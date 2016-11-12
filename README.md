@@ -4,6 +4,8 @@ ShowTime displays your taps and gestures on screen, perfect for that demo or pre
 
 ShowTime works best when mirroring your screen or recording through QuickTime. By default the size of the visual touches are 44pt. This mirrors Apple's guidelines for minimim hit size for buttons on iOS. You're free to change this, of course!
 
+![ShowTime](http://macid.co/images/2016-11-12%2011_49_44.gif)
+
 ## Installation
 
 - Step 1: Drop `ShowTime.swift` into your project or copy the contents of it whereever you like. 
