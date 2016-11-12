@@ -35,7 +35,7 @@ fileprivate final class TouchView: UILabel {
   convenience init(touch: UITouch, relativeTo view: UIView) {
     self.init()
     let location = touch.location(in: view)
-    frame = frame.offsetBy(dx: location.x - ShowTime.size.width / 2, dy: location.y - ShowTime.size.height / 2)
+    frame = CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height)
     layer.cornerRadius = ShowTime.size.height / 2
     backgroundColor = ShowTime.fillColor
     layer.borderColor = ShowTime.strokeColor.cgColor
@@ -59,15 +59,16 @@ fileprivate var touches = [Int : TouchView]()
 extension UIWindow {
   
   open override class func initialize() {
+    struct Swizzled {
+      static var once = false // Workaround for missing dispatch_once in Swift 3
+    }
+    guard !Swizzled.once else { return }
+    Swizzled.once = true
     let originalSelector = #selector(UIWindow.sendEvent(_:))
     let swizzledSelector = #selector(UIWindow.swizzled_sendEvent(_:))
     let originalMethod = class_getInstanceMethod(self, originalSelector)
     let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
-    guard class_addMethod(self, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod)) else {
-      method_exchangeImplementations(originalMethod, swizzledMethod)
-      return
-    }
-    class_replaceMethod(self, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod))
+    method_exchangeImplementations(originalMethod, swizzledMethod)
   }
   
   @objc private func swizzled_sendEvent(_ event: UIEvent) {
