@@ -1,6 +1,6 @@
 # It's ShowTime 🎥
 
-ShowTime displays your taps and gestures on screen, perfect for that demo or presentation. One file is all you need to massively improve your demos.
+ShowTime displays your taps and gestures on screen, perfect for that demo or presentation. One file is all you need to massively improve your demos. ShowTime can even display how much force is applied for each touch.
 
 ShowTime works best when mirroring your screen or recording through QuickTime. By default the size of the visual touches are 44pt. This mirrors Apple's guidelines for minimim hit size for buttons on iOS. You're free to change this, of course!
 
@@ -22,3 +22,4 @@ Here's a list of options:
 - `ShowTime.size`: The size of the touch circles. The default is 44 x 44
 - `ShowTime.showMultipleTapCount`: Whether the touch circles should indicate a multiple tap (i.e. show a number 2 for a double tap) (`false` by default)
 - `ShowTime.multipleTapCountTextColor`: The colour of the text to use when showing multiple tap counts
+- `ShowTime.showForce`: Whether the touch circles should visually show how much force is applied
