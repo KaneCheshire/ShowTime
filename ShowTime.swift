@@ -24,9 +24,11 @@ struct ShowTime {
   /// The size of the touch circles. The default is 44 x 44
   static var size = CGSize(width: 44, height: 44)
   /// Whether the touch circles should indicate a multiple tap (i.e. show a number 2 for a double tap)
-  static var showMultipleTapCount: Bool = false
+  static var showMultipleTapCount = false
   /// The colour of the text to use when showing multiple tap counts
   static var multipleTapCountTextColor: UIColor = .black
+  /// Whether the touch circles should visually show how much force is applied
+  static var showForce = true
   
 }
 
@@ -50,13 +52,23 @@ fileprivate final class TouchView: UILabel {
   func update(with touch: UITouch, in view: UIView) {
     let location = touch.location(in: view)
     frame = CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height)
+    if ShowTime.showForce {
+      let scale = 1 + (0.5 * touch.normalizedForce)
+      CATransaction.begin()
+      CATransaction.setDisableActions(true)
+      layer.transform = CATransform3DMakeScale(scale, scale, 0)
+      CATransaction.setDisableActions(false)
+      CATransaction.commit()
+    }
   }
   
 }
 
-fileprivate var touches = [Int : TouchView]()
+
 
 extension UIWindow {
+  
+  fileprivate static var touches = [Int : TouchView]()
   
   open override class func initialize() {
     struct Swizzled {
@@ -89,23 +101,34 @@ extension UIWindow {
   private func touchBegan(_ touch: UITouch) {
     let touchView = TouchView(touch: touch, relativeTo: self)
     self.addSubview(touchView)
-    touches[touch.hashValue] = touchView
+    UIWindow.touches[touch.hashValue] = touchView
   }
   
   private func touchMoved(_ touch: UITouch) {
-    guard let touchView = touches[touch.hashValue] else { return }
+    guard let touchView = UIWindow.touches[touch.hashValue] else { return }
     touchView.update(with: touch, in: self)
   }
   
   private func touchEnded(_ touch: UITouch) {
-    guard let touchView = touches[touch.hashValue] else { return }
+    guard let touchView = UIWindow.touches[touch.hashValue] else { return }
     UIView.animate(withDuration: 0.2, animations: {
       touchView.alpha = 0
       touchView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
     }, completion: { _ in
       touchView.removeFromSuperview()
     })
-    touches[touch.hashValue] = nil
+    UIWindow.touches[touch.hashValue] = nil
+  }
+  
+}
+
+extension UITouch {
+  
+  var normalizedForce: CGFloat {
+    if #available(iOS 9.0, *) {
+      return force / maximumPossibleForce
+    }
+    return 0
   }
   
 }
