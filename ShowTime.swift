@@ -64,23 +64,15 @@ fileprivate final class TouchView: UILabel {
   
 }
 
-
-
 extension UIWindow {
   
   fileprivate static var touches = [Int : TouchView]()
   
   open override class func initialize() {
-    struct Swizzled {
-      static var once = false // Workaround for missing dispatch_once in Swift 3
-    }
+    struct Swizzled { static var once = false } // Workaround for missing dispatch_once in Swift 3
     guard !Swizzled.once else { return }
     Swizzled.once = true
-    let originalSelector = #selector(UIWindow.sendEvent(_:))
-    let swizzledSelector = #selector(UIWindow.swizzled_sendEvent(_:))
-    let originalMethod = class_getInstanceMethod(self, originalSelector)
-    let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
-    method_exchangeImplementations(originalMethod, swizzledMethod)
+    method_exchangeImplementations(class_getInstanceMethod(self, #selector(UIWindow.sendEvent(_:))), class_getInstanceMethod(self, #selector(UIWindow.swizzled_sendEvent(_:))))
   }
   
   @objc private func swizzled_sendEvent(_ event: UIEvent) {
