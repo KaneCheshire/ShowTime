@@ -15,14 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
-    // Uncomment to disable ShowTime
+    /* Uncomment to disable ShowTime */
     
 //    ShowTime.itsShowTime = false
     
     
-    // Uncomment to modify ShowTime display settings
+    /* Uncomment to modify ShowTime display settings */
     
-//    ShowTime.showMultipleTapCount = true
+//    ShowTime.shouldShowMultipleTapCount = true
 //    ShowTime.multipleTapCountTextColor = .white
 //    ShowTime.fillColor = .black
 //    ShowTime.strokeColor = .red

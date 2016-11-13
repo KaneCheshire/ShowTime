@@ -24,11 +24,11 @@ struct ShowTime {
   /// The size of the touch circles. The default is 44 x 44
   static var size = CGSize(width: 44, height: 44)
   /// Whether the touch circles should indicate a multiple tap (i.e. show a number 2 for a double tap)
-  static var showMultipleTapCount = false
+  static var shouldShowMultipleTapCount = false
   /// The colour of the text to use when showing multiple tap counts
   static var multipleTapCountTextColor: UIColor = .black
   /// Whether the touch circles should visually show how much force is applied
-  static var showForce = true
+  static var shouldShowForce = true
   
 }
 
@@ -46,13 +46,13 @@ fileprivate final class TouchView: UILabel {
     textAlignment = .center
     textColor = ShowTime.multipleTapCountTextColor
     isUserInteractionEnabled = false
-    text = ShowTime.showMultipleTapCount && touch.tapCount > 1 ? "\(touch.tapCount)" : nil
+    text = ShowTime.shouldShowMultipleTapCount && touch.tapCount > 1 ? "\(touch.tapCount)" : nil
   }
   
   func update(with touch: UITouch, in view: UIView) {
     let location = touch.location(in: view)
     frame = CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height)
-    if ShowTime.showForce {
+    if ShowTime.shouldShowForce {
       let scale = 1 + (0.5 * touch.normalizedForce)
       CATransaction.begin()
       CATransaction.setDisableActions(true)
