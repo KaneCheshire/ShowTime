@@ -10,7 +10,7 @@ ShowTime works best when mirroring your screen or recording through QuickTime. B
 
 Showing your gestures during demos helps give your audience a much clearer context on what's happening on your device. Consider trying ShowTime for your next demo!
 
-![ShowTime](images/demo.gif)
+![ShowTime](./images/demo.gif)
 
 ## Installation
 
