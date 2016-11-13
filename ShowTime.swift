@@ -103,7 +103,7 @@ extension UIWindow {
   
   private func touchEnded(_ touch: UITouch) {
     guard let touchView = UIWindow.touches[touch.hashValue] else { return }
-    UIView.animate(withDuration: 0.2, animations: {
+    UIView.animate(withDuration: 0.2, delay: 0.15, options: [], animations: {
       touchView.alpha = 0
       touchView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
     }, completion: { _ in
