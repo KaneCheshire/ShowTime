@@ -125,7 +125,7 @@ extension UIWindow {
 extension UITouch {
   
   var normalizedForce: CGFloat {
-    if #available(iOS 9.0, *) {
+    if #available(iOS 9.0, *), maximumPossibleForce > 0 {
       return force / maximumPossibleForce
     }
     return 0
