@@ -25,9 +25,9 @@ change the colour and outline of the taps, and even choose whether to display th
 Here's a list of options:
 
 - `ShowTime.itsShowTime`: Whether ShowTime is enabled. `true` by default.
-- `ShowTime.fillColor`: The fill (background) colour of a visual touch. 50% gray with 50% alpha by default.
-- `ShowTime.strokeColor`: The colour of the stroke (outline) of a visual touch. `UIColor.gray` by default.
-- `ShowTime.strokeWidth`: The width (thickness) of the stroke around a visual touch. 1pt by default.
+- `ShowTime.fillColor`: The fill (background) colour of a visual touch. Blue with 50% opacity by default.
+- `ShowTime.strokeColor`: The colour of the stroke (outline) of a visual touch. Blue by default.
+- `ShowTime.strokeWidth`: The width (thickness) of the stroke around a visual touch. 3pt by default.
 - `ShowTime.size`: The size of a visual touch. 44pt x 44pt by default.
 - `ShowTime.shouldShowMultipleTapCount`: Whether visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). `false` by default.
 - `ShowTime.multipleTapCountTextColor`: The colour of the text to use when showing multiple tap counts. `UITouch.black` by default.

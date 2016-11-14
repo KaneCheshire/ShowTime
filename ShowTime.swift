@@ -16,11 +16,11 @@ struct ShowTime {
   static var itsShowTime = true
   
   /// The fill (background) colour of the touch circles
-  static var fillColor: UIColor = UIColor(white: 0.5, alpha: 0.5)
+  static var fillColor: UIColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:0.5)
   /// The colour of the stroke (outline) of the touch circles
-  static var strokeColor: UIColor = .gray
+  static var strokeColor: UIColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:1)
   /// The width (thickness) of the stroke around the touch circles
-  static var strokeWidth: CGFloat = 1
+  static var strokeWidth: CGFloat = 3
   /// The size of the touch circles. The default is 44 x 44
   static var size = CGSize(width: 44, height: 44)
   /// Whether the touch circles should indicate a multiple tap (i.e. show a number 2 for a double tap)
