@@ -2,7 +2,7 @@
 
 ShowTime displays all your taps and gestures on screen, perfect for that demo, presentation or video. 
 
-One file is all you need to turbo-boost your demos. ShowTime even **displays the level of force you're applying**, and can be configured to show the **actual number of taps performed**.
+One file is all you need to turbo-boost your demos. ShowTime even **displays the level of force you're applying**, and can be configured to show the **actual number of taps performed**. Apple Pencil events are configurable and disabled by default.
 
 ShowTime works with single- and multi-window setups, check out **[How it works](#how-it-works)**.
 
@@ -29,9 +29,11 @@ Here's a list of options:
 - `ShowTime.strokeColor`: The colour of the stroke (outline) of a visual touch. Blue by default.
 - `ShowTime.strokeWidth`: The width (thickness) of the stroke around a visual touch. 3pt by default.
 - `ShowTime.size`: The size of a visual touch. 44pt x 44pt by default.
+- `ShowTime.disappearDelay`: The delay, in seconds, before the visual touch disappears after a touch ends 0.1s by default.
 - `ShowTime.shouldShowMultipleTapCount`: Whether visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). `false` by default.
 - `ShowTime.multipleTapCountTextColor`: The colour of the text to use when showing multiple tap counts. `UITouch.black` by default.
 - `ShowTime.shouldShowForce`: Whether visual touches should visually show how much force is applied. `true` by default (show off that amazing tech!)
+- `ShowTime.shouldIgnoreApplePencilEvents`: Whether touch events from Apple Pencil are ignored. `true` by default.
 
 ## <a name='how-it-works'></a>How it works
 
