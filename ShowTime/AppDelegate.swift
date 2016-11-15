@@ -22,11 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     /* Uncomment to modify ShowTime display settings */
     
+//    ShowTime.shouldIgnoreApplePencilEvents = false
+//    ShowTime.disappearDelay = 0
 //    ShowTime.shouldShowMultipleTapCount = true
 //    ShowTime.multipleTapCountTextColor = .white
 //    ShowTime.fillColor = .black
 //    ShowTime.strokeColor = .red
-//    ShowTime.strokeWidth = 3
+//    ShowTime.strokeWidth = 1
+//    ShowTime.size = CGSize(width: 20, height: 20)
     
     return true
   }

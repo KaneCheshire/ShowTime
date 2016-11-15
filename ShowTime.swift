@@ -15,41 +15,55 @@ struct ShowTime {
   /// Whether ShowTime is enabled
   static var itsShowTime = true
   
-  /// The fill (background) colour of the touch circles
+  /// The fill (background) colour of the visual touches
   static var fillColor: UIColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:0.5)
-  /// The colour of the stroke (outline) of the touch circles
+  /// The colour of the stroke (outline) of the visual touches
   static var strokeColor: UIColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:1)
-  /// The width (thickness) of the stroke around the touch circles
+  /// The width (thickness) of the stroke around the visual touches
   static var strokeWidth: CGFloat = 3
-  /// The size of the touch circles. The default is 44 x 44
+  /// The size of the touch circles. The default is 44pt x 44pt
   static var size = CGSize(width: 44, height: 44)
-  /// Whether the touch circles should indicate a multiple tap (i.e. show a number 2 for a double tap)
+  /// The delay, in seconds, before the visual touch disappears after a touch ends (0.1s by default)
+  static var disappearDelay: TimeInterval = 0.1
+  /// Whether the visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap) (false by default)
   static var shouldShowMultipleTapCount = false
   /// The colour of the text to use when showing multiple tap counts
   static var multipleTapCountTextColor: UIColor = .black
-  /// Whether the touch circles should visually show how much force is applied
+  /// Whether the visual touch should visually show how much force is applied (true by default)
   static var shouldShowForce = true
+  /// Whether touch events from Apple Pencil are ignored (true by default)
+  static var shouldIgnoreApplePencilEvents = true
   
 }
 
 fileprivate final class TouchView: UILabel {
   
+  /// Creates a new instance representing a touch to visually display
+  ///
+  /// - Parameters:
+  ///   - touch: A `UITouch` instance the visual touch represents
+  ///   - view: A view the touch is relative to, typically the window calling `sendEvent(_:)`
   convenience init(touch: UITouch, relativeTo view: UIView) {
     self.init()
     let location = touch.location(in: view)
     frame = CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height)
     layer.cornerRadius = ShowTime.size.height / 2
-    backgroundColor = ShowTime.fillColor
     layer.borderColor = ShowTime.strokeColor.cgColor
     layer.borderWidth = ShowTime.strokeWidth
-    clipsToBounds = true
+    backgroundColor = ShowTime.fillColor
+    text = ShowTime.shouldShowMultipleTapCount && touch.tapCount > 1 ? "\(touch.tapCount)" : nil
     textAlignment = .center
     textColor = ShowTime.multipleTapCountTextColor
+    clipsToBounds = true
     isUserInteractionEnabled = false
-    text = ShowTime.shouldShowMultipleTapCount && touch.tapCount > 1 ? "\(touch.tapCount)" : nil
   }
   
-  func update(with touch: UITouch, in view: UIView) {
+  /// Updates the position and force level of a visual touch
+  ///
+  /// - Parameters:
+  ///   - touch: A `UITouch` instance the visual touch represents
+  ///   - view: A view the touch is relative to, typically the window calling `sendEvent(_:)`
+  func update(with touch: UITouch, relativeTo view: UIView) {
     let location = touch.location(in: view)
     frame = CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height)
     if ShowTime.shouldShowForce {
@@ -60,6 +74,17 @@ fileprivate final class TouchView: UILabel {
       CATransaction.setDisableActions(false)
       CATransaction.commit()
     }
+  }
+  
+  /// Animates the visual touch out to disappear from view
+  /// Removes itself from the superview after the animation complete
+  func disappear() {
+    UIView.animate(withDuration: 0.2, delay: ShowTime.disappearDelay, options: [], animations: { [weak self] in
+      self?.alpha = 0
+      self?.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+    }, completion: { [weak self] _ in
+      self?.removeFromSuperview()
+    })
   }
   
 }
@@ -79,6 +104,7 @@ extension UIWindow {
     self.swizzled_sendEvent(event)
     guard ShowTime.itsShowTime else { return }
     event.allTouches?.forEach {
+      if ShowTime.shouldIgnoreApplePencilEvents && $0.isApplePencil { return }
       switch $0.phase {
       case .began:
         touchBegan($0)
@@ -98,29 +124,34 @@ extension UIWindow {
   
   private func touchMoved(_ touch: UITouch) {
     guard let touchView = UIWindow.touches[touch.hashValue] else { return }
-    touchView.update(with: touch, in: self)
+    touchView.update(with: touch, relativeTo: self)
   }
   
   private func touchEnded(_ touch: UITouch) {
     guard let touchView = UIWindow.touches[touch.hashValue] else { return }
-    UIView.animate(withDuration: 0.2, delay: 0.15, options: [], animations: {
-      touchView.alpha = 0
-      touchView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
-    }, completion: { _ in
-      touchView.removeFromSuperview()
-    })
+    touchView.disappear()
     UIWindow.touches[touch.hashValue] = nil
   }
   
 }
 
-extension UITouch {
+fileprivate extension UITouch {
   
+  /// Normalizes the level of force betwenn 0 and 1 regardless of device.
+  /// Will always be 0 for devices that don't support 3D Touch
   var normalizedForce: CGFloat {
     if #available(iOS 9.0, *), maximumPossibleForce > 0 {
       return force / maximumPossibleForce
     }
     return 0
+  }
+  
+  /// Whether the touch event is from an Apple Pencil (i.e. type `.stylus`)
+  var isApplePencil: Bool {
+    if #available(iOS 9.1, *) {
+      return type == .stylus
+    }
+    return false
   }
   
 }
