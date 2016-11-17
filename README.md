@@ -4,7 +4,7 @@ ShowTime displays all your taps and gestures on screen, perfect for that demo, p
 
 One file is all you need to turbo-boost your demos. ShowTime even **displays the level of force you're applying**, and can be configured to show the **actual number of taps performed**. Apple Pencil events are configurable and disabled by default.
 
-ShowTime works with single- and multi-window setups, check out **[How it works](#how-it-works)**.
+ShowTime works with **single- and multi-window setups**, check out **[How it works](#how-it-works)**.
 
 ShowTime works best when mirroring your screen or recording through QuickTime. By default the size of the visual touches are 44pt; this mirrors Apple's guidelines for minimim hit size for buttons on iOS. You're free to change this, of course!
 
@@ -24,16 +24,49 @@ change the colour and outline of the taps, and even choose whether to display th
 
 Here's a list of options:
 
-- `ShowTime.itsShowTime`: Whether ShowTime is enabled. `true` by default.
-- `ShowTime.fillColor`: The fill (background) colour of a visual touch. Blue with 50% opacity by default.
-- `ShowTime.strokeColor`: The colour of the stroke (outline) of a visual touch. Blue by default.
-- `ShowTime.strokeWidth`: The width (thickness) of the stroke around a visual touch. 3pt by default.
-- `ShowTime.size`: The size of a visual touch. 44pt x 44pt by default.
-- `ShowTime.disappearDelay`: The delay, in seconds, before the visual touch disappears after a touch ends 0.1s by default.
-- `ShowTime.shouldShowMultipleTapCount`: Whether visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). `false` by default.
-- `ShowTime.multipleTapCountTextColor`: The colour of the text to use when showing multiple tap counts. `UITouch.black` by default.
-- `ShowTime.shouldShowForce`: Whether visual touches should visually show how much force is applied. `true` by default (show off that amazing tech!)
-- `ShowTime.shouldIgnoreApplePencilEvents`: Whether touch events from Apple Pencil are ignored. `true` by default.
+```swift
+// Whether ShowTime is enabled. 
+// true by default.
+ShowTime.itsShowTime: Bool 
+
+
+// The fill (background) color of a visual touch.
+// Twitter blue with 50% opacity by default.
+ShowTime.fillColor: UIColor
+
+// The colour of the stroke (outline) of a visual touch.
+// Twitter blue by default.
+ShowTime.strokeColor: UIColor
+
+// The width (thickness) of the stroke around a visual touch.
+// 3pt by default.
+ShowTime.strokeWidth: CGFloat
+
+// The size of a visual touch. 
+// 44x44pt by default
+ShowTime.size: CGSize
+
+// The delay, in seconds, before the visual touch disappears after a touch ends. 
+// 0.1s by default.
+ShowTime.disappearDelay: TimeInterval
+
+// Whether visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). 
+// false by default.
+ShowTime.shouldShowMultipleTapCount: Bool
+
+// The colour of the text to use when showing multiple tap counts.
+// Black by default.
+ShowTime.multipleTapCountTextColor: UIColor
+
+// Whether visual touches should visually show how much force is applied. 
+// true by default (show off that amazing tech!)
+ShowTime.shouldShowForce: Bool
+
+// Whether touch events from Apple Pencil are ignored. 
+// true by default.
+ShowTime.shouldIgnoreApplePencilEvents
+
+```
 
 ## <a name='how-it-works'></a>How it works
 
@@ -43,7 +76,7 @@ To achieve this, ShowTime uses _method swizzling_. [Method swizzling](http://nsh
 
 Swizzling is just a friendly term used for swapping out the default implementation of a method and replacing it with your own (which calls the default implementation, a bit like calling a `super` implementation of a `class`), so that you have more control over what happens with that method without having to subclass. The benefit – but also danger – of this is that **_all_** objects instantiated will use the new implementation, so swizzling should be used wisely and sparingly, especially in production code.
 
-ShowTime swizzles the `sendEvent(_:)` method on `UIWindow`, intercepts the event and then lets `UIWindow` carry on with sending the event. By intercepting that event and extracting the `UITouch`es out of it, ShowTime displays those touches visually on whatever window is calling `sendEvent(_:)`.
+ShowTime swizzles the `sendEvent(_:)` method on `UIWindow`, intercepts the event and then lets `UIWindow` carry on with sending the event. By intercepting that event and extracting the `UITouch`es out of it, ShowTime displays those touches visually on whatever window is receiving `sendEvent(_:)`.
 
 ## Useful info
 
