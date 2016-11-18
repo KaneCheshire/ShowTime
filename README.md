@@ -25,9 +25,15 @@ change the colour and outline of the taps, and even choose whether to display th
 Here's a list of options:
 
 ```swift
-// Whether ShowTime is enabled. 
-// true by default.
-ShowTime.itsShowTime: Bool 
+// Defines when and if ShowTime is enabled
+//
+// Possible values are:
+// - .always
+// - .never
+// - .debugOnly
+// 
+// .always by default
+ShowTime.itsShowTime: ShowTime.Enabled 
 
 
 // The fill (background) color of a visual touch.

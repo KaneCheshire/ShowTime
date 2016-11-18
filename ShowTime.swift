@@ -12,13 +12,24 @@ import UIKit
 /// Change the options to customise ShowTime
 struct ShowTime {
   
+  /// Defines if and when ShowTime should be enabled
+  ///
+  /// - always:    ShowTime is always enabled
+  /// - never:     ShowTime is never enabled
+  /// - debugOnly: ShowTime is enabled while the DEBUG flag is enabled.
+  enum Enabled {
+    case always
+    case never
+    case debugOnly
+  }
+  
   /// Whether ShowTime is enabled
-  static var itsShowTime = true
+  static var enabled: ShowTime.Enabled = .debugOnly
   
   /// The fill (background) colour of the visual touches
-  static var fillColor: UIColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:0.5)
+  static var fillColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:0.5)
   /// The colour of the stroke (outline) of the visual touches
-  static var strokeColor: UIColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:1)
+  static var strokeColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:1)
   /// The width (thickness) of the stroke around the visual touches
   static var strokeWidth: CGFloat = 3
   /// The size of the touch circles. The default is 44pt x 44pt
@@ -33,6 +44,18 @@ struct ShowTime {
   static var shouldShowForce = true
   /// Whether touch events from Apple Pencil are ignored (true by default)
   static var shouldIgnoreApplePencilEvents = true
+  
+  fileprivate static var shouldEnable: Bool {
+    guard enabled != .never else { return false }
+    guard enabled != .debugOnly else {
+      #if DEBUG
+        return true
+      #else
+        return false
+      #endif
+    }
+    return true
+  }
   
 }
 
@@ -82,8 +105,8 @@ fileprivate final class TouchView: UILabel {
     UIView.animate(withDuration: 0.2, delay: ShowTime.disappearDelay, options: [], animations: { [weak self] in
       self?.alpha = 0
       self?.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
-    }, completion: { [weak self] _ in
-      self?.removeFromSuperview()
+      }, completion: { [weak self] _ in
+        self?.removeFromSuperview()
     })
   }
   
@@ -102,7 +125,7 @@ extension UIWindow {
   
   @objc private func swizzled_sendEvent(_ event: UIEvent) {
     self.swizzled_sendEvent(event)
-    guard ShowTime.itsShowTime else { return }
+    guard ShowTime.shouldEnable else { return }
     event.allTouches?.forEach {
       if ShowTime.shouldIgnoreApplePencilEvents && $0.isApplePencil { return }
       switch $0.phase {

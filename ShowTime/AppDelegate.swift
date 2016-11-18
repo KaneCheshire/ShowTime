@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     /* Uncomment to disable ShowTime */
     
-//    ShowTime.itsShowTime = false
+//    ShowTime.enabled = .never
     
     
     /* Uncomment to modify ShowTime display settings */
