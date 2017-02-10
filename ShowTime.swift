@@ -23,6 +23,17 @@ struct ShowTime {
     case debugOnly
   }
   
+  /// Defines a style of animation.
+  ///
+  /// - standard: The standard type of animation will be used.
+  /// - scaleDown: The animation has a scale down effect.
+  /// - scaleUp: The animation has a scale up effect.
+  enum Animation {
+    case standard
+    case scaleDown
+    case scaleUp
+  }
+  
   /// Whether ShowTime is enabled. (`.debugOnly` by default)
   static var enabled: ShowTime.Enabled = .debugOnly
   
@@ -34,6 +45,8 @@ struct ShowTime {
   static var strokeWidth: CGFloat = 3
   /// The size of the touch circles. (44pt x 44pt by default)
   static var size = CGSize(width: 44, height: 44)
+  /// The style of animation to use when hiding a visual touch. (`.standard` by default)
+  static var disappearAnimation: ShowTime.Animation = .standard
   /// The delay, in seconds, before the visual touch disappears after a touch ends. (0.1s by default)
   static var disappearDelay: TimeInterval = 0.1
   /// Whether the visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). (false by default)
@@ -102,19 +115,36 @@ fileprivate final class TouchView: UILabel {
   /// Animates the visual touch out to disappear from view.
   /// Removes itself from the superview after the animation complete.
   func disappear() {
-    UIView.animate(withDuration: 0.2, delay: ShowTime.disappearDelay, options: [], animations: { [weak self] in
-      self?.alpha = 0
-      self?.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+    UIView.animate(withDuration: 0.2, delay: ShowTime.disappearDelay, options: [.beginFromCurrentState], animations: { [weak self] in
+      switch ShowTime.disappearAnimation {
+      case .standard: self?.standard()
+      case .scaleDown: self?.scaleDown()
+      case .scaleUp: self?.animateScaleUp()
+      }
       }, completion: { [weak self] _ in
         self?.removeFromSuperview()
     })
+  }
+  
+  private func standard() {
+    alpha = 0
+    transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+  }
+  
+  private func scaleDown() {
+    transform = CGAffineTransform(scaleX: 0, y: 0)
+  }
+  
+  private func animateScaleUp() {
+    alpha = 0
+    transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
   }
   
 }
 
 extension UIWindow {
   
-  fileprivate static var touches = [Int : TouchView]()
+  fileprivate static var touches = [UITouch : TouchView]()
   
   open override class func initialize() {
     struct Swizzled { static var once = false } // Workaround for missing dispatch_once in Swift 3
@@ -139,18 +169,18 @@ extension UIWindow {
   private func touchBegan(_ touch: UITouch) {
     let touchView = TouchView(touch: touch, relativeTo: self)
     self.addSubview(touchView)
-    UIWindow.touches[touch.hashValue] = touchView
+    UIWindow.touches[touch] = touchView
   }
   
   private func touchMoved(_ touch: UITouch) {
-    guard let touchView = UIWindow.touches[touch.hashValue] else { return }
+    guard let touchView = UIWindow.touches[touch] else { return }
     touchView.update(with: touch, relativeTo: self)
   }
   
   private func touchEnded(_ touch: UITouch) {
-    guard let touchView = UIWindow.touches[touch.hashValue] else { return }
+    guard let touchView = UIWindow.touches[touch] else { return }
     touchView.disappear()
-    UIWindow.touches[touch.hashValue] = nil
+    UIWindow.touches[touch] = nil
   }
   
 }
