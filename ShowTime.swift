@@ -34,8 +34,8 @@ struct ShowTime {
     case scaleUp
   }
   
-  /// Whether ShowTime is enabled. (`.debugOnly` by default)
-  static var enabled: ShowTime.Enabled = .debugOnly
+  /// Whether ShowTime is enabled. (`.always` by default)
+  static var enabled: ShowTime.Enabled = .always
   
   /// The fill (background) colour of the visual touches. (Twitter Blue with 50% alpha by default)
   static var fillColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:0.5)
