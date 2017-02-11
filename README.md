@@ -49,27 +49,37 @@ ShowTime.strokeColor: UIColor
 ShowTime.strokeWidth: CGFloat
 
 // The size of a visual touch. 
-// 44x44pt by default
+// 44x44pt by default.
 ShowTime.size: CGSize
 
+// The style of animation  to use when a visual touch disappears.
+//
+// Possible values are:
+// - .standard (Slightly scaled down and faded out)
+// - .scaleDown (Completely scaled down with no fade)
+// - .scaleUp (Scaled up and faded out)
+// 
+// `.standard` by default.
+ShowTime.disappearAnimation: ShowTime.Animation
+
 // The delay, in seconds, before the visual touch disappears after a touch ends. 
-// 0.1s by default.
+// `0.1` by default.
 ShowTime.disappearDelay: TimeInterval
 
 // Whether visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). 
-// false by default.
+// `false` by default.
 ShowTime.shouldShowMultipleTapCount: Bool
 
 // The colour of the text to use when showing multiple tap counts.
-// Black by default.
+// `.black` by default.
 ShowTime.multipleTapCountTextColor: UIColor
 
 // Whether visual touches should visually show how much force is applied. 
-// true by default (show off that amazing tech!)
+// `true` by default (show off that amazing tech!).
 ShowTime.shouldShowForce: Bool
 
 // Whether touch events from Apple Pencil are ignored. 
-// true by default.
+// `true` by default.
 ShowTime.shouldIgnoreApplePencilEvents
 
 ```
