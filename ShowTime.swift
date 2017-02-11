@@ -80,9 +80,8 @@ fileprivate final class TouchView: UILabel {
   ///   - touch: A `UITouch` instance the visual touch represents.
   ///   - view: A view the touch is relative to, typically the window calling `sendEvent(_:)`.
   convenience init(touch: UITouch, relativeTo view: UIView) {
-    self.init()
     let location = touch.location(in: view)
-    frame = CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height)
+    self.init(frame: CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height))
     layer.cornerRadius = ShowTime.size.height / 2
     layer.borderColor = ShowTime.strokeColor.cgColor
     layer.borderWidth = ShowTime.strokeWidth
