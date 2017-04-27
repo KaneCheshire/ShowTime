@@ -131,7 +131,7 @@ class TouchView: UILabel {
   }
   
   private func scaleDown() {
-    transform = CGAffineTransform(scaleX: 0, y: 0)
+    transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
   }
   
   private func animateScaleUp() {
@@ -141,9 +141,9 @@ class TouchView: UILabel {
   
 }
 
+internal var _touches = [UITouch : TouchView]()
+
 extension UIWindow {
-  
-  private static var touches = [UITouch : TouchView]()
   
   open override class func initialize() {
     struct Swizzled { static var once = false } // Workaround for missing dispatch_once in Swift 3
@@ -168,18 +168,18 @@ extension UIWindow {
   private func touchBegan(_ touch: UITouch) {
     let touchView = TouchView(touch: touch, relativeTo: self)
     self.addSubview(touchView)
-    UIWindow.touches[touch] = touchView
+    _touches[touch] = touchView
   }
   
   private func touchMoved(_ touch: UITouch) {
-    guard let touchView = UIWindow.touches[touch] else { return }
+    guard let touchView = _touches[touch] else { return }
     touchView.update(with: touch, relativeTo: self)
   }
   
   private func touchEnded(_ touch: UITouch) {
-    guard let touchView = UIWindow.touches[touch] else { return }
+    guard let touchView = _touches[touch] else { return }
     touchView.disappear()
-    UIWindow.touches[touch] = nil
+    _touches[touch] = nil
   }
   
 }

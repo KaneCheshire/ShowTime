@@ -3,19 +3,47 @@ import XCTest
 @testable import ShowTime
 
 class MockTouch: UITouch {
-  
   let taps: Int
-  
-  init(tapCount: Int = 1) {
+  var _phase: UITouchPhase
+  let _type: UITouchType
+  init(tapCount: Int = 1, phase: UITouchPhase = .began, type: UITouchType = .direct) {
     self.taps = tapCount
+    self._phase = phase
+    self._type = type
   }
   
   override var tapCount: Int {
     return taps
   }
+  
+  override var phase: UITouchPhase {
+    return _phase
+  }
+  
+  override var type: UITouchType {
+    return _type
+  }
+}
+
+class MockEvent: UIEvent {
+  let touches: [UITouch]
+  init(touches: [UITouch] = []) {
+    self.touches = touches
+  }
+  
+  override var allTouches: Set<UITouch>? {
+    return Set(touches)
+  }
+  
 }
 
 class Tests: XCTestCase {
+  
+  
+  override func setUp() {
+    super.setUp()
+    _touches.removeAll()
+  }
   
   func test_enablingShowTime() {
     ShowTime.enabled = .never
@@ -32,7 +60,6 @@ class Tests: XCTestCase {
   }
   
   func test_creatingTouchView() {
-    
     let touch = MockTouch(tapCount: 5)
     let touchView = TouchView(touch: touch, relativeTo: UIView())
     XCTAssertEqual(touchView.frame.width, ShowTime.size.width)
@@ -95,6 +122,76 @@ class Tests: XCTestCase {
     let touchWith2Taps = MockTouch(tapCount: 2)
     let touchView3 = TouchView(touch: touchWith2Taps, relativeTo: UIView())
     XCTAssertEqual(touchView3.text, "2")
+  }
+  
+  func test_handlingEvents() {
+    XCTAssertTrue(_touches.isEmpty)
+    let eventWithNoTouches = MockEvent()
+    let window = UIWindow()
+    window.sendEvent(eventWithNoTouches)
+    XCTAssertTrue(_touches.isEmpty)
+    
+    let touch1 = MockTouch()
+    let eventWithOneTouch = MockEvent(touches: [touch1])
+    window.sendEvent(eventWithOneTouch)
+    XCTAssertEqual(_touches.count, 1)
+    XCTAssertNotNil(_touches[touch1])
+    
+    let touch2 = MockTouch()
+    let touch3 = MockTouch()
+    XCTAssertNil(_touches[touch2])
+    XCTAssertNil(_touches[touch3])
+    let eventWithMultipleTouches = MockEvent(touches: [touch2, touch3])
+    window.sendEvent(eventWithMultipleTouches)
+    XCTAssertEqual(_touches.count, 3)
+    XCTAssertNotNil(_touches[touch2])
+    XCTAssertNotNil(_touches[touch3])
+  }
+  
+  func test_touchPhases() {
+    XCTAssertTrue(_touches.isEmpty)
+    let touch = MockTouch(phase: .began)
+    let event = MockEvent(touches: [touch])
+    let window = UIWindow()
+    window.sendEvent(event)
+    XCTAssertEqual(_touches.count, 1)
+    
+    touch._phase = .moved
+    window.sendEvent(event)
+    XCTAssertEqual(_touches.count, 1)
+    
+    touch._phase = .ended
+    window.sendEvent(event)
+    XCTAssertEqual(_touches.count, 0)
+    
+    let touch2 = MockTouch(phase: .began)
+    let event2 = MockEvent(touches: [touch2])
+    window.sendEvent(event2)
+    XCTAssertEqual(_touches.count, 1)
+    
+    touch2._phase = .stationary
+    window.sendEvent(event2)
+    XCTAssertEqual(_touches.count, 1)
+    
+    touch2._phase = .cancelled
+    window.sendEvent(event2)
+    XCTAssertEqual(_touches.count, 0)
+  }
+  
+  func test_ignoringApplePencilEvents() {
+    XCTAssertTrue(_touches.isEmpty)
+    XCTAssertTrue(ShowTime.shouldIgnoreApplePencilEvents)
+    
+    let window = UIWindow()
+    let applePencilTouch = MockTouch(type: .stylus)
+    let event = MockEvent(touches: [applePencilTouch])
+    window.sendEvent(event)
+    XCTAssertEqual(_touches.count, 0)
+    
+    ShowTime.shouldIgnoreApplePencilEvents = false
+    XCTAssertFalse(ShowTime.shouldIgnoreApplePencilEvents)
+    window.sendEvent(event)
+    XCTAssertEqual(_touches.count, 1)
   }
     
 }

@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 /* Uncomment to modify ShowTime display settings */
     
+    // ShowTime.disappearAnimation = .scaleDown
     // ShowTime.shouldIgnoreApplePencilEvents = false
     // ShowTime.disappearDelay = 0
     // ShowTime.shouldShowMultipleTapCount = true
