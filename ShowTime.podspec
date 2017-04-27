@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ShowTime'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of ShowTime.'
+  s.summary          = 'The easiest way to show off your iOS taps and gestures for demos.'
   s.description      = <<-DESC
   ShowTime displays all your taps and gestures on screen, perfect for that demo, presentation or video.
   One file is all you need to turbo-boost your demos. ShowTime even displays the level of force you're applying, and can be configured to show the actual number of taps performed. Apple Pencil events are configurable and disabled by default.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/kanecheshire/ShowTime'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author           = { 'kanecheshire' => 'kane.cheshire@googlemail.com' }
   s.source           = { :git => 'https://github.com/kanecheshire/ShowTime.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/kanecheshire'
