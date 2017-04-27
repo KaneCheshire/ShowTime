@@ -1,0 +1,26 @@
+{
+  "name": "ShowTime",
+  "version": "1.0.0",
+  "summary": "A short description of ShowTime.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kanecheshire/ShowTime",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kanecheshire": "kane.cheshire@googlemail.com"
+  },
+  "source": {
+    "git": "https://github.com/kanecheshire/ShowTime.git",
+    "tag": "1.0.0"
+  },
+  "social_media_url": "https://twitter.com/kanecheshire",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": [
+    "ShowTime/Classes/**/*",
+    "ShowTime.swift"
+  ]
+}

@@ -10,42 +10,42 @@ import UIKit
 
 /// ShowTime displays your taps and swipes when you're presenting or demoing
 /// Change the options to customise ShowTime
-struct ShowTime {
+public struct ShowTime {
   
   /// Defines if and when ShowTime should be enabled
   ///
   /// - always:    ShowTime is always enabled
   /// - never:     ShowTime is never enabled
   /// - debugOnly: ShowTime is enabled while the DEBUG flag is enabled.
-  enum Enabled {
+  public enum Enabled {
     case always
     case never
     case debugOnly
   }
   
   /// Whether ShowTime is enabled
-  static var enabled: ShowTime.Enabled = .debugOnly
+  public static var enabled: ShowTime.Enabled = .debugOnly
   
   /// The fill (background) colour of the visual touches
-  static var fillColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:0.5)
+  public static var fillColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:0.5)
   /// The colour of the stroke (outline) of the visual touches
-  static var strokeColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:1)
+  public static var strokeColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:1)
   /// The width (thickness) of the stroke around the visual touches
-  static var strokeWidth: CGFloat = 3
+  public static var strokeWidth: CGFloat = 3
   /// The size of the touch circles. The default is 44pt x 44pt
-  static var size = CGSize(width: 44, height: 44)
+  public static var size = CGSize(width: 44, height: 44)
   /// The delay, in seconds, before the visual touch disappears after a touch ends (0.1s by default)
-  static var disappearDelay: TimeInterval = 0.1
+  public static var disappearDelay: TimeInterval = 0.1
   /// Whether the visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap) (false by default)
-  static var shouldShowMultipleTapCount = false
+  public static var shouldShowMultipleTapCount = false
   /// The colour of the text to use when showing multiple tap counts
-  static var multipleTapCountTextColor: UIColor = .black
+  public static var multipleTapCountTextColor: UIColor = .black
   /// Whether the visual touch should visually show how much force is applied (true by default)
-  static var shouldShowForce = true
+  public static var shouldShowForce = true
   /// Whether touch events from Apple Pencil are ignored (true by default)
-  static var shouldIgnoreApplePencilEvents = true
+  public static var shouldIgnoreApplePencilEvents = true
   
-  fileprivate static var shouldEnable: Bool {
+  static var shouldEnable: Bool {
     guard enabled != .never else { return false }
     guard enabled != .debugOnly else {
       #if DEBUG
@@ -59,7 +59,7 @@ struct ShowTime {
   
 }
 
-fileprivate final class TouchView: UILabel {
+final class TouchView: UILabel {
   
   /// Creates a new instance representing a touch to visually display
   ///
