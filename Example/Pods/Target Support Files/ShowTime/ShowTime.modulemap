@@ -1,0 +1,6 @@
+framework module ShowTime {
+  umbrella header "ShowTime-umbrella.h"
+
+  export *
+  module * { export * }
+}

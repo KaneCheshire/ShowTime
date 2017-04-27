@@ -1,0 +1,16 @@
+PODS:
+  - ShowTime (1.0.0)
+
+DEPENDENCIES:
+  - ShowTime (from `../`)
+
+EXTERNAL SOURCES:
+  ShowTime:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ShowTime: d81afbf21f3b6ac2b48bc41d81f29933889e2336
+
+PODFILE CHECKSUM: 7fa35d46c9c7723ac3961254c1f58cd3281fbdbc
+
+COCOAPODS: 1.2.1

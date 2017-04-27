@@ -10,14 +10,14 @@ import UIKit
 
 /// ShowTime displays your taps and swipes when you're presenting or demoing.
 /// Change the options to customise ShowTime.
-struct ShowTime {
+public struct ShowTime {
   
   /// Defines if and when ShowTime should be enabled.
   ///
   /// - always:    ShowTime is always enabled.
   /// - never:     ShowTime is never enabled.
   /// - debugOnly: ShowTime is enabled while the `DEBUG` flag is set and enabled.
-  enum Enabled {
+  public enum Enabled {
     case always
     case never
     case debugOnly
@@ -28,37 +28,37 @@ struct ShowTime {
   /// - standard: The standard type of animation will be used.
   /// - scaleDown: The animation has a scale down effect.
   /// - scaleUp: The animation has a scale up effect.
-  enum Animation {
+  public enum Animation {
     case standard
     case scaleDown
     case scaleUp
   }
   
   /// Whether ShowTime is enabled. (`.always` by default)
-  static var enabled: ShowTime.Enabled = .always
+  public static var enabled: ShowTime.Enabled = .always
   
   /// The fill (background) colour of the visual touches. (Twitter Blue with 50% alpha by default)
-  static var fillColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:0.5)
+  public static var fillColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:0.5)
   /// The colour of the stroke (outline) of the visual touches. (Twitter Blue by default)
-  static var strokeColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:1)
+  public static var strokeColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:1)
   /// The width (thickness) of the stroke around the visual touches. (3pt by default)
-  static var strokeWidth: CGFloat = 3
+  public static var strokeWidth: CGFloat = 3
   /// The size of the touch circles. (44pt x 44pt by default)
-  static var size = CGSize(width: 44, height: 44)
+  public static var size = CGSize(width: 44, height: 44)
   /// The style of animation to use when hiding a visual touch. (`.standard` by default)
-  static var disappearAnimation: ShowTime.Animation = .standard
+  public static var disappearAnimation: ShowTime.Animation = .standard
   /// The delay, in seconds, before the visual touch disappears after a touch ends. (0.1s by default)
-  static var disappearDelay: TimeInterval = 0.1
+  public static var disappearDelay: TimeInterval = 0.1
   /// Whether the visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). (false by default)
-  static var shouldShowMultipleTapCount = false
+  public static var shouldShowMultipleTapCount = false
   /// The colour of the text to use when showing multiple tap counts. (black by default)
-  static var multipleTapCountTextColor: UIColor = .black
+  public static var multipleTapCountTextColor: UIColor = .black
   /// Whether the visual touch should visually show how much force is applied. (true by default)
-  static var shouldShowForce = true
+  public static var shouldShowForce = true
   /// Whether touch events from Apple Pencil are ignored. (true by default)
-  static var shouldIgnoreApplePencilEvents = true
+  public static var shouldIgnoreApplePencilEvents = true
   
-  fileprivate static var shouldEnable: Bool {
+  static var shouldEnable: Bool {
     guard enabled != .never else { return false }
     guard enabled != .debugOnly else {
       #if DEBUG
@@ -72,7 +72,7 @@ struct ShowTime {
   
 }
 
-fileprivate final class TouchView: UILabel {
+class TouchView: UILabel {
   
   /// Creates a new instance representing a touch to visually display.
   ///
@@ -131,7 +131,7 @@ fileprivate final class TouchView: UILabel {
   }
   
   private func scaleDown() {
-    transform = CGAffineTransform(scaleX: 0, y: 0)
+    transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
   }
   
   private func animateScaleUp() {
@@ -141,9 +141,9 @@ fileprivate final class TouchView: UILabel {
   
 }
 
+internal var _touches = [UITouch : TouchView]()
+
 extension UIWindow {
-  
-  fileprivate static var touches = [UITouch : TouchView]()
   
   open override class func initialize() {
     struct Swizzled { static var once = false } // Workaround for missing dispatch_once in Swift 3
@@ -168,18 +168,18 @@ extension UIWindow {
   private func touchBegan(_ touch: UITouch) {
     let touchView = TouchView(touch: touch, relativeTo: self)
     self.addSubview(touchView)
-    UIWindow.touches[touch] = touchView
+    _touches[touch] = touchView
   }
   
   private func touchMoved(_ touch: UITouch) {
-    guard let touchView = UIWindow.touches[touch] else { return }
+    guard let touchView = _touches[touch] else { return }
     touchView.update(with: touch, relativeTo: self)
   }
   
   private func touchEnded(_ touch: UITouch) {
-    guard let touchView = UIWindow.touches[touch] else { return }
+    guard let touchView = _touches[touch] else { return }
     touchView.disappear()
-    UIWindow.touches[touch] = nil
+    _touches[touch] = nil
   }
   
 }
