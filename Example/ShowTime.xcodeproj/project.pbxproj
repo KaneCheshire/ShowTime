@@ -13,7 +13,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A077C43F4B38DA493B5D04BB /* Pods_ShowTime_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A010FC2B5E4C55FF1F0BE15 /* Pods_ShowTime_Example.framework */; };
-		F4A3D6C652E58D1292B2E66B /* Pods_ShowTime_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B372A9325FC6B0A5B2E9808B /* Pods_ShowTime_Tests.framework */; };
 		FE89F459F687C4D8FA2B42A8 /* Pods_ShowTime_Example_ShowTime_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98718DFA6C77F6F4D331EA83 /* Pods_ShowTime_Example_ShowTime_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A3D6C652E58D1292B2E66B /* Pods_ShowTime_Tests.framework in Frameworks */,
 				FE89F459F687C4D8FA2B42A8 /* Pods_ShowTime_Example_ShowTime_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,10 +525,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3125EDC62DB0A9F8D45E9B41 /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -547,10 +542,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 242CC857B408D6A30483BB0F /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";

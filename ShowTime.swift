@@ -8,41 +8,54 @@
 
 import UIKit
 
-/// ShowTime displays your taps and swipes when you're presenting or demoing
-/// Change the options to customise ShowTime
+/// ShowTime displays your taps and swipes when you're presenting or demoing.
+/// Change the options to customise ShowTime.
 public struct ShowTime {
   
-  /// Defines if and when ShowTime should be enabled
+  /// Defines if and when ShowTime should be enabled.
   ///
-  /// - always:    ShowTime is always enabled
-  /// - never:     ShowTime is never enabled
-  /// - debugOnly: ShowTime is enabled while the DEBUG flag is enabled.
+  /// - always:    ShowTime is always enabled.
+  /// - never:     ShowTime is never enabled.
+  /// - debugOnly: ShowTime is enabled while the `DEBUG` flag is set and enabled.
   public enum Enabled {
     case always
     case never
     case debugOnly
   }
   
-  /// Whether ShowTime is enabled
-  public static var enabled: ShowTime.Enabled = .debugOnly
+  /// Defines a style of animation.
+  ///
+  /// - standard: The standard type of animation will be used.
+  /// - scaleDown: The animation has a scale down effect.
+  /// - scaleUp: The animation has a scale up effect.
+  public enum Animation {
+    case standard
+    case scaleDown
+    case scaleUp
+  }
   
-  /// The fill (background) colour of the visual touches
+  /// Whether ShowTime is enabled. (`.always` by default)
+  public static var enabled: ShowTime.Enabled = .always
+  
+  /// The fill (background) colour of the visual touches. (Twitter Blue with 50% alpha by default)
   public static var fillColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:0.5)
-  /// The colour of the stroke (outline) of the visual touches
+  /// The colour of the stroke (outline) of the visual touches. (Twitter Blue by default)
   public static var strokeColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:1)
-  /// The width (thickness) of the stroke around the visual touches
+  /// The width (thickness) of the stroke around the visual touches. (3pt by default)
   public static var strokeWidth: CGFloat = 3
-  /// The size of the touch circles. The default is 44pt x 44pt
+  /// The size of the touch circles. (44pt x 44pt by default)
   public static var size = CGSize(width: 44, height: 44)
-  /// The delay, in seconds, before the visual touch disappears after a touch ends (0.1s by default)
+  /// The style of animation to use when hiding a visual touch. (`.standard` by default)
+  public static var disappearAnimation: ShowTime.Animation = .standard
+  /// The delay, in seconds, before the visual touch disappears after a touch ends. (0.1s by default)
   public static var disappearDelay: TimeInterval = 0.1
-  /// Whether the visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap) (false by default)
+  /// Whether the visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). (false by default)
   public static var shouldShowMultipleTapCount = false
-  /// The colour of the text to use when showing multiple tap counts
+  /// The colour of the text to use when showing multiple tap counts. (black by default)
   public static var multipleTapCountTextColor: UIColor = .black
-  /// Whether the visual touch should visually show how much force is applied (true by default)
+  /// Whether the visual touch should visually show how much force is applied. (true by default)
   public static var shouldShowForce = true
-  /// Whether touch events from Apple Pencil are ignored (true by default)
+  /// Whether touch events from Apple Pencil are ignored. (true by default)
   public static var shouldIgnoreApplePencilEvents = true
   
   static var shouldEnable: Bool {
@@ -59,17 +72,16 @@ public struct ShowTime {
   
 }
 
-final class TouchView: UILabel {
+class TouchView: UILabel {
   
-  /// Creates a new instance representing a touch to visually display
+  /// Creates a new instance representing a touch to visually display.
   ///
   /// - Parameters:
-  ///   - touch: A `UITouch` instance the visual touch represents
-  ///   - view: A view the touch is relative to, typically the window calling `sendEvent(_:)`
+  ///   - touch: A `UITouch` instance the visual touch represents.
+  ///   - view: A view the touch is relative to, typically the window calling `sendEvent(_:)`.
   convenience init(touch: UITouch, relativeTo view: UIView) {
-    self.init()
     let location = touch.location(in: view)
-    frame = CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height)
+    self.init(frame: CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height))
     layer.cornerRadius = ShowTime.size.height / 2
     layer.borderColor = ShowTime.strokeColor.cgColor
     layer.borderWidth = ShowTime.strokeWidth
@@ -81,11 +93,11 @@ final class TouchView: UILabel {
     isUserInteractionEnabled = false
   }
   
-  /// Updates the position and force level of a visual touch
+  /// Updates the position and force level of a visual touch.
   ///
   /// - Parameters:
-  ///   - touch: A `UITouch` instance the visual touch represents
-  ///   - view: A view the touch is relative to, typically the window calling `sendEvent(_:)`
+  ///   - touch: A `UITouch` instance the visual touch represents.
+  ///   - view: A view the touch is relative to, typically the window calling `sendEvent(_:)`.
   func update(with touch: UITouch, relativeTo view: UIView) {
     let location = touch.location(in: view)
     frame = CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height)
@@ -99,22 +111,39 @@ final class TouchView: UILabel {
     }
   }
   
-  /// Animates the visual touch out to disappear from view
-  /// Removes itself from the superview after the animation complete
+  /// Animates the visual touch out to disappear from view.
+  /// Removes itself from the superview after the animation complete.
   func disappear() {
-    UIView.animate(withDuration: 0.2, delay: ShowTime.disappearDelay, options: [], animations: { [weak self] in
-      self?.alpha = 0
-      self?.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+    UIView.animate(withDuration: 0.2, delay: ShowTime.disappearDelay, options: [.beginFromCurrentState], animations: { [weak self] in
+      switch ShowTime.disappearAnimation {
+      case .standard: self?.standard()
+      case .scaleDown: self?.scaleDown()
+      case .scaleUp: self?.animateScaleUp()
+      }
       }, completion: { [weak self] _ in
         self?.removeFromSuperview()
     })
+  }
+  
+  private func standard() {
+    alpha = 0
+    transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+  }
+  
+  private func scaleDown() {
+    transform = CGAffineTransform(scaleX: 0, y: 0)
+  }
+  
+  private func animateScaleUp() {
+    alpha = 0
+    transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
   }
   
 }
 
 extension UIWindow {
   
-  fileprivate static var touches = [Int : TouchView]()
+  private static var touches = [UITouch : TouchView]()
   
   open override class func initialize() {
     struct Swizzled { static var once = false } // Workaround for missing dispatch_once in Swift 3
@@ -129,12 +158,9 @@ extension UIWindow {
     event.allTouches?.forEach {
       if ShowTime.shouldIgnoreApplePencilEvents && $0.isApplePencil { return }
       switch $0.phase {
-      case .began:
-        touchBegan($0)
-      case .moved, .stationary:
-        touchMoved($0)
-      case .cancelled, .ended:
-        touchEnded($0)
+      case .began: touchBegan($0)
+      case .moved, .stationary: touchMoved($0)
+      case .cancelled, .ended: touchEnded($0)
       }
     }
   }
@@ -142,18 +168,18 @@ extension UIWindow {
   private func touchBegan(_ touch: UITouch) {
     let touchView = TouchView(touch: touch, relativeTo: self)
     self.addSubview(touchView)
-    UIWindow.touches[touch.hashValue] = touchView
+    UIWindow.touches[touch] = touchView
   }
   
   private func touchMoved(_ touch: UITouch) {
-    guard let touchView = UIWindow.touches[touch.hashValue] else { return }
+    guard let touchView = UIWindow.touches[touch] else { return }
     touchView.update(with: touch, relativeTo: self)
   }
   
   private func touchEnded(_ touch: UITouch) {
-    guard let touchView = UIWindow.touches[touch.hashValue] else { return }
+    guard let touchView = UIWindow.touches[touch] else { return }
     touchView.disappear()
-    UIWindow.touches[touch.hashValue] = nil
+    UIWindow.touches[touch] = nil
   }
   
 }
@@ -161,20 +187,16 @@ extension UIWindow {
 fileprivate extension UITouch {
   
   /// Normalizes the level of force betwenn 0 and 1 regardless of device.
-  /// Will always be 0 for devices that don't support 3D Touch
+  /// Will always be 0 for devices that don't support 3D Touch.
   var normalizedForce: CGFloat {
-    if #available(iOS 9.0, *), maximumPossibleForce > 0 {
-      return force / maximumPossibleForce
-    }
-    return 0
+    guard #available(iOS 9.0, *), maximumPossibleForce > 0 else { return 0 }
+    return force / maximumPossibleForce
   }
   
-  /// Whether the touch event is from an Apple Pencil (i.e. type `.stylus`)
+  /// Whether the touch event is from an Apple Pencil (i.e. type `.stylus`).
   var isApplePencil: Bool {
-    if #available(iOS 9.1, *) {
-      return type == .stylus
-    }
-    return false
+    guard #available(iOS 9.1, *) else { return false }
+    return type == .stylus
   }
   
 }
