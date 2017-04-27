@@ -1,6 +1,6 @@
 # It's ShowTime 🎥
 
-ShowTime displays all your taps and gestures on screen, perfect for that demo, presentation or video. 
+ShowTime displays all your taps and gestures on screen, perfect for that demo, presentation or video.
 
 One file is all you need to turbo-boost your demos. ShowTime even **displays the level of force you're applying**, and can be configured to show the **actual number of taps performed**. Apple Pencil events are configurable and disabled by default.
 
@@ -14,13 +14,21 @@ Showing your gestures during demos helps give your audience a much clearer conte
 
 ## Installation
 
-- Step 1: Drop `ShowTime.swift` into your project or copy the contents of it whereever you like. 
+There are two very easy ways to integrate ShowTime.
+
+Using Cocoapods? Simply add the following to your podfile:
+```ruby
+pod 'ShowTime'
+```
+Update your pods with `pod update`, and that's it. You don't even have to `import ShowTime` into a file in your project, unless you want to change the defaults.
+
+If you're not using Cocoapods:
+- Step 1: Drop `ShowTime.swift` into your project or copy the contents of it where ever you like.
 - Step 2: There is no step 2; you're ready to go.
 
 ## Usage
 
-ShowTime works out of the box, but you can customise it to turn it on or off (you could use this to have a demo environment),
-change the colour and outline of the taps, and even choose whether to display the number of taps for multiple taps.
+ShowTime works out of the box, but you can customise it to turn it on or off (you could use this to have a demo environment), change the colour and outline of the taps, and even choose whether to display the number of taps for multiple taps.
 
 Here's a list of options:
 
@@ -31,9 +39,9 @@ Here's a list of options:
 // - .always
 // - .never
 // - .debugOnly
-// 
+//
 // .always by default
-ShowTime.itsShowTime: ShowTime.Enabled 
+ShowTime.itsShowTime: ShowTime.Enabled
 
 
 // The fill (background) color of a visual touch.
@@ -48,7 +56,7 @@ ShowTime.strokeColor: UIColor
 // 3pt by default.
 ShowTime.strokeWidth: CGFloat
 
-// The size of a visual touch. 
+// The size of a visual touch.
 // 44x44pt by default.
 ShowTime.size: CGSize
 
@@ -58,15 +66,15 @@ ShowTime.size: CGSize
 // - .standard (Slightly scaled down and faded out)
 // - .scaleDown (Completely scaled down with no fade)
 // - .scaleUp (Scaled up and faded out)
-// 
+//
 // `.standard` by default.
 ShowTime.disappearAnimation: ShowTime.Animation
 
-// The delay, in seconds, before the visual touch disappears after a touch ends. 
+// The delay, in seconds, before the visual touch disappears after a touch ends.
 // `0.1` by default.
 ShowTime.disappearDelay: TimeInterval
 
-// Whether visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). 
+// Whether visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap).
 // `false` by default.
 ShowTime.shouldShowMultipleTapCount: Bool
 
@@ -74,11 +82,11 @@ ShowTime.shouldShowMultipleTapCount: Bool
 // `.black` by default.
 ShowTime.multipleTapCountTextColor: UIColor
 
-// Whether visual touches should visually show how much force is applied. 
+// Whether visual touches should visually show how much force is applied.
 // `true` by default (show off that amazing tech!).
 ShowTime.shouldShowForce: Bool
 
-// Whether touch events from Apple Pencil are ignored. 
+// Whether touch events from Apple Pencil are ignored.
 // `true` by default.
 ShowTime.shouldIgnoreApplePencilEvents
 
@@ -102,12 +110,12 @@ In theory, yes. You could easily set up  a configuration that disables ShowTime 
 What I would suggest doing instead, is having a `demo` branch that you have `ShowTime` installed in, and merge your changes into that branch whenever you want to demo something. Because there is so little setup to `ShowTime`, you should rarely get any conflicts.
 
 ### Is there really only one step to installing ShowTime?
-Yes! Thanks to method Swizzling and Swift extensions all you have to do is include the code somewhere in your project. ShowTime works out of the box, but is quite customizable. 
+Yes! Thanks to method Swizzling and Swift extensions all you have to do is include the code somewhere in your project. ShowTime works out of the box, but is quite customizable.
 
 ### Why would I want to show the number of multiple taps?
 The thing to remember here is that people watching a demo of your app don't know exactly what your fingers are doing, which is why ShowTime exists.
 
-Double tapping makes sense if you're watching someone's hands, but often this can be easily missed if you're watching it on a screen. Showing the number of multiple taps by setting `ShowTime.shouldShowMultipleTapCount` to `true` shows a number inside the tap itself, clearly demonstrating to your audience that you just tapped twice (or more) in succession in the same place. 
+Double tapping makes sense if you're watching someone's hands, but often this can be easily missed if you're watching it on a screen. Showing the number of multiple taps by setting `ShowTime.shouldShowMultipleTapCount` to `true` shows a number inside the tap itself, clearly demonstrating to your audience that you just tapped twice (or more) in succession in the same place.
 
 ### Can I have a different colour tap per-screen rather than per-app?
 This is possible, you'd just need to set the colour in `viewDidLoad` or `viewDidAppear(_:)` in the screens you want to change the colour of the taps on. It adds a small layer of complexity, but certainly possible.
