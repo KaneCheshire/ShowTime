@@ -11,7 +11,11 @@ Pod::Spec.new do |s|
   s.version          = '1.0.0'
   s.summary          = 'A short description of ShowTime.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  ShowTime displays all your taps and gestures on screen, perfect for that demo, presentation or video.
+  One file is all you need to turbo-boost your demos. ShowTime even displays the level of force you're applying, and can be configured to show the actual number of taps performed. Apple Pencil events are configurable and disabled by default.
+  ShowTime works with single- and multi-window setups.
+  ShowTime works best when mirroring your screen or recording through QuickTime. By default the size of the visual touches are 44pt; this mirrors Apple's guidelines for minimim hit size for buttons on iOS. You're free to change this, of course!
+  Showing your gestures during demos helps give your audience a much clearer context on what's happening on your device. Consider trying ShowTime for your next demo!
                        DESC
 
   s.homepage         = 'https://github.com/kanecheshire/ShowTime'
