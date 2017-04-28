@@ -26,6 +26,8 @@ If you're not using Cocoapods:
 - Step 1: Drop `ShowTime.swift` into your project or copy the contents of it where ever you like.
 - Step 2: There is no step 2; you're ready to go.
 
+**NOTE** If you're using Xcode 8.3.2 or newer you may get a warning about `initialize()` being unavailable in future versions of Swift. When this is removed by Apple, I have a decent workaround ready to implement, but may mean an extra step in the setup process.
+
 ## Usage
 
 ShowTime works out of the box, but you can customise it to turn it on or off (you could use this to have a demo environment), change the colour and outline of the taps, and even choose whether to display the number of taps for multiple taps.
