@@ -107,7 +107,7 @@ ShowTime swizzles the `sendEvent(_:)` method on `UIWindow`, intercepts the event
 ## Useful info
 
 ### Can I use this in production?
-In theory, yes. You could easily set up  a configuration that disables ShowTime by setting `ShowTime.itsShowTime` to `false` (check out [configen](https://github.com/theappbusiness/ConfigGenerator) for easily having different configrations based on Xcode schemes), however ShowTime is new and hasn't been stress tested, so do so at your own risk.
+In theory, yes. You could easily set up  a configuration that disables ShowTime by setting `ShowTime.enabled` to `.never` (check out [configen](https://github.com/theappbusiness/ConfigGenerator) for easily having different configrations based on Xcode schemes), however ShowTime is new and hasn't been stress tested, so do so at your own risk.
 
 What I would suggest doing instead, is having a `demo` branch that you have `ShowTime` installed in, and merge your changes into that branch whenever you want to demo something. Because there is so little setup to `ShowTime`, you should rarely get any conflicts.
 
