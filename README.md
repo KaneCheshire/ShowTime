@@ -43,7 +43,7 @@ Here's a list of options:
 // - .debugOnly
 //
 // .always by default
-ShowTime.itsShowTime: ShowTime.Enabled
+ShowTime.enabled: ShowTime.Enabled
 
 
 // The fill (background) color of a visual touch.
