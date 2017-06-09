@@ -151,7 +151,7 @@ class TouchView: UILabel {
 internal var _touches = [UITouch : TouchView]()
 
 extension UIWindow {
-
+  
   fileprivate class func swizzle() { // `initialize()` removed in Swift 4
     struct Swizzled { static var once = false } // Workaround for missing dispatch_once in Swift 3
     guard !Swizzled.once else { return }
