@@ -34,8 +34,15 @@ public struct ShowTime {
     case scaleUp
   }
   
-  /// Whether ShowTime is enabled. (`.always` by default)
-  public static var enabled: ShowTime.Enabled = .always
+  /// Whether ShowTime is enabled.
+  /// Since Swift 4, it is no longer possible for ShowTime
+  /// to automatically enable itself.
+  ///(`.never` by default)
+  public static var enabled: ShowTime.Enabled = .never {
+    didSet {
+      UIWindow.swizzle()
+    }
+  }
   
   /// The fill (background) colour of the visual touches. (Twitter Blue with 50% alpha by default)
   public static var fillColor = UIColor(red:0.21, green:0.61, blue:0.92, alpha:0.5)
@@ -145,7 +152,7 @@ internal var _touches = [UITouch : TouchView]()
 
 extension UIWindow {
   
-  open override class func initialize() {
+  fileprivate class func swizzle() { // `initialize()` removed in Swift 4
     struct Swizzled { static var once = false } // Workaround for missing dispatch_once in Swift 3
     guard !Swizzled.once else { return }
     Swizzled.once = true
