@@ -37,8 +37,10 @@ That's all you need to do.
 
 ### Manual
 
-- Step 1: Drop `ShowTime.swift` into your project or copy the contents of it where ever you like.
+- Step 1: Switch to branch `1.0.1` and drop `ShowTime.swift` into your project, or copy the contents of it where ever you like.
 - Step 2: There is no step 2; you're ready to go.
+
+Note: If you use the latest version of ShowTime without switching to `1.0.1` you'll end up with the Swift 4 version.
 
 ## Usage
 
