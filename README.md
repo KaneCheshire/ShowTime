@@ -25,7 +25,7 @@ That's all you need to do.
 
 ### Manual
 
-- Step 1: Drop `ShowTime.swift` into your project or copy the contents of it where ever you like.
+- Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/2.0.0/ShowTime.swift) into your project or copy the contents of it where ever you like.
 - Step 2: Set `ShowTime.enabled = .always` or `ShowTime.enabled = .debugOnly`.
 
 ## Installation (Swift 3)
