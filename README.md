@@ -1,39 +1,40 @@
 # It's ShowTime 🎥
 
-ShowTime is the easiest way to display all your taps and gestures on screen. Perfect for that demo, presentation or video.
+ShowTime is the simplest and best way to display all your taps and gestures on screen. Perfect for that demo, presentation or video.
 
 One file is all you need to add that extra polish your demos. ShowTime even **displays the level of force you're applying**, and can be configured to show the **actual number of taps performed**. Apple Pencil events are configurable and disabled by default.
 
-ShowTime works with **single- and multi-window setups**, check out **[How it works](#how-it-works)**.
+ShowTime works with **single- and multi-window setups**, as well as in iOS widgets. check out **[How it works](#how-it-works)**.
 
 Consider using ShowTime when you're sharing or recording your screen through QuickTime or AirPlay. By default, the size of the visual touches are 44pt; this mirrors Apple's guidelines for minimum hit size for buttons on iOS. You're free to change this, of course!
 
-Showing your gestures during demos helps give your audience a much clearer context on what's happening on your device. Consider trying ShowTime for your next demo, it's insanely easy to set up!
+Showing your gestures during demos gives your audience a much clearer context on what's happening on your device. Try ShowTime for your next demo, it's insanely easy to set up!
 
 ![ShowTime](http://kanecheshire.com/images/github/showtime-demo-4.gif)
 
 ## Installation (Swift 4)
 
-Integrating ShowTime with Swift 4 takes one extra step unfortunately, due to removal of a required function ShowTime uses for Swizzling.
+Integrating ShowTime with Swift 4 takes one extra step unfortunately, due to removal of a required function ShowTime uses for swizzling.
 
 ### Cocoapods
 
 - Step 1: Simply add `pod 'ShowTime', '2.0.0'` to your podfile and run `pod update` in Terminal.
 - Step 2: Somewhere (like your `AppDelegate`), set `ShowTime.enabled = .always` or `ShowTime.enabled = .debugOnly`
 
-That's all you need to do.
+That's all you need to do, but you're free to change some of the many options!
 
 ### Manual
 
 - Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/2.0.0/ShowTime.swift) into your project or copy the contents of it where ever you like.
 - Step 2: Set `ShowTime.enabled = .always` or `ShowTime.enabled = .debugOnly`.
 
+That's all you need to do, but you're free to change some of the many options!
+
 ## Installation (Swift 3)
 
 ### Cocoapods
 
 - Step 1: Simply add `pod 'ShowTime', '1.0.1'` to your podfile and run `pod update` in Terminal. You don't need to do anything else, ShowTime can autmatically enable itself with Swift 3.
-
 
 ### Manual
 
