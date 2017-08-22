@@ -37,7 +37,7 @@ That's all you need to do.
 
 ### Manual
 
-- Step 1: [Switch to tag/branch `1.0.1`](https://github.com/KaneCheshire/ShowTime/tree/1.0.1) and drop `ShowTime.swift` into your project, or copy the contents of it where ever you like.
+- Step 1: [Switch to tag/branch `1.0.1`](https://github.com/KaneCheshire/ShowTime/tree/1.0.1) and drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/1.0.1/ShowTime.swift) into your project, or copy the contents of it where ever you like.
 - Step 2: There is no step 2; you're ready to go.
 
 **Note: If you use the latest version of ShowTime without switching to [`1.0.1`](https://github.com/KaneCheshire/ShowTime/tree/1.0.1) you'll end up with the Swift 4 version and will have to enable it manually**
