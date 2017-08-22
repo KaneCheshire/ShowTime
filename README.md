@@ -106,7 +106,7 @@ ShowTime.shouldShowForce: Bool
 
 // Whether touch events from Apple Pencil are ignored.
 // `true` by default.
-ShowTime.shouldIgnoreApplePencilEvents
+ShowTime.shouldIgnoreApplePencilEvents: Bool
 
 ```
 
@@ -132,7 +132,6 @@ Yes! Thanks to method Swizzling and Swift extensions all you have to do is inclu
 The thing to remember here is that people watching a demo of your app don't know exactly what your fingers are doing, which is why ShowTime exists.
 
 Double tapping makes sense if you're watching someone's hands, but often this can be easily missed if you're watching it on a screen. Showing the number of multiple taps by setting `ShowTime.shouldShowMultipleTapCount` to `true` shows a number inside the tap itself, clearly demonstrating to your audience that you just tapped twice (or more) in succession in the same place.
-
 
 ### Can I have a different colour tap per-screen rather than per-app?
 This is possible, you'd just need to set the colour in `viewDidLoad` or `viewDidAppear(_:)` in the screens you want to change the colour of the taps on. It adds a small layer of complexity, but certainly possible.
