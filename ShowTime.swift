@@ -161,7 +161,14 @@ extension UIWindow {
   
   @objc private func swizzled_sendEvent(_ event: UIEvent) {
     self.swizzled_sendEvent(event)
-    guard ShowTime.shouldEnable else { return }
+    
+    guard ShowTime.shouldEnable else {
+        for touch in _touches.keys {
+            hideTouchView(associatedWith: touch)
+        }
+        return
+    }
+    
     event.allTouches?.forEach {
       if ShowTime.shouldIgnoreApplePencilEvents && $0.isApplePencil { return }
       switch $0.phase {
@@ -184,11 +191,14 @@ extension UIWindow {
   }
   
   private func touchEnded(_ touch: UITouch) {
+    hideTouchView(associatedWith: touch)
+  }
+    
+  private func hideTouchView(associatedWith touch: UITouch) {
     guard let touchView = _touches[touch] else { return }
     touchView.disappear()
     _touches[touch] = nil
   }
-  
 }
 
 fileprivate extension UITouch {
