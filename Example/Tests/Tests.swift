@@ -194,4 +194,21 @@ class Tests: XCTestCase {
     XCTAssertEqual(_touches.count, 1)
   }
     
+  func test_removingTouchViewsAfterDisabling() {
+    XCTAssertTrue(_touches.isEmpty)
+    
+    let defaultState = ShowTime.enabled
+    ShowTime.enabled = .always
+    
+    let window = UIWindow()
+    let startEvent = MockEvent(touches: [MockTouch(phase: .began)])
+    window.sendEvent(startEvent)
+    ShowTime.enabled = .never
+    let endEvent = MockEvent(touches: [MockTouch(phase: .ended)])
+    window.sendEvent(endEvent)
+    
+    XCTAssertTrue(_touches.isEmpty)
+    ShowTime.enabled = defaultState
+  }
+    
 }
