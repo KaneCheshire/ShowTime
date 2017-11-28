@@ -156,12 +156,17 @@ extension UIWindow {
     struct Swizzled { static var once = false } // Workaround for missing dispatch_once in Swift 3
     guard !Swizzled.once else { return }
     Swizzled.once = true
-    method_exchangeImplementations(class_getInstanceMethod(self, #selector(UIWindow.sendEvent(_:))), class_getInstanceMethod(self, #selector(UIWindow.swizzled_sendEvent(_:))))
+    guard let original = class_getInstanceMethod(self, #selector(UIWindow.sendEvent(_:))) else { return }
+    guard let new = class_getInstanceMethod(self, #selector(UIWindow.swizzled_sendEvent(_:))) else { return }
+    method_exchangeImplementations(original, new)
   }
   
   @objc private func swizzled_sendEvent(_ event: UIEvent) {
     self.swizzled_sendEvent(event)
-    guard ShowTime.shouldEnable else { return }
+    guard ShowTime.shouldEnable else {
+        removeAllTouchViews()
+        return
+    }
     event.allTouches?.forEach {
       if ShowTime.shouldIgnoreApplePencilEvents && $0.isApplePencil { return }
       switch $0.phase {
@@ -184,11 +189,20 @@ extension UIWindow {
   }
   
   private func touchEnded(_ touch: UITouch) {
+    removeTouchView(associatedWith: touch)
+  }
+    
+  private func removeAllTouchViews() {
+    _touches.keys.forEach { touch in
+        removeTouchView(associatedWith: touch)
+    }
+  }
+    
+  private func removeTouchView(associatedWith touch: UITouch) {
     guard let touchView = _touches[touch] else { return }
     touchView.disappear()
     _touches[touch] = nil
   }
-  
 }
 
 fileprivate extension UITouch {
