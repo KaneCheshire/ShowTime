@@ -18,14 +18,14 @@ Integrating ShowTime with Swift 4 takes one extra step unfortunately, due to rem
 
 ### Cocoapods
 
-- Step 1: Simply add `pod 'ShowTime', '2.0.0'` to your podfile and run `pod update` in Terminal.
+- Step 1: Add `pod 'ShowTime', '2.0.1'` to your Podfile and run `pod update` in Terminal.
 - Step 2: Somewhere (like your `AppDelegate`), set `ShowTime.enabled = .always` or `ShowTime.enabled = .debugOnly`
 
 That's all you need to do, but you're free to change some of the many options!
 
 ### Manual
 
-- Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/2.0.0/ShowTime.swift) into your project or copy the contents of it where ever you like.
+- Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/2.0.1/ShowTime.swift) into your project or copy the contents of it where ever you like.
 - Step 2: Set `ShowTime.enabled = .always` or `ShowTime.enabled = .debugOnly`.
 
 That's all you need to do, but you're free to change some of the many options!
@@ -34,7 +34,7 @@ That's all you need to do, but you're free to change some of the many options!
 
 ### Cocoapods
 
-- Step 1: Simply add `pod 'ShowTime', '1.0.1'` to your podfile and run `pod update` in Terminal. You don't need to do anything else, ShowTime can autmatically enable itself with Swift 3.
+- Step 1: Add `pod 'ShowTime', '1.0.1'` to your Podfile and run `pod update` in Terminal. You don't need to do anything else, ShowTime can automatically enable itself with Swift 3.
 
 ### Manual
 
