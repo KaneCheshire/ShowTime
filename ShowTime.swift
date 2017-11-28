@@ -156,7 +156,9 @@ extension UIWindow {
     struct Swizzled { static var once = false } // Workaround for missing dispatch_once in Swift 3
     guard !Swizzled.once else { return }
     Swizzled.once = true
-    method_exchangeImplementations(class_getInstanceMethod(self, #selector(UIWindow.sendEvent(_:))), class_getInstanceMethod(self, #selector(UIWindow.swizzled_sendEvent(_:))))
+    guard let original = class_getInstanceMethod(self, #selector(UIWindow.sendEvent(_:))) else { return }
+    guard let new = class_getInstanceMethod(self, #selector(UIWindow.swizzled_sendEvent(_:))) else { return }
+    method_exchangeImplementations(original, new)
   }
   
   @objc private func swizzled_sendEvent(_ event: UIEvent) {
