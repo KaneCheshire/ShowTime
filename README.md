@@ -58,7 +58,7 @@ Here's a list of options:
 // - .debugOnly
 //
 // `.never` by default,
-// so set to `.always` or `.debuOnly`
+// so set to `.always` or `.debugOnly`
 // somewhere like your AppDelegate.
 ShowTime.enabled: ShowTime.Enabled
 
