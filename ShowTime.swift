@@ -10,7 +10,7 @@ import UIKit
 
 /// ShowTime displays your taps and swipes when you're presenting or demoing.
 /// Change the options to customise ShowTime.
-public struct ShowTime {
+public final class ShowTime {
   
   /// Defines if and when ShowTime should be enabled.
   ///
