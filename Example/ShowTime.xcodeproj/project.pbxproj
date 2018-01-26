@@ -13,6 +13,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A077C43F4B38DA493B5D04BB /* Pods_ShowTime_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A010FC2B5E4C55FF1F0BE15 /* Pods_ShowTime_Example.framework */; };
+		C30E907C201B490E00DF30B5 /* ObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30E907B201B490E00DF30B5 /* ObjCViewController.m */; };
 		FE89F459F687C4D8FA2B42A8 /* Pods_ShowTime_Example_ShowTime_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98718DFA6C77F6F4D331EA83 /* Pods_ShowTime_Example_ShowTime_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,10 +43,13 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8A010FC2B5E4C55FF1F0BE15 /* Pods_ShowTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AC2ECF5E78DBFE6D09D5A27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		98718DFA6C77F6F4D331EA83 /* Pods_ShowTime_Example_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example_ShowTime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372A9325FC6B0A5B2E9808B /* Pods_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E2A27A2DD2B58430D13FDA /* Pods-ShowTime_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTime_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C30E9079201B490D00DF30B5 /* ShowTime_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShowTime_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		C30E907A201B490E00DF30B5 /* ObjCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCViewController.h; sourceTree = "<group>"; };
+		C30E907B201B490E00DF30B5 /* ObjCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCViewController.m; sourceTree = "<group>"; };
+		C3822CD4201B547900D825F3 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		CCCF095274BF5A0ED5FBD44C /* Pods-ShowTime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTime_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTime_Tests/Pods-ShowTime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3F2ECCA67E6BB07BC6B5E49 /* ShowTime.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ShowTime.podspec; path = ../ShowTime.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				C3822CD3201B508700D825F3 /* ObjcSupport */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for ShowTime";
@@ -134,7 +138,7 @@
 			children = (
 				E3F2ECCA67E6BB07BC6B5E49 /* ShowTime.podspec */,
 				0E843E8A7065B470CAD56DAE /* README.md */,
-				8AC2ECF5E78DBFE6D09D5A27 /* LICENSE */,
+				C3822CD4201B547900D825F3 /* LICENSE.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -147,6 +151,17 @@
 				98718DFA6C77F6F4D331EA83 /* Pods_ShowTime_Example_ShowTime_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3822CD3201B508700D825F3 /* ObjcSupport */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				C30E907A201B490E00DF30B5 /* ObjCViewController.h */,
+				C30E907B201B490E00DF30B5 /* ObjCViewController.m */,
+				C30E9079201B490D00DF30B5 /* ShowTime_Example-Bridging-Header.h */,
+			);
+			name = ObjcSupport;
 			sourceTree = "<group>";
 		};
 		EBD441EC646C7E615CBEAF14 /* Pods */ = {
@@ -218,7 +233,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -364,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30E907C201B490E00DF30B5 /* ObjCViewController.m in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,12 +526,15 @@
 			baseConfigurationReference = 2B3ED768FADD67C38FF3BEFA /* Pods-ShowTime_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ShowTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_OBJC_BRIDGING_HEADER = "ShowTime/ShowTime_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -525,12 +544,14 @@
 			baseConfigurationReference = C0E2A27A2DD2B58430D13FDA /* Pods-ShowTime_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ShowTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_OBJC_BRIDGING_HEADER = "ShowTime/ShowTime_Example-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -549,7 +570,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -564,7 +585,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
