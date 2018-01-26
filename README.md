@@ -165,8 +165,8 @@ ShowTime swizzles the `sendEvent(_:)` method on `UIWindow`, intercepts the event
 ### Can I use this in production?
 Yes, I've never seen any weird crashes but it's never been stress tested, so to do so is at your own risk.
 
-### Is there really only one step to installing ShowTime?
-Yes! Thanks to method Swizzling and Swift extensions all you have to do is include the code somewhere in your project. ShowTime works out of the box, but is quite customizable.
+### Why do I need to enable ShowTime now?
+In Swift 3, it was possible to automatically swizzle `UIWindow` without doing anything at start up. In Swift 4 that ability was removed which means one extra step is needed to kick off the swizzling to enable ShowTime. I figured the best place to do this is when you actually set ShowTime to be enabled, so as soon as you set `ShowTime.enabled` to either `.always` or  `.debugOnly`, ShowTime will do a one-time swizzle of `UIWindow` under the hood. 
 
 ### Why would I want to show the number of multiple taps?
 The thing to remember here is that people watching a demo of your app don't know exactly what your fingers are doing, which is why ShowTime exists.
