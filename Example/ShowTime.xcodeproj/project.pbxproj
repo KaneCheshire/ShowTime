@@ -43,13 +43,13 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8A010FC2B5E4C55FF1F0BE15 /* Pods_ShowTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AC2ECF5E78DBFE6D09D5A27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		98718DFA6C77F6F4D331EA83 /* Pods_ShowTime_Example_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example_ShowTime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372A9325FC6B0A5B2E9808B /* Pods_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E2A27A2DD2B58430D13FDA /* Pods-ShowTime_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTime_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C30E9079201B490D00DF30B5 /* ShowTime_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShowTime_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		C30E907A201B490E00DF30B5 /* ObjCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCViewController.h; sourceTree = "<group>"; };
 		C30E907B201B490E00DF30B5 /* ObjCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCViewController.m; sourceTree = "<group>"; };
+		C3822CD4201B547900D825F3 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		CCCF095274BF5A0ED5FBD44C /* Pods-ShowTime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTime_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTime_Tests/Pods-ShowTime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3F2ECCA67E6BB07BC6B5E49 /* ShowTime.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ShowTime.podspec; path = ../ShowTime.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,7 +138,7 @@
 			children = (
 				E3F2ECCA67E6BB07BC6B5E49 /* ShowTime.podspec */,
 				0E843E8A7065B470CAD56DAE /* README.md */,
-				8AC2ECF5E78DBFE6D09D5A27 /* LICENSE */,
+				C3822CD4201B547900D825F3 /* LICENSE.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
