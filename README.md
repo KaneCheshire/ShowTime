@@ -1,9 +1,9 @@
 # It's ShowTime 🎥
 
-- [Installation (Swift 4)](#installation)
+- [Installation (Swift 4)](#installation-swift-4)
     - [Cocoapods](#cocoapods)
     - [Manual](#manual)
-- [Installation (Swift 3)](#installation)
+- [Installation (Swift 3)](#installation-swift-3)
     - [Cocoapods](#cocoapods-1)
     - [Manual](#manual-1)
 - [Usage](#usage)
