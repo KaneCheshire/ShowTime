@@ -18,17 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     ShowTime.enabled = .always
     
-    /* Uncomment to modify ShowTime display settings */
+//     Uncomment to modify ShowTime display settings
+//     See ObjCViewController.m for Objective-C support
     
-    // ShowTime.disappearAnimation = .scaleDown
-    // ShowTime.shouldIgnoreApplePencilEvents = false
-    // ShowTime.disappearDelay = 0
-    // ShowTime.shouldShowMultipleTapCount = true
-    // ShowTime.multipleTapCountTextColor = .white
-    // ShowTime.fillColor = .black
-    // ShowTime.strokeColor = .red
-    // ShowTime.strokeWidth = 1
-    // ShowTime.size = CGSize(width: 20, height: 20)
+//     ShowTime.disappearAnimation = .scaleDown
+//     ShowTime.shouldIgnoreApplePencilEvents = false
+//     ShowTime.disappearDelay = 0
+//     ShowTime.shouldShowMultipleTapCount = true
+//     ShowTime.multipleTapCountTextColor = .white
+//     ShowTime.fillColor = .black
+//     ShowTime.strokeColor = .red
+//     ShowTime.strokeWidth = 1
+//     ShowTime.size = CGSize(width: 20, height: 20)
     
     return true
   }
