@@ -1,3 +1,8 @@
+[![CI Status](http://img.shields.io/travis/KaneCheshire/ShowTime.svg?style=flat)](https://travis-ci.org/KaneCheshire/Communicator)
+[![Version](https://img.shields.io/cocoapods/v/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
+[![License](https://img.shields.io/cocoapods/l/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
+[![Platform](https://img.shields.io/cocoapods/p/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
+
 # It's ShowTime 🎥
 
 - [Installation (Swift 4)](#installation-swift-4)
