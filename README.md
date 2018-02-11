@@ -129,6 +129,7 @@ ShowTime.size: CGSize
 // - .standard (Slightly scaled down and faded out)
 // - .scaleDown (Completely scaled down with no fade)
 // - .scaleUp (Scaled up and faded out)
+// - .custom (Provide your own custom animation block)
 //
 // `.standard` by default.
 ShowTime.disappearAnimation: ShowTime.Animation
@@ -144,6 +145,10 @@ ShowTime.shouldShowMultipleTapCount: Bool
 // The colour of the text to use when showing multiple tap counts.
 // `.black` by default.
 ShowTime.multipleTapCountTextColor: UIColor
+
+// The font of the text to use when showing multiple tap counts.
+// `.systemFont(ofSize: 17, weight: .bold)` by default.
+ShowTime.multipleTapCountTextColor: UIFont
 
 // Whether visual touches should visually show how much force is applied.
 // `true` by default (show off that amazing tech!).
