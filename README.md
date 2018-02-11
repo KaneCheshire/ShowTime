@@ -148,7 +148,7 @@ ShowTime.multipleTapCountTextColor: UIColor
 
 // The font of the text to use when showing multiple tap counts.
 // `.systemFont(ofSize: 17, weight: .bold)` by default.
-ShowTime.multipleTapCountTextColor: UIFont
+ShowTime.multipleTapCountTextFont: UIFont
 
 // Whether visual touches should visually show how much force is applied.
 // `true` by default (show off that amazing tech!).
