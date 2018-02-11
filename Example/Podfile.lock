@@ -1,16 +1,16 @@
 PODS:
-  - ShowTime (1.0.0)
+  - ShowTime (2.1.0)
 
 DEPENDENCIES:
   - ShowTime (from `../`)
 
 EXTERNAL SOURCES:
   ShowTime:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  ShowTime: d81afbf21f3b6ac2b48bc41d81f29933889e2336
+  ShowTime: 8f3f8dd91d9dc0d0431101f1cb5789fb6a9f842f
 
 PODFILE CHECKSUM: 7fa35d46c9c7723ac3961254c1f58cd3281fbdbc
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0

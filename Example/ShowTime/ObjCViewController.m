@@ -22,7 +22,6 @@
     
 //    ShowTime.enabled = EnabledAlways;
     
-//    ShowTime.disappearAnimation = AnimationScaleDown;
 //    ShowTime.shouldIgnoreApplePencilEvents = NO;
 //    ShowTime.disappearDelay = 0;
 //    ShowTime.shouldShowMultipleTapCount = YES;

@@ -28,10 +28,11 @@ public final class ShowTime: NSObject {
     /// - standard: The standard type of animation will be used.
     /// - scaleDown: The animation has a scale down effect.
     /// - scaleUp: The animation has a scale up effect.
-    @objc public enum Animation: Int {
+    public enum Animation {
         case standard
         case scaleDown
         case scaleUp
+        case custom((UIView) -> Void)
     }
     
     /// Whether ShowTime is enabled.
@@ -53,13 +54,15 @@ public final class ShowTime: NSObject {
     /// The size of the touch circles. (44pt x 44pt by default)
     @objc public static var size = CGSize(width: 44, height: 44)
     /// The style of animation to use when hiding a visual touch. (`.standard` by default)
-    @objc public static var disappearAnimation: ShowTime.Animation = .standard
+    public static var disappearAnimation: ShowTime.Animation = .standard
     /// The delay, in seconds, before the visual touch disappears after a touch ends. (0.1s by default)
     @objc public static var disappearDelay: TimeInterval = 0.1
     /// Whether the visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). (false by default)
     @objc public static var shouldShowMultipleTapCount = false
     /// The colour of the text to use when showing multiple tap counts. (black by default)
     @objc public static var multipleTapCountTextColor: UIColor = .black
+    /// The font of the test to use when showing multiple tap counts. (System 17 bold by default)
+    @objc public static var multipleTapCountTextFont: UIFont = .systemFont(ofSize: 17, weight: .bold)
     /// Whether the visual touch should visually show how much force is applied. (true by default)
     @objc public static var shouldShowForce = true
     /// Whether touch events from Apple Pencil are ignored. (true by default)
@@ -89,6 +92,10 @@ class TouchView: UILabel {
     convenience init(touch: UITouch, relativeTo view: UIView) {
         let location = touch.location(in: view)
         self.init(frame: CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height))
+        style(with: touch)
+    }
+    
+    private func style(with touch: UITouch) {
         layer.cornerRadius = ShowTime.size.height / 2
         layer.borderColor = ShowTime.strokeColor.cgColor
         layer.borderWidth = ShowTime.strokeWidth
@@ -96,6 +103,7 @@ class TouchView: UILabel {
         text = ShowTime.shouldShowMultipleTapCount && touch.tapCount > 1 ? "\(touch.tapCount)" : nil
         textAlignment = .center
         textColor = ShowTime.multipleTapCountTextColor
+        font = ShowTime.multipleTapCountTextFont
         clipsToBounds = true
         isUserInteractionEnabled = false
     }
@@ -121,11 +129,12 @@ class TouchView: UILabel {
     /// Animates the visual touch out to disappear from view.
     /// Removes itself from the superview after the animation complete.
     func disappear() {
-        UIView.animate(withDuration: 0.2, delay: ShowTime.disappearDelay, options: [.beginFromCurrentState], animations: { [weak self] in
+        UIView.animate(withDuration: 0.2, delay: ShowTime.disappearDelay, options: [.beginFromCurrentState], animations: {
             switch ShowTime.disappearAnimation {
-            case .standard: self?.standard()
-            case .scaleDown: self?.scaleDown()
-            case .scaleUp: self?.animateScaleUp()
+            case .standard: self.standard()
+            case .scaleDown: self.scaleDown()
+            case .scaleUp: self.animateScaleUp()
+            case .custom(let custom): custom(self)
             }
             }, completion: { [weak self] _ in
                 self?.removeFromSuperview()

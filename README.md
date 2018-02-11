@@ -1,3 +1,8 @@
+[![CI Status](http://img.shields.io/travis/KaneCheshire/ShowTime.svg?style=flat)](https://travis-ci.org/KaneCheshire/ShowTime)
+[![Version](https://img.shields.io/cocoapods/v/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
+[![License](https://img.shields.io/cocoapods/l/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
+[![Platform](https://img.shields.io/cocoapods/p/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
+
 # It's ShowTime 🎥
 
 - [Installation (Swift 4)](#installation-swift-4)
@@ -124,6 +129,7 @@ ShowTime.size: CGSize
 // - .standard (Slightly scaled down and faded out)
 // - .scaleDown (Completely scaled down with no fade)
 // - .scaleUp (Scaled up and faded out)
+// - .custom (Provide your own custom animation block)
 //
 // `.standard` by default.
 ShowTime.disappearAnimation: ShowTime.Animation
@@ -139,6 +145,10 @@ ShowTime.shouldShowMultipleTapCount: Bool
 // The colour of the text to use when showing multiple tap counts.
 // `.black` by default.
 ShowTime.multipleTapCountTextColor: UIColor
+
+// The font of the text to use when showing multiple tap counts.
+// `.systemFont(ofSize: 17, weight: .bold)` by default.
+ShowTime.multipleTapCountTextFont: UIFont
 
 // Whether visual touches should visually show how much force is applied.
 // `true` by default (show off that amazing tech!).

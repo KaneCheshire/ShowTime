@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ShowTime'
-  s.version          = '2.1.0'
+  s.version          = '2.2.0'
   s.summary          = 'The easiest way to show off your iOS taps and gestures for demos.'
   s.description      = <<-DESC
   ShowTime displays all your taps and gestures on screen, perfect for that demo, presentation or video.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/kanecheshire/ShowTime.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/kanecheshire'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '8.2'
 
   s.source_files = 'ShowTime.swift'
 end
