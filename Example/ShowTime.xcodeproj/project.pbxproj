@@ -11,9 +11,14 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* ShowTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ShowTimeTests.swift */; };
+		92BF8D033B8A8749303C1FB6 /* Pods_ShowTimeTodayExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED813A37AC77EB860FFA0C46 /* Pods_ShowTimeTodayExtension.framework */; };
 		A077C43F4B38DA493B5D04BB /* Pods_ShowTime_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A010FC2B5E4C55FF1F0BE15 /* Pods_ShowTime_Example.framework */; };
 		C30E907C201B490E00DF30B5 /* ObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30E907B201B490E00DF30B5 /* ObjCViewController.m */; };
+		C3455816205BAE6F00364603 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3455815205BAE6F00364603 /* NotificationCenter.framework */; };
+		C3455819205BAE6F00364603 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3455818205BAE6F00364603 /* TodayViewController.swift */; };
+		C345581C205BAE6F00364603 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C345581A205BAE6F00364603 /* MainInterface.storyboard */; };
+		C3455820205BAE6F00364603 /* ShowTimeTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3455814205BAE6E00364603 /* ShowTimeTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FE89F459F687C4D8FA2B42A8 /* Pods_ShowTime_Example_ShowTime_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98718DFA6C77F6F4D331EA83 /* Pods_ShowTime_Example_ShowTime_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +30,32 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = ShowTime;
 		};
+		C345581E205BAE6F00364603 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3455813205BAE6E00364603;
+			remoteInfo = ShowTimeTodayExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3455824205BAE6F00364603 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C3455820205BAE6F00364603 /* ShowTimeTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E843E8A7065B470CAD56DAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		227B664F7B1AFA518933E1BE /* Pods-ShowTimeTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTimeTodayExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTimeTodayExtension/Pods-ShowTimeTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
 		23708A76B65CFB20DFAC8FC9 /* Pods-ShowTime_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTime_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTime_Tests/Pods-ShowTime_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		242CC857B408D6A30483BB0F /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2B3ED768FADD67C38FF3BEFA /* Pods-ShowTime_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTime_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -41,17 +68,24 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* ShowTime_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowTime_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* ShowTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTimeTests.swift; sourceTree = "<group>"; };
 		8A010FC2B5E4C55FF1F0BE15 /* Pods_ShowTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98718DFA6C77F6F4D331EA83 /* Pods_ShowTime_Example_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example_ShowTime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCAD38C9622518A61EA33CA /* Pods-ShowTimeTodayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTimeTodayExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTimeTodayExtension/Pods-ShowTimeTodayExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		B372A9325FC6B0A5B2E9808B /* Pods_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E2A27A2DD2B58430D13FDA /* Pods-ShowTime_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTime_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C30E9079201B490D00DF30B5 /* ShowTime_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShowTime_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		C30E907A201B490E00DF30B5 /* ObjCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCViewController.h; sourceTree = "<group>"; };
 		C30E907B201B490E00DF30B5 /* ObjCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCViewController.m; sourceTree = "<group>"; };
+		C3455814205BAE6E00364603 /* ShowTimeTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShowTimeTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3455815205BAE6F00364603 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		C3455818205BAE6F00364603 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		C345581B205BAE6F00364603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C345581D205BAE6F00364603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3822CD4201B547900D825F3 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		CCCF095274BF5A0ED5FBD44C /* Pods-ShowTime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTime_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTime_Tests/Pods-ShowTime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E3F2ECCA67E6BB07BC6B5E49 /* ShowTime.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ShowTime.podspec; path = ../ShowTime.podspec; sourceTree = "<group>"; };
+		E3F2ECCA67E6BB07BC6B5E49 /* ShowTime.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ShowTime.podspec; path = ../ShowTime.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ED813A37AC77EB860FFA0C46 /* Pods_ShowTimeTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTimeTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +105,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3455811205BAE6E00364603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3455816205BAE6F00364603 /* NotificationCenter.framework in Frameworks */,
+				92BF8D033B8A8749303C1FB6 /* Pods_ShowTimeTodayExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +122,7 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for ShowTime */,
+				C3455817205BAE6F00364603 /* ShowTimeTodayExtension */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				EBD441EC646C7E615CBEAF14 /* Pods */,
@@ -91,6 +135,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* ShowTime_Example.app */,
 				607FACE51AFB9204008FA782 /* ShowTime_Tests.xctest */,
+				C3455814205BAE6E00364603 /* ShowTimeTodayExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +154,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
@@ -119,7 +165,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* ShowTimeTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -149,14 +195,25 @@
 				8A010FC2B5E4C55FF1F0BE15 /* Pods_ShowTime_Example.framework */,
 				B372A9325FC6B0A5B2E9808B /* Pods_ShowTime_Tests.framework */,
 				98718DFA6C77F6F4D331EA83 /* Pods_ShowTime_Example_ShowTime_Tests.framework */,
+				C3455815205BAE6F00364603 /* NotificationCenter.framework */,
+				ED813A37AC77EB860FFA0C46 /* Pods_ShowTimeTodayExtension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3455817205BAE6F00364603 /* ShowTimeTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C3455818205BAE6F00364603 /* TodayViewController.swift */,
+				C345581A205BAE6F00364603 /* MainInterface.storyboard */,
+				C345581D205BAE6F00364603 /* Info.plist */,
+			);
+			path = ShowTimeTodayExtension;
 			sourceTree = "<group>";
 		};
 		C3822CD3201B508700D825F3 /* ObjcSupport */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				C30E907A201B490E00DF30B5 /* ObjCViewController.h */,
 				C30E907B201B490E00DF30B5 /* ObjCViewController.m */,
 				C30E9079201B490D00DF30B5 /* ShowTime_Example-Bridging-Header.h */,
@@ -173,6 +230,8 @@
 				23708A76B65CFB20DFAC8FC9 /* Pods-ShowTime_Tests.release.xcconfig */,
 				3125EDC62DB0A9F8D45E9B41 /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */,
 				242CC857B408D6A30483BB0F /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */,
+				9FCAD38C9622518A61EA33CA /* Pods-ShowTimeTodayExtension.debug.xcconfig */,
+				227B664F7B1AFA518933E1BE /* Pods-ShowTimeTodayExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -190,10 +249,12 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				E8A80A04E2770BBED5AEA4F8 /* [CP] Embed Pods Frameworks */,
 				CD96C685BE9DEBC1E8AEFC8F /* [CP] Copy Pods Resources */,
+				C3455824205BAE6F00364603 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C345581F205BAE6F00364603 /* PBXTargetDependency */,
 			);
 			name = ShowTime_Example;
 			productName = ShowTime;
@@ -221,13 +282,32 @@
 			productReference = 607FACE51AFB9204008FA782 /* ShowTime_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C3455813205BAE6E00364603 /* ShowTimeTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3455821205BAE6F00364603 /* Build configuration list for PBXNativeTarget "ShowTimeTodayExtension" */;
+			buildPhases = (
+				D1E35C6D2F2014DC8EEC2842 /* [CP] Check Pods Manifest.lock */,
+				C3455810205BAE6E00364603 /* Sources */,
+				C3455811205BAE6E00364603 /* Frameworks */,
+				C3455812205BAE6E00364603 /* Resources */,
+				41B92C6EDF34E40CFD717C1C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShowTimeTodayExtension;
+			productName = ShowTimeTodayExtension;
+			productReference = C3455814205BAE6E00364603 /* ShowTimeTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -239,6 +319,10 @@
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					C3455813205BAE6E00364603 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -257,6 +341,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* ShowTime_Example */,
 				607FACE41AFB9204008FA782 /* ShowTime_Tests */,
+				C3455813205BAE6E00364603 /* ShowTimeTodayExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +361,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3455812205BAE6E00364603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C345581C205BAE6F00364603 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +393,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		41B92C6EDF34E40CFD717C1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShowTimeTodayExtension/Pods-ShowTimeTodayExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5C9AB75801A5EB6C2A39FC53 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,7 +430,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ShowTime/ShowTime.framework",
+				"${BUILT_PRODUCTS_DIR}/ShowTime-iOS8.3/ShowTime.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -366,6 +474,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D1E35C6D2F2014DC8EEC2842 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShowTimeTodayExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E8A80A04E2770BBED5AEA4F8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,7 +499,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ShowTime/ShowTime.framework",
+				"${BUILT_PRODUCTS_DIR}/ShowTime-iOS8.3/ShowTime.framework",
+				"${BUILT_PRODUCTS_DIR}/ShowTime-iOS11.2/ShowTime.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -400,7 +527,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* ShowTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3455810205BAE6E00364603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3455819205BAE6F00364603 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +546,11 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* ShowTime_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		C345581F205BAE6F00364603 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3455813205BAE6E00364603 /* ShowTimeTodayExtension */;
+			targetProxy = C345581E205BAE6F00364603 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -429,6 +569,14 @@
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		C345581A205BAE6F00364603 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C345581B205BAE6F00364603 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -537,8 +685,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B3ED768FADD67C38FF3BEFA /* Pods-ShowTime_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ShowTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -555,8 +705,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0E2A27A2DD2B58430D13FDA /* Pods-ShowTime_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ShowTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -602,6 +754,54 @@
 			};
 			name = Release;
 		};
+		C3455822205BAE6F00364603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FCAD38C9622518A61EA33CA /* Pods-ShowTimeTodayExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ShowTimeTodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.ShowTime-Example.ShowTimeTodayExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3455823205BAE6F00364603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 227B664F7B1AFA518933E1BE /* Pods-ShowTimeTodayExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ShowTimeTodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.ShowTime-Example.ShowTimeTodayExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -628,6 +828,15 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3455821205BAE6F00364603 /* Build configuration list for PBXNativeTarget "ShowTimeTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3455822205BAE6F00364603 /* Debug */,
+				C3455823205BAE6F00364603 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
