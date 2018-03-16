@@ -7,154 +7,252 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06D9A3045FB16A787F0855DC9EB9983F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		350D1717AFC9571F6AD4FD5B6C12C119 /* ShowTime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA498E8DB6310CC4B7080E586361D2F /* ShowTime-dummy.m */; };
-		4D22059239DECE833B8EC14690A359FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		4E64FD7D1FBBCFD06F88FE46E9CF4F66 /* ShowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2CCCF5CBEB6AB1781FC16BDE3A446 /* ShowTime.swift */; };
-		532E6D2B21A1D27350C1A01BCDA2DC45 /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F1B0A1A68DB8D309C1C1C74816C792 /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m */; };
-		6617488C2E58A5993590794FCF651CE5 /* Pods-ShowTime_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F1A2003A9C388089FC685016FD1EF4A /* Pods-ShowTime_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79B8224DAF70DE486D764B16CC41C663 /* ShowTime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CACCE6568745AD6760082D431A5C3A0 /* ShowTime-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7CB64F6CD6EBED354E624F4E92CA0554 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DE8347CF737B1AB781AA070495ED57 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE79731AE47D9F4D5B7172A5F38CD386 /* Pods-ShowTime_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31406C282BB5D3D1499C4984E1C9BB69 /* Pods-ShowTime_Example-dummy.m */; };
-		F9A8C58D2E70A40FD183A566D51A15A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		479D3119F68C9B1E9078333FC2C40863 /* ShowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E785C4BB33E8323A6775A9F532687D /* ShowTime.swift */; };
+		5E4A0ACCCDF80B5D44FF208FAA6F96B2 /* Pods-ShowTimeTodayExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8D9406F56B1A625ADD709781EE8640 /* Pods-ShowTimeTodayExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B51B560F290B7EE0E0A29E5975915CA /* ShowTime-iOS11.2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70452DD0EA339CF51363F709147F1EA1 /* ShowTime-iOS11.2-dummy.m */; };
+		882CD81E8FE9FF13D2C7D9FBEEE54816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8A2429DC77D4276052E9F5F9483005E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8FDCCD7867B8A26BF73698CF139381D4 /* ShowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E785C4BB33E8323A6775A9F532687D /* ShowTime.swift */; };
+		9F29524CB012CE7B6A4808E924F85C25 /* ShowTime-iOS11.2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C70631AFA6A35F22A4C9FC9593F0AFE /* ShowTime-iOS11.2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9BE4FD710159941F00BFFD6392EA587 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDE87F24BEDEBD438DC34C58BDC76210 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0D722C30F342D41B2CCC3E3B910EFA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C10C3F7EDF893364E8D7D229E270FF75 /* ShowTime-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A64720A8E2FE6573A1F0E251DF1B9063 /* ShowTime-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C8EE5DB68F98018F87E34D14C9AE0E /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3131472F8C22752C1456D2F3D8CA7E4 /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m */; };
+		DBC8D677DD83D15467F71EA7F0A1CDB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E3E8D94055D0A670500F6A97183D996B /* Pods-ShowTime_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC21EB2554D73981FB2CDF19964BB007 /* Pods-ShowTime_Example-dummy.m */; };
+		E6E6A35167F064FD0BF6D7C1FB5E0B54 /* Pods-ShowTimeTodayExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEFAA8EBDED329C3F90FBBDF67FF231 /* Pods-ShowTimeTodayExtension-dummy.m */; };
+		F404DC7C36DD7C8BE80A43518BB855CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F60FDB517F646C3330E9F55ED07D62DE /* ShowTime-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD648D39E078E285C7A4FF9E0BB038AA /* ShowTime-iOS8.3-dummy.m */; };
+		FFAB8E89427A9EB618EB781708BD1B80 /* Pods-ShowTime_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C2FD3F0C9814872E7B39FA28E0A2AF /* Pods-ShowTime_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7974B2ECF40C262480FE1239B96BC1A7 /* PBXContainerItemProxy */ = {
+		48952C4C51563EC6B5C0D8B18BE2C4CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5647D577C289651C8A3C934AA40A57EB;
-			remoteInfo = ShowTime;
+			remoteGlobalIDString = 1546ABD5CB100BA510CA401BFB63786D;
+			remoteInfo = "ShowTime-iOS11.2";
 		};
-		852409CF67B1CA7F07CF41C2AB7BC34E /* PBXContainerItemProxy */ = {
+		83267FB6388BC8CB510927BF792834A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5647D577C289651C8A3C934AA40A57EB;
-			remoteInfo = ShowTime;
+			remoteGlobalIDString = 1546ABD5CB100BA510CA401BFB63786D;
+			remoteInfo = "ShowTime-iOS11.2";
+		};
+		C6AA789C4ADBC9C11D85E3F06D6762AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B933204C725B0130D311D8946E1DE5EF;
+			remoteInfo = "ShowTime-iOS8.3";
+		};
+		D57DE5C27216B3A49DD3E3B3369EBA3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B933204C725B0130D311D8946E1DE5EF;
+			remoteInfo = "ShowTime-iOS8.3";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C621AE4E28D94602A8650B5BA90F71D /* ShowTime-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-prefix.pch"; sourceTree = "<group>"; };
-		2574B0409904C543261EA9B9CA923AEC /* Pods_ShowTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTime_Example.framework; path = "Pods-ShowTime_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1A2003A9C388089FC685016FD1EF4A /* Pods-ShowTime_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTime_Example-umbrella.h"; sourceTree = "<group>"; };
-		31406C282BB5D3D1499C4984E1C9BB69 /* Pods-ShowTime_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowTime_Example-dummy.m"; sourceTree = "<group>"; };
-		37F3F5AF47C8B3568457E81A6C8DBDB0 /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3AA498E8DB6310CC4B7080E586361D2F /* ShowTime-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShowTime-dummy.m"; sourceTree = "<group>"; };
-		469F1FCA2A83AD5B24A24272611CFDF6 /* ShowTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShowTime.framework; path = ShowTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47C57497893BC6F2F0824F5C4630F23D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FE1FC7D00392F2F24D5C0039B8D3C2B /* Pods-ShowTime_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ShowTime_Example.modulemap"; sourceTree = "<group>"; };
-		5228D8FB36045FE619612CC3871E9B85 /* Pods_ShowTime_Example_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTime_Example_ShowTime_Tests.framework; path = "Pods-ShowTime_Example-ShowTime_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A5FDB62ECB91D645A992FDC83452582 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BDE0550261F72FE423C1AC3CB8784B4 /* Pods-ShowTime_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-resources.sh"; sourceTree = "<group>"; };
-		64BE8DCEF02B954F3D27CA9974BBE762 /* Pods-ShowTime_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		013979A863AAB0840030CE9FE48D6E7E /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0591B5CD2281F3F189459373C96BC669 /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		059ADABF6E09BB8C01C59FFCE4D82A76 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		05AA6BBADC2A039A2BD09F5E701ABAF4 /* ShowTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShowTime.framework; path = "ShowTime-iOS11.2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E785C4BB33E8323A6775A9F532687D /* ShowTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowTime.swift; sourceTree = "<group>"; };
+		0C5464F49DE2BFC5F22D3ECB1595997E /* Pods-ShowTimeTodayExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTimeTodayExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1406BE8A0704FB34CA924CBDF6772FCF /* ShowTime-iOS11.2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "ShowTime-iOS11.2.modulemap"; sourceTree = "<group>"; };
+		1CEFAA8EBDED329C3F90FBBDF67FF231 /* Pods-ShowTimeTodayExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowTimeTodayExtension-dummy.m"; sourceTree = "<group>"; };
+		249EF2936B4E65D783E942F3278508B2 /* ShowTime.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ShowTime.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2D85BE6A22DA67A3DC56B4FCE79CF032 /* Pods-ShowTime_Example-ShowTime_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-ShowTime_Tests-resources.sh"; sourceTree = "<group>"; };
+		2E8A5AB51631DE23B12FC0F4ACFF227D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456C0D568AC9F93BA482B619D1FD921D /* ShowTime-iOS11.2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ShowTime-iOS11.2.xcconfig"; sourceTree = "<group>"; };
+		60F7E7E1B408D51A1E1165CF0B0A8D92 /* Pods-ShowTimeTodayExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ShowTimeTodayExtension.modulemap"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6CACCE6568745AD6760082D431A5C3A0 /* ShowTime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-umbrella.h"; sourceTree = "<group>"; };
-		6E1175D03895AC1D7B512824006C2C8A /* ShowTime.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShowTime.xcconfig; sourceTree = "<group>"; };
-		6E89049F962F5D90CE6C32EAE104D436 /* ShowTime.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ShowTime.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7589BEEC8537AFDE50B3B912DFA0EFAF /* Pods-ShowTime_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7673A0D0EA2E7188F8EC4A65A55ABB6A /* Pods-ShowTime_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTime_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7DB2CABF62D74E882B5B3CC4A88DE4B7 /* Pods-ShowTime_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		89C19FFA274CE769A8475035CE97A259 /* Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		70452DD0EA339CF51363F709147F1EA1 /* ShowTime-iOS11.2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShowTime-iOS11.2-dummy.m"; sourceTree = "<group>"; };
+		7115280F4429FC702574B50D6CA70E3F /* ShowTime-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ShowTime-iOS8.3.xcconfig"; path = "../ShowTime-iOS8.3/ShowTime-iOS8.3.xcconfig"; sourceTree = "<group>"; };
+		7C70631AFA6A35F22A4C9FC9593F0AFE /* ShowTime-iOS11.2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-iOS11.2-umbrella.h"; sourceTree = "<group>"; };
+		7F8DC4E14F549081A9F6F6515DDE4A87 /* Pods-ShowTime_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-frameworks.sh"; sourceTree = "<group>"; };
+		87CC70D47B3EB08D9385914E7F1D7367 /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8A82AB71CB25F12080E8923F7FECD662 /* ShowTime-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "ShowTime-iOS8.3.modulemap"; path = "../ShowTime-iOS8.3/ShowTime-iOS8.3.modulemap"; sourceTree = "<group>"; };
+		8BC1ED1080C34CA8992CE5F5F44C9B37 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B0C6C991CF339F1E6EF1D93F9582D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A6DE8347CF737B1AB781AA070495ED57 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTime_Example-ShowTime_Tests-umbrella.h"; sourceTree = "<group>"; };
-		AC7A1543B277E25B983DFCACB442CDDD /* Pods-ShowTime_Example-ShowTime_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ShowTime_Example-ShowTime_Tests.modulemap"; sourceTree = "<group>"; };
-		B196001CEBCBBDB2728C288A0275E0EF /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B3F1B0A1A68DB8D309C1C1C74816C792 /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowTime_Example-ShowTime_Tests-dummy.m"; sourceTree = "<group>"; };
-		B74212F7F5D25025D05285E187C3690E /* Pods-ShowTime_Example-ShowTime_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-ShowTime_Tests-resources.sh"; sourceTree = "<group>"; };
-		BBE8907B4367509EB7FCF5D3BC6EE9C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFA2CCCF5CBEB6AB1781FC16BDE3A446 /* ShowTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowTime.swift; sourceTree = "<group>"; };
-		C43A48FD4CBF1D3D0BD718F94E6924EF /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C9E1923E8CC3070D9CA7529B6FC326B9 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
-		CA168FD2EFA80D3395B508761B87E256 /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E714CEFF9839817658D8EE901B02DBB8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		F99FE786263DCC2E7A8FABA7CB015873 /* Pods-ShowTime_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FA641593A4E59B9E29C519D11200A4EB /* ShowTime.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ShowTime.modulemap; sourceTree = "<group>"; };
+		95E16C9AC9E59C83EE4A8977DDBBA16F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A717BC3E3E6FB36343EA98BF2F43B3B /* Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9A80FB9888E89024F1C1B72C42606FB8 /* ShowTime-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ShowTime-iOS8.3-prefix.pch"; path = "../ShowTime-iOS8.3/ShowTime-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
+		A399874FDCF28D0BB22C66BB171DA224 /* Pods-ShowTime_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A64720A8E2FE6573A1F0E251DF1B9063 /* ShowTime-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ShowTime-iOS8.3-umbrella.h"; path = "../ShowTime-iOS8.3/ShowTime-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
+		A90A9168644D8995A1C6E80501CFBC6B /* Pods-ShowTimeTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTimeTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
+		AFC69E11A4AA4F85A70A99DE3872E38B /* Pods-ShowTime_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B3131472F8C22752C1456D2F3D8CA7E4 /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowTime_Example-ShowTime_Tests-dummy.m"; sourceTree = "<group>"; };
+		B79F765109763B12F816D2238355F053 /* Pods-ShowTimeTodayExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTimeTodayExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		BE8B071C8A8446D17BF757D87942B600 /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CAE47556B7CD7457B99B08CF147995F7 /* Pods-ShowTime_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ShowTime_Example.modulemap"; sourceTree = "<group>"; };
+		D463866CF7610CC2BDF97A6400D8E3CB /* Pods_ShowTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTime_Example.framework; path = "Pods-ShowTime_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56BB418EAA2775902434D23A30E984E /* Pods-ShowTime_Example-ShowTime_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ShowTime_Example-ShowTime_Tests.modulemap"; sourceTree = "<group>"; };
+		DAFD837101290B2E787128144FDE5527 /* Pods-ShowTimeTodayExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTimeTodayExtension-resources.sh"; sourceTree = "<group>"; };
+		DC246AD62BFB6A8E155B2000667F80AE /* Pods_ShowTimeTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTimeTodayExtension.framework; path = "Pods-ShowTimeTodayExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8D9406F56B1A625ADD709781EE8640 /* Pods-ShowTimeTodayExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTimeTodayExtension-umbrella.h"; sourceTree = "<group>"; };
+		DDE87F24BEDEBD438DC34C58BDC76210 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTime_Example-ShowTime_Tests-umbrella.h"; sourceTree = "<group>"; };
+		DFBC8C5C474B3B6F2C3E0D94C7A1D1C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../ShowTime-iOS8.3/Info.plist"; sourceTree = "<group>"; };
+		E080DEBEBB598FB9C9294E114E0A5546 /* Pods-ShowTime_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E42152F72CB165314DF32FC181BC3757 /* ShowTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShowTime.framework; path = "ShowTime-iOS8.3.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C2FD3F0C9814872E7B39FA28E0A2AF /* Pods-ShowTime_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTime_Example-umbrella.h"; sourceTree = "<group>"; };
+		E9469A86A71C87E788B7C67EA8FA004B /* Pods-ShowTime_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTime_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EA5058F7E6406FE8A2D7258BFC0A9D2D /* Pods-ShowTimeTodayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTimeTodayExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		EA923B44602CE3206BFD351E87036AAE /* Pods-ShowTime_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-resources.sh"; sourceTree = "<group>"; };
+		EB4730A3EAD52CF4A95592784D2FEDB7 /* Pods_ShowTime_Example_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTime_Example_ShowTime_Tests.framework; path = "Pods-ShowTime_Example-ShowTime_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC21EB2554D73981FB2CDF19964BB007 /* Pods-ShowTime_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowTime_Example-dummy.m"; sourceTree = "<group>"; };
+		F0EAB4F59986B2A56C5D482CE6BD9FAA /* ShowTime-iOS11.2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-iOS11.2-prefix.pch"; sourceTree = "<group>"; };
+		FD648D39E078E285C7A4FF9E0BB038AA /* ShowTime-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ShowTime-iOS8.3-dummy.m"; path = "../ShowTime-iOS8.3/ShowTime-iOS8.3-dummy.m"; sourceTree = "<group>"; };
+		FE6702187E07F7D9A466C498C6E77F1B /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		298333493CA4C631A379ECA667B0782D /* Frameworks */ = {
+		1A13EF8623C19109E29C4F732B14CADC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D22059239DECE833B8EC14690A359FB /* Foundation.framework in Frameworks */,
+				F404DC7C36DD7C8BE80A43518BB855CF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AAE24EE7244EB57424742CA61741746 /* Frameworks */ = {
+		3F70EC69DD05BDD4749E60232B3C4489 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A8C58D2E70A40FD183A566D51A15A3 /* Foundation.framework in Frameworks */,
+				8A2429DC77D4276052E9F5F9483005E5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE555F79EF1569C001E4D6617278094B /* Frameworks */ = {
+		8B14F6F8E2EBFD6438EA963E6200B2DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06D9A3045FB16A787F0855DC9EB9983F /* Foundation.framework in Frameworks */,
+				882CD81E8FE9FF13D2C7D9FBEEE54816 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC055E446BFC2A1938404D57EB3D0FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0D722C30F342D41B2CCC3E3B910EFA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAAEC156CD17BE558A3CC4EC731761F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC8D677DD83D15467F71EA7F0A1CDB0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0836330DFBC162C7DB1566D3B13902E5 /* Pods-ShowTime_Example-ShowTime_Tests */ = {
+		066CD8778CEEE49C1FFD03447DCB7C14 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BBE8907B4367509EB7FCF5D3BC6EE9C3 /* Info.plist */,
-				AC7A1543B277E25B983DFCACB442CDDD /* Pods-ShowTime_Example-ShowTime_Tests.modulemap */,
-				CA168FD2EFA80D3395B508761B87E256 /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown */,
-				B196001CEBCBBDB2728C288A0275E0EF /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist */,
-				B3F1B0A1A68DB8D309C1C1C74816C792 /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m */,
-				89C19FFA274CE769A8475035CE97A259 /* Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh */,
-				B74212F7F5D25025D05285E187C3690E /* Pods-ShowTime_Example-ShowTime_Tests-resources.sh */,
-				A6DE8347CF737B1AB781AA070495ED57 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h */,
-				C43A48FD4CBF1D3D0BD718F94E6924EF /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */,
-				37F3F5AF47C8B3568457E81A6C8DBDB0 /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */,
+				5135DD05884D0DA7A8A397CE9E1C4227 /* Pods-ShowTime_Example */,
+				2FABCD5201839DC5D45FB2EFBE792FAB /* Pods-ShowTime_Example-ShowTime_Tests */,
+				8E4B10A3B4804D899DEAEBBE1CA06EC9 /* Pods-ShowTimeTodayExtension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		174158B2B0D6FF356A98D5F2216CCF53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D463866CF7610CC2BDF97A6400D8E3CB /* Pods_ShowTime_Example.framework */,
+				EB4730A3EAD52CF4A95592784D2FEDB7 /* Pods_ShowTime_Example_ShowTime_Tests.framework */,
+				DC246AD62BFB6A8E155B2000667F80AE /* Pods_ShowTimeTodayExtension.framework */,
+				05AA6BBADC2A039A2BD09F5E701ABAF4 /* ShowTime.framework */,
+				E42152F72CB165314DF32FC181BC3757 /* ShowTime.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21839B7CC7C44FF54F888043CFA05D3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				95E16C9AC9E59C83EE4A8977DDBBA16F /* Info.plist */,
+				DFBC8C5C474B3B6F2C3E0D94C7A1D1C7 /* Info.plist */,
+				1406BE8A0704FB34CA924CBDF6772FCF /* ShowTime-iOS11.2.modulemap */,
+				456C0D568AC9F93BA482B619D1FD921D /* ShowTime-iOS11.2.xcconfig */,
+				70452DD0EA339CF51363F709147F1EA1 /* ShowTime-iOS11.2-dummy.m */,
+				F0EAB4F59986B2A56C5D482CE6BD9FAA /* ShowTime-iOS11.2-prefix.pch */,
+				7C70631AFA6A35F22A4C9FC9593F0AFE /* ShowTime-iOS11.2-umbrella.h */,
+				8A82AB71CB25F12080E8923F7FECD662 /* ShowTime-iOS8.3.modulemap */,
+				7115280F4429FC702574B50D6CA70E3F /* ShowTime-iOS8.3.xcconfig */,
+				FD648D39E078E285C7A4FF9E0BB038AA /* ShowTime-iOS8.3-dummy.m */,
+				9A80FB9888E89024F1C1B72C42606FB8 /* ShowTime-iOS8.3-prefix.pch */,
+				A64720A8E2FE6573A1F0E251DF1B9063 /* ShowTime-iOS8.3-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ShowTime-iOS11.2";
+			sourceTree = "<group>";
+		};
+		24C42947E05AE28FDC1F1E04633ABF34 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FE6702187E07F7D9A466C498C6E77F1B /* LICENSE.md */,
+				059ADABF6E09BB8C01C59FFCE4D82A76 /* README.md */,
+				249EF2936B4E65D783E942F3278508B2 /* ShowTime.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2FABCD5201839DC5D45FB2EFBE792FAB /* Pods-ShowTime_Example-ShowTime_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8BC1ED1080C34CA8992CE5F5F44C9B37 /* Info.plist */,
+				D56BB418EAA2775902434D23A30E984E /* Pods-ShowTime_Example-ShowTime_Tests.modulemap */,
+				0591B5CD2281F3F189459373C96BC669 /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown */,
+				013979A863AAB0840030CE9FE48D6E7E /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist */,
+				B3131472F8C22752C1456D2F3D8CA7E4 /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m */,
+				9A717BC3E3E6FB36343EA98BF2F43B3B /* Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh */,
+				2D85BE6A22DA67A3DC56B4FCE79CF032 /* Pods-ShowTime_Example-ShowTime_Tests-resources.sh */,
+				DDE87F24BEDEBD438DC34C58BDC76210 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h */,
+				BE8B071C8A8446D17BF757D87942B600 /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */,
+				87CC70D47B3EB08D9385914E7F1D7367 /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */,
 			);
 			name = "Pods-ShowTime_Example-ShowTime_Tests";
 			path = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests";
 			sourceTree = "<group>";
 		};
-		26485A90F29055A09C67FBB6985062F3 /* Targets Support Files */ = {
+		3DA2CBAE5274A38AB5F94DC9490E5F95 /* ShowTime */ = {
 			isa = PBXGroup;
 			children = (
-				4E3384D04971BBE5F5537C3F7BCF4D46 /* Pods-ShowTime_Example */,
-				0836330DFBC162C7DB1566D3B13902E5 /* Pods-ShowTime_Example-ShowTime_Tests */,
+				05E785C4BB33E8323A6775A9F532687D /* ShowTime.swift */,
+				24C42947E05AE28FDC1F1E04633ABF34 /* Pod */,
+				21839B7CC7C44FF54F888043CFA05D3A /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = ShowTime;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		4E3384D04971BBE5F5537C3F7BCF4D46 /* Pods-ShowTime_Example */ = {
+		5135DD05884D0DA7A8A397CE9E1C4227 /* Pods-ShowTime_Example */ = {
 			isa = PBXGroup;
 			children = (
-				5A5FDB62ECB91D645A992FDC83452582 /* Info.plist */,
-				4FE1FC7D00392F2F24D5C0039B8D3C2B /* Pods-ShowTime_Example.modulemap */,
-				7673A0D0EA2E7188F8EC4A65A55ABB6A /* Pods-ShowTime_Example-acknowledgements.markdown */,
-				64BE8DCEF02B954F3D27CA9974BBE762 /* Pods-ShowTime_Example-acknowledgements.plist */,
-				31406C282BB5D3D1499C4984E1C9BB69 /* Pods-ShowTime_Example-dummy.m */,
-				7589BEEC8537AFDE50B3B912DFA0EFAF /* Pods-ShowTime_Example-frameworks.sh */,
-				5BDE0550261F72FE423C1AC3CB8784B4 /* Pods-ShowTime_Example-resources.sh */,
-				2F1A2003A9C388089FC685016FD1EF4A /* Pods-ShowTime_Example-umbrella.h */,
-				7DB2CABF62D74E882B5B3CC4A88DE4B7 /* Pods-ShowTime_Example.debug.xcconfig */,
-				F99FE786263DCC2E7A8FABA7CB015873 /* Pods-ShowTime_Example.release.xcconfig */,
+				2E8A5AB51631DE23B12FC0F4ACFF227D /* Info.plist */,
+				CAE47556B7CD7457B99B08CF147995F7 /* Pods-ShowTime_Example.modulemap */,
+				E9469A86A71C87E788B7C67EA8FA004B /* Pods-ShowTime_Example-acknowledgements.markdown */,
+				A399874FDCF28D0BB22C66BB171DA224 /* Pods-ShowTime_Example-acknowledgements.plist */,
+				EC21EB2554D73981FB2CDF19964BB007 /* Pods-ShowTime_Example-dummy.m */,
+				7F8DC4E14F549081A9F6F6515DDE4A87 /* Pods-ShowTime_Example-frameworks.sh */,
+				EA923B44602CE3206BFD351E87036AAE /* Pods-ShowTime_Example-resources.sh */,
+				E6C2FD3F0C9814872E7B39FA28E0A2AF /* Pods-ShowTime_Example-umbrella.h */,
+				E080DEBEBB598FB9C9294E114E0A5546 /* Pods-ShowTime_Example.debug.xcconfig */,
+				AFC69E11A4AA4F85A70A99DE3872E38B /* Pods-ShowTime_Example.release.xcconfig */,
 			);
 			name = "Pods-ShowTime_Example";
 			path = "Target Support Files/Pods-ShowTime_Example";
-			sourceTree = "<group>";
-		};
-		5BC36DE62D711816C85299343562FF0E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2574B0409904C543261EA9B9CA923AEC /* Pods_ShowTime_Example.framework */,
-				5228D8FB36045FE619612CC3871E9B85 /* Pods_ShowTime_Example_ShowTime_Tests.framework */,
-				469F1FCA2A83AD5B24A24272611CFDF6 /* ShowTime.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -163,9 +261,26 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				EAB4AE725EDB94D8DA063705A9174C82 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				5BC36DE62D711816C85299343562FF0E /* Products */,
-				26485A90F29055A09C67FBB6985062F3 /* Targets Support Files */,
+				174158B2B0D6FF356A98D5F2216CCF53 /* Products */,
+				066CD8778CEEE49C1FFD03447DCB7C14 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8E4B10A3B4804D899DEAEBBE1CA06EC9 /* Pods-ShowTimeTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				92B0C6C991CF339F1E6EF1D93F9582D1 /* Info.plist */,
+				60F7E7E1B408D51A1E1165CF0B0A8D92 /* Pods-ShowTimeTodayExtension.modulemap */,
+				0C5464F49DE2BFC5F22D3ECB1595997E /* Pods-ShowTimeTodayExtension-acknowledgements.markdown */,
+				B79F765109763B12F816D2238355F053 /* Pods-ShowTimeTodayExtension-acknowledgements.plist */,
+				1CEFAA8EBDED329C3F90FBBDF67FF231 /* Pods-ShowTimeTodayExtension-dummy.m */,
+				DAFD837101290B2E787128144FDE5527 /* Pods-ShowTimeTodayExtension-resources.sh */,
+				DC8D9406F56B1A625ADD709781EE8640 /* Pods-ShowTimeTodayExtension-umbrella.h */,
+				EA5058F7E6406FE8A2D7258BFC0A9D2D /* Pods-ShowTimeTodayExtension.debug.xcconfig */,
+				A90A9168644D8995A1C6E80501CFBC6B /* Pods-ShowTimeTodayExtension.release.xcconfig */,
+			);
+			name = "Pods-ShowTimeTodayExtension";
+			path = "Target Support Files/Pods-ShowTimeTodayExtension";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -174,31 +289,6 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CC17AF8B9F616E16B1E558E24290BB64 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				47C57497893BC6F2F0824F5C4630F23D /* Info.plist */,
-				FA641593A4E59B9E29C519D11200A4EB /* ShowTime.modulemap */,
-				6E1175D03895AC1D7B512824006C2C8A /* ShowTime.xcconfig */,
-				3AA498E8DB6310CC4B7080E586361D2F /* ShowTime-dummy.m */,
-				0C621AE4E28D94602A8650B5BA90F71D /* ShowTime-prefix.pch */,
-				6CACCE6568745AD6760082D431A5C3A0 /* ShowTime-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ShowTime";
-			sourceTree = "<group>";
-		};
-		CC59A4B50C2257B2BCA9DEEEB55C621C /* ShowTime */ = {
-			isa = PBXGroup;
-			children = (
-				BFA2CCCF5CBEB6AB1781FC16BDE3A446 /* ShowTime.swift */,
-				F24E875E4165A805D62B834691728C83 /* Pod */,
-				CC17AF8B9F616E16B1E558E24290BB64 /* Support Files */,
-			);
-			name = ShowTime;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -212,102 +302,144 @@
 		EAB4AE725EDB94D8DA063705A9174C82 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CC59A4B50C2257B2BCA9DEEEB55C621C /* ShowTime */,
+				3DA2CBAE5274A38AB5F94DC9490E5F95 /* ShowTime */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		F24E875E4165A805D62B834691728C83 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				C9E1923E8CC3070D9CA7529B6FC326B9 /* LICENSE.md */,
-				E714CEFF9839817658D8EE901B02DBB8 /* README.md */,
-				6E89049F962F5D90CE6C32EAE104D436 /* ShowTime.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		406A3FF77A437FA7939E3786F322AB64 /* Headers */ = {
+		41EB0B8627D6B3CADB19E7EE1CE92248 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6617488C2E58A5993590794FCF651CE5 /* Pods-ShowTime_Example-umbrella.h in Headers */,
+				5E4A0ACCCDF80B5D44FF208FAA6F96B2 /* Pods-ShowTimeTodayExtension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46CCE5E046516462F7515AA51F050710 /* Headers */ = {
+		6CD8D0F2EBD76CEF3B020BF4BEB54584 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B8224DAF70DE486D764B16CC41C663 /* ShowTime-umbrella.h in Headers */,
+				FFAB8E89427A9EB618EB781708BD1B80 /* Pods-ShowTime_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA96A62739A40B5F248EA8BA9A898EA2 /* Headers */ = {
+		966C7E78ACFE327F104B1E7813874FE9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB64F6CD6EBED354E624F4E92CA0554 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h in Headers */,
+				A9BE4FD710159941F00BFFD6392EA587 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D1F113CB8309728A3F1E4064E3FFCE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10C3F7EDF893364E8D7D229E270FF75 /* ShowTime-iOS8.3-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E80349955ADA8F033976573E399B1986 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F29524CB012CE7B6A4808E924F85C25 /* ShowTime-iOS11.2-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0E4A9E58A41A97E87F504FE4788FBA74 /* Pods-ShowTime_Example-ShowTime_Tests */ = {
+		057CA612957A227110191C065F982DFF /* Pods-ShowTime_Example-ShowTime_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3EE2755F0144E08A77A8DB67726515F /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example-ShowTime_Tests" */;
+			buildConfigurationList = A33336AA171DEE5C319303EA1352FFE1 /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example-ShowTime_Tests" */;
 			buildPhases = (
-				276A7A173575947744D3BA31247F1C35 /* Sources */,
-				DE555F79EF1569C001E4D6617278094B /* Frameworks */,
-				BA96A62739A40B5F248EA8BA9A898EA2 /* Headers */,
+				A6A7AB895562511ADC612ACAAE987123 /* Sources */,
+				DAAEC156CD17BE558A3CC4EC731761F8 /* Frameworks */,
+				966C7E78ACFE327F104B1E7813874FE9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D14222DB94D2B541E5E325F92CB37088 /* PBXTargetDependency */,
+				C786D5C996FF2D53CC0B195B41B8F9A8 /* PBXTargetDependency */,
 			);
 			name = "Pods-ShowTime_Example-ShowTime_Tests";
 			productName = "Pods-ShowTime_Example-ShowTime_Tests";
-			productReference = 5228D8FB36045FE619612CC3871E9B85 /* Pods_ShowTime_Example_ShowTime_Tests.framework */;
+			productReference = EB4730A3EAD52CF4A95592784D2FEDB7 /* Pods_ShowTime_Example_ShowTime_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		173C9AD52A17069285D1CC981EF6BE05 /* Pods-ShowTime_Example */ = {
+		1546ABD5CB100BA510CA401BFB63786D /* ShowTime-iOS11.2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 506B13389800183C26DEFA1D1CCAFFE5 /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example" */;
+			buildConfigurationList = C299B90EAD7DE6DF73E47F08284978BD /* Build configuration list for PBXNativeTarget "ShowTime-iOS11.2" */;
 			buildPhases = (
-				D19122060F8A8F18142696FC6BED0EB6 /* Sources */,
-				9AAE24EE7244EB57424742CA61741746 /* Frameworks */,
-				406A3FF77A437FA7939E3786F322AB64 /* Headers */,
+				BB6A66DC8099004A6A2EE5253EF33FDF /* Sources */,
+				8B14F6F8E2EBFD6438EA963E6200B2DA /* Frameworks */,
+				E80349955ADA8F033976573E399B1986 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				05E7F0DA13E6763EBC3BFC1D120103E1 /* PBXTargetDependency */,
+			);
+			name = "ShowTime-iOS11.2";
+			productName = "ShowTime-iOS11.2";
+			productReference = 05AA6BBADC2A039A2BD09F5E701ABAF4 /* ShowTime.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		33920C246013728386AA2D1D724646EB /* Pods-ShowTime_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44818988025994D1A97837D4D8FAED90 /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example" */;
+			buildPhases = (
+				D5ACAFDE1AFDC0C6B0F0815D558039AD /* Sources */,
+				3F70EC69DD05BDD4749E60232B3C4489 /* Frameworks */,
+				6CD8D0F2EBD76CEF3B020BF4BEB54584 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DFD79802EFFCB09E8BD0B3E70F54452 /* PBXTargetDependency */,
+				24A25918592156DEEFE149A17B41ED3D /* PBXTargetDependency */,
 			);
 			name = "Pods-ShowTime_Example";
 			productName = "Pods-ShowTime_Example";
-			productReference = 2574B0409904C543261EA9B9CA923AEC /* Pods_ShowTime_Example.framework */;
+			productReference = D463866CF7610CC2BDF97A6400D8E3CB /* Pods_ShowTime_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5647D577C289651C8A3C934AA40A57EB /* ShowTime */ = {
+		A9E37AEC0D6514381722EA3A027EA150 /* Pods-ShowTimeTodayExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5297C2009CC7619787D8C1DFE16D80F6 /* Build configuration list for PBXNativeTarget "ShowTime" */;
+			buildConfigurationList = 816E053909398F25893C433A8EA31911 /* Build configuration list for PBXNativeTarget "Pods-ShowTimeTodayExtension" */;
 			buildPhases = (
-				6F635EF465E84018463356F697C3A714 /* Sources */,
-				298333493CA4C631A379ECA667B0782D /* Frameworks */,
-				46CCE5E046516462F7515AA51F050710 /* Headers */,
+				5D908E3ED6D6933D8566EDB7892DA0FE /* Sources */,
+				1A13EF8623C19109E29C4F732B14CADC /* Frameworks */,
+				41EB0B8627D6B3CADB19E7EE1CE92248 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF976BA92D47ED7F636B219D4DB78EF9 /* PBXTargetDependency */,
+			);
+			name = "Pods-ShowTimeTodayExtension";
+			productName = "Pods-ShowTimeTodayExtension";
+			productReference = DC246AD62BFB6A8E155B2000667F80AE /* Pods_ShowTimeTodayExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B933204C725B0130D311D8946E1DE5EF /* ShowTime-iOS8.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B1657C31069ADD91D86AF4813F6D27C /* Build configuration list for PBXNativeTarget "ShowTime-iOS8.3" */;
+			buildPhases = (
+				11EB5336F92C8B531BA3328D36F0ADCC /* Sources */,
+				BEC055E446BFC2A1938404D57EB3D0FF /* Frameworks */,
+				96D1F113CB8309728A3F1E4064E3FFCE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ShowTime;
-			productName = ShowTime;
-			productReference = 469F1FCA2A83AD5B24A24272611CFDF6 /* ShowTime.framework */;
+			name = "ShowTime-iOS8.3";
+			productName = "ShowTime-iOS8.3";
+			productReference = E42152F72CB165314DF32FC181BC3757 /* ShowTime.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -327,98 +459,95 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5BC36DE62D711816C85299343562FF0E /* Products */;
+			productRefGroup = 174158B2B0D6FF356A98D5F2216CCF53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				173C9AD52A17069285D1CC981EF6BE05 /* Pods-ShowTime_Example */,
-				0E4A9E58A41A97E87F504FE4788FBA74 /* Pods-ShowTime_Example-ShowTime_Tests */,
-				5647D577C289651C8A3C934AA40A57EB /* ShowTime */,
+				33920C246013728386AA2D1D724646EB /* Pods-ShowTime_Example */,
+				057CA612957A227110191C065F982DFF /* Pods-ShowTime_Example-ShowTime_Tests */,
+				A9E37AEC0D6514381722EA3A027EA150 /* Pods-ShowTimeTodayExtension */,
+				1546ABD5CB100BA510CA401BFB63786D /* ShowTime-iOS11.2 */,
+				B933204C725B0130D311D8946E1DE5EF /* ShowTime-iOS8.3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		276A7A173575947744D3BA31247F1C35 /* Sources */ = {
+		11EB5336F92C8B531BA3328D36F0ADCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				532E6D2B21A1D27350C1A01BCDA2DC45 /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m in Sources */,
+				F60FDB517F646C3330E9F55ED07D62DE /* ShowTime-iOS8.3-dummy.m in Sources */,
+				479D3119F68C9B1E9078333FC2C40863 /* ShowTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F635EF465E84018463356F697C3A714 /* Sources */ = {
+		5D908E3ED6D6933D8566EDB7892DA0FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				350D1717AFC9571F6AD4FD5B6C12C119 /* ShowTime-dummy.m in Sources */,
-				4E64FD7D1FBBCFD06F88FE46E9CF4F66 /* ShowTime.swift in Sources */,
+				E6E6A35167F064FD0BF6D7C1FB5E0B54 /* Pods-ShowTimeTodayExtension-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D19122060F8A8F18142696FC6BED0EB6 /* Sources */ = {
+		A6A7AB895562511ADC612ACAAE987123 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE79731AE47D9F4D5B7172A5F38CD386 /* Pods-ShowTime_Example-dummy.m in Sources */,
+				C4C8EE5DB68F98018F87E34D14C9AE0E /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6A66DC8099004A6A2EE5253EF33FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B51B560F290B7EE0E0A29E5975915CA /* ShowTime-iOS11.2-dummy.m in Sources */,
+				8FDCCD7867B8A26BF73698CF139381D4 /* ShowTime.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5ACAFDE1AFDC0C6B0F0815D558039AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E8D94055D0A670500F6A97183D996B /* Pods-ShowTime_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		05E7F0DA13E6763EBC3BFC1D120103E1 /* PBXTargetDependency */ = {
+		24A25918592156DEEFE149A17B41ED3D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ShowTime;
-			target = 5647D577C289651C8A3C934AA40A57EB /* ShowTime */;
-			targetProxy = 7974B2ECF40C262480FE1239B96BC1A7 /* PBXContainerItemProxy */;
+			name = "ShowTime-iOS8.3";
+			target = B933204C725B0130D311D8946E1DE5EF /* ShowTime-iOS8.3 */;
+			targetProxy = C6AA789C4ADBC9C11D85E3F06D6762AC /* PBXContainerItemProxy */;
 		};
-		D14222DB94D2B541E5E325F92CB37088 /* PBXTargetDependency */ = {
+		4DFD79802EFFCB09E8BD0B3E70F54452 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ShowTime;
-			target = 5647D577C289651C8A3C934AA40A57EB /* ShowTime */;
-			targetProxy = 852409CF67B1CA7F07CF41C2AB7BC34E /* PBXContainerItemProxy */;
+			name = "ShowTime-iOS11.2";
+			target = 1546ABD5CB100BA510CA401BFB63786D /* ShowTime-iOS11.2 */;
+			targetProxy = 48952C4C51563EC6B5C0D8B18BE2C4CD /* PBXContainerItemProxy */;
+		};
+		C786D5C996FF2D53CC0B195B41B8F9A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ShowTime-iOS8.3";
+			target = B933204C725B0130D311D8946E1DE5EF /* ShowTime-iOS8.3 */;
+			targetProxy = D57DE5C27216B3A49DD3E3B3369EBA3E /* PBXContainerItemProxy */;
+		};
+		CF976BA92D47ED7F636B219D4DB78EF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ShowTime-iOS11.2";
+			target = 1546ABD5CB100BA510CA401BFB63786D /* ShowTime-iOS11.2 */;
+			targetProxy = 83267FB6388BC8CB510927BF792834A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		004314AA713A2785446A6BA648331871 /* Debug */ = {
+		06B8FABFD567E9E48719C551231394FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C43A48FD4CBF1D3D0BD718F94E6924EF /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ShowTime_Example_ShowTime_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		18B05FB37F381C69B403497756A3F5C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F99FE786263DCC2E7A8FABA7CB015873 /* Pods-ShowTime_Example.release.xcconfig */;
+			baseConfigurationReference = AFC69E11A4AA4F85A70A99DE3872E38B /* Pods-ShowTime_Example.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -449,6 +578,72 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		15F5DC8C7862EA632684C863A0039673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7115280F4429FC702574B50D6CA70E3F /* ShowTime-iOS8.3.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ShowTime-iOS8.3/ShowTime-iOS8.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShowTime-iOS8.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ShowTime-iOS8.3/ShowTime-iOS8.3.modulemap";
+				PRODUCT_NAME = ShowTime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		163E876AEF2EF4DA98FFF02E6F8A3EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E080DEBEBB598FB9C9294E114E0A5546 /* Pods-ShowTime_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ShowTime_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		1CDAB5613991E411E5990BAF694995C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -510,10 +705,11 @@
 			};
 			name = Debug;
 		};
-		413EC98B4BA9B0CCADB19DDD82086006 /* Debug */ = {
+		55CB895626A4F3ADAD19C3D228B8F5C5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DB2CABF62D74E882B5B3CC4A88DE4B7 /* Pods-ShowTime_Example.debug.xcconfig */;
+			baseConfigurationReference = A90A9168644D8995A1C6E80501CFBC6B /* Pods-ShowTimeTodayExtension.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -523,51 +719,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowTimeTodayExtension/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowTimeTodayExtension/Pods-ShowTimeTodayExtension.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ShowTime_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		68B742F0368443D5E709F55D2474C69D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37F3F5AF47C8B3568457E81A6C8DBDB0 /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ShowTime_Example_ShowTime_Tests;
+				PRODUCT_NAME = Pods_ShowTimeTodayExtension;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -633,9 +795,9 @@
 			};
 			name = Release;
 		};
-		CDF63D6B9C7DE7F13030803AD2FE1B28 /* Release */ = {
+		915A598C45870536ECD883AB747436FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E1175D03895AC1D7B512824006C2C8A /* ShowTime.xcconfig */;
+			baseConfigurationReference = 7115280F4429FC702574B50D6CA70E3F /* ShowTime-iOS8.3.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -646,12 +808,144 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ShowTime/ShowTime-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShowTime/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ShowTime-iOS8.3/ShowTime-iOS8.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShowTime-iOS8.3/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShowTime/ShowTime.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ShowTime-iOS8.3/ShowTime-iOS8.3.modulemap";
+				PRODUCT_NAME = ShowTime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		997F650FFB5AEEDF8FF54A9E283BDB1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87CC70D47B3EB08D9385914E7F1D7367 /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ShowTime_Example_ShowTime_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9C82C52C9223F63CE0E2688292B3172B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 456C0D568AC9F93BA482B619D1FD921D /* ShowTime-iOS11.2.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ShowTime-iOS11.2/ShowTime-iOS11.2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShowTime-iOS11.2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ShowTime-iOS11.2/ShowTime-iOS11.2.modulemap";
+				PRODUCT_NAME = ShowTime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6D972675298B112C4ABDE79029CA97D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE8B071C8A8446D17BF757D87942B600 /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ShowTime_Example_ShowTime_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4A134893B5FE2EAE3AE509460EF858C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 456C0D568AC9F93BA482B619D1FD921D /* ShowTime-iOS11.2.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ShowTime-iOS11.2/ShowTime-iOS11.2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShowTime-iOS11.2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ShowTime-iOS11.2/ShowTime-iOS11.2.modulemap";
 				PRODUCT_NAME = ShowTime;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -665,10 +959,11 @@
 			};
 			name = Release;
 		};
-		E94F5854B8153BAAA90720839FBCA7A5 /* Debug */ = {
+		CA912D58FB1E536AFF7F3A44969B5A9D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E1175D03895AC1D7B512824006C2C8A /* ShowTime.xcconfig */;
+			baseConfigurationReference = EA5058F7E6406FE8A2D7258BFC0A9D2D /* Pods-ShowTimeTodayExtension.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -678,18 +973,21 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ShowTime/ShowTime-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShowTime/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowTimeTodayExtension/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShowTime/ShowTime.modulemap";
-				PRODUCT_NAME = ShowTime;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowTimeTodayExtension/Pods-ShowTimeTodayExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ShowTimeTodayExtension;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -708,29 +1006,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		506B13389800183C26DEFA1D1CCAFFE5 /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example" */ = {
+		44818988025994D1A97837D4D8FAED90 /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				413EC98B4BA9B0CCADB19DDD82086006 /* Debug */,
-				18B05FB37F381C69B403497756A3F5C3 /* Release */,
+				163E876AEF2EF4DA98FFF02E6F8A3EF9 /* Debug */,
+				06B8FABFD567E9E48719C551231394FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5297C2009CC7619787D8C1DFE16D80F6 /* Build configuration list for PBXNativeTarget "ShowTime" */ = {
+		4B1657C31069ADD91D86AF4813F6D27C /* Build configuration list for PBXNativeTarget "ShowTime-iOS8.3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E94F5854B8153BAAA90720839FBCA7A5 /* Debug */,
-				CDF63D6B9C7DE7F13030803AD2FE1B28 /* Release */,
+				915A598C45870536ECD883AB747436FA /* Debug */,
+				15F5DC8C7862EA632684C863A0039673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3EE2755F0144E08A77A8DB67726515F /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example-ShowTime_Tests" */ = {
+		816E053909398F25893C433A8EA31911 /* Build configuration list for PBXNativeTarget "Pods-ShowTimeTodayExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				004314AA713A2785446A6BA648331871 /* Debug */,
-				68B742F0368443D5E709F55D2474C69D /* Release */,
+				CA912D58FB1E536AFF7F3A44969B5A9D /* Debug */,
+				55CB895626A4F3ADAD19C3D228B8F5C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A33336AA171DEE5C319303EA1352FFE1 /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example-ShowTime_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D972675298B112C4ABDE79029CA97D /* Debug */,
+				997F650FFB5AEEDF8FF54A9E283BDB1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C299B90EAD7DE6DF73E47F08284978BD /* Build configuration list for PBXNativeTarget "ShowTime-iOS11.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C82C52C9223F63CE0E2688292B3172B /* Debug */,
+				C4A134893B5FE2EAE3AE509460EF858C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

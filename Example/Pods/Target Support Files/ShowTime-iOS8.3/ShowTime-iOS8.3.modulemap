@@ -1,0 +1,6 @@
+framework module ShowTime {
+  umbrella header "ShowTime-iOS8.3-umbrella.h"
+
+  export *
+  module * { export * }
+}

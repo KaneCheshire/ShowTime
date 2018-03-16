@@ -1,5 +1,5 @@
 PODS:
-  - ShowTime (2.1.0)
+  - ShowTime (2.3.0)
 
 DEPENDENCIES:
   - ShowTime (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ShowTime: 8f3f8dd91d9dc0d0431101f1cb5789fb6a9f842f
+  ShowTime: ea2a2918f9a23a773598e2f131ebe2ec8e28f2c1
 
-PODFILE CHECKSUM: 7fa35d46c9c7723ac3961254c1f58cd3281fbdbc
+PODFILE CHECKSUM: bba545224e4192a9e661fc07800b7f70c6456b46
 
 COCOAPODS: 1.4.0

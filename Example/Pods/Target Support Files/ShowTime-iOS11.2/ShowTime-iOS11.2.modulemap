@@ -1,5 +1,5 @@
 framework module ShowTime {
-  umbrella header "ShowTime-umbrella.h"
+  umbrella header "ShowTime-iOS11.2-umbrella.h"
 
   export *
   module * { export * }
