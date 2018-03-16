@@ -92,7 +92,6 @@ class ShowTimeTests: XCTestCase {
         XCTAssertTrue(_touches.isEmpty)
         let eventWithNoTouches = MockEvent()
         let window = UIWindow()
-        _ = window.canBecomeFirstResponder
         window.sendEvent(eventWithNoTouches)
         XCTAssertTrue(_touches.isEmpty)
         
@@ -118,7 +117,6 @@ class ShowTimeTests: XCTestCase {
         let touch = MockTouch(phase: .began)
         let event = MockEvent(touches: [touch])
         let window = UIWindow()
-        _ = window.canBecomeFirstResponder
         window.sendEvent(event)
         XCTAssertEqual(_touches.count, 1)
         
@@ -149,7 +147,6 @@ class ShowTimeTests: XCTestCase {
         XCTAssertTrue(ShowTime.shouldIgnoreApplePencilEvents)
         
         let window = UIWindow()
-        _ = window.canBecomeFirstResponder
         let applePencilTouch = MockTouch(type: .stylus)
         let event = MockEvent(touches: [applePencilTouch])
         window.sendEvent(event)
