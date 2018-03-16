@@ -9,3 +9,7 @@ target 'ShowTime_Example' do
     
   end
 end
+
+target 'ShowTimeTodayExtension' do
+    pod 'ShowTime', :path => '../'
+end

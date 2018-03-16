@@ -169,9 +169,9 @@ internal var _touches = [UITouch : TouchView]()
 
 extension UIWindow {
     
-    open override var canBecomeFirstResponder: Bool {
+    open override var layer: CALayer {
         UIWindow.swizzle()
-        return super.canBecomeFirstResponder
+        return super.layer
     }
     
     private class func swizzle() { // `initialize()` removed in Swift 4
