@@ -36,35 +36,40 @@ public final class ShowTime: NSObject {
     }
     
     /// Whether ShowTime is enabled.
-    /// Since Swift 4, it is no longer possible for ShowTime
-    /// to automatically enable itself.
-    ///(`.never` by default)
-    @objc public static var enabled: ShowTime.Enabled = .never {
-        didSet {
-            UIWindow.swizzle()
-        }
-    }
+    /// ShowTime automatically enables itself by default.
+    ///(`.always` by default)
+    @objc public static var enabled: ShowTime.Enabled = .always
     
     /// The fill (background) colour of the visual touches. (Twitter Blue with 50% alpha by default)
     @objc public static var fillColor = UIColor(red: 0.21, green: 0.61, blue: 0.92, alpha: 0.5)
+    
     /// The colour of the stroke (outline) of the visual touches. (Twitter Blue by default)
     @objc public static var strokeColor = UIColor(red: 0.21, green: 0.61, blue: 0.92, alpha: 1)
+    
     /// The width (thickness) of the stroke around the visual touches. (3pt by default)
     @objc public static var strokeWidth: CGFloat = 3
+    
     /// The size of the touch circles. (44pt x 44pt by default)
     @objc public static var size = CGSize(width: 44, height: 44)
+    
     /// The style of animation to use when hiding a visual touch. (`.standard` by default)
     public static var disappearAnimation: ShowTime.Animation = .standard
+    
     /// The delay, in seconds, before the visual touch disappears after a touch ends. (0.1s by default)
     @objc public static var disappearDelay: TimeInterval = 0.1
+    
     /// Whether the visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). (false by default)
     @objc public static var shouldShowMultipleTapCount = false
+    
     /// The colour of the text to use when showing multiple tap counts. (black by default)
     @objc public static var multipleTapCountTextColor: UIColor = .black
+    
     /// The font of the test to use when showing multiple tap counts. (System 17 bold by default)
     @objc public static var multipleTapCountTextFont: UIFont = .systemFont(ofSize: 17, weight: .bold)
+    
     /// Whether the visual touch should visually show how much force is applied. (true by default)
     @objc public static var shouldShowForce = true
+    
     /// Whether touch events from Apple Pencil are ignored. (true by default)
     @objc public static var shouldIgnoreApplePencilEvents = true
     
@@ -91,21 +96,11 @@ class TouchView: UILabel {
     ///   - view: A view the touch is relative to, typically the window calling `sendEvent(_:)`.
     convenience init(touch: UITouch, relativeTo view: UIView) {
         let location = touch.location(in: view)
-        self.init(frame: CGRect(x: location.x - ShowTime.size.width / 2, y: location.y - ShowTime.size.height / 2, width: ShowTime.size.width, height: ShowTime.size.height))
+        self.init(frame: CGRect(x: location.x - ShowTime.size.width / 2,
+                                y: location.y - ShowTime.size.height / 2,
+                                width: ShowTime.size.width,
+                                height: ShowTime.size.height))
         style(with: touch)
-    }
-    
-    private func style(with touch: UITouch) {
-        layer.cornerRadius = ShowTime.size.height / 2
-        layer.borderColor = ShowTime.strokeColor.cgColor
-        layer.borderWidth = ShowTime.strokeWidth
-        backgroundColor = ShowTime.fillColor
-        text = ShowTime.shouldShowMultipleTapCount && touch.tapCount > 1 ? "\(touch.tapCount)" : nil
-        textAlignment = .center
-        textColor = ShowTime.multipleTapCountTextColor
-        font = ShowTime.multipleTapCountTextFont
-        clipsToBounds = true
-        isUserInteractionEnabled = false
     }
     
     /// Updates the position and force level of a visual touch.
@@ -155,13 +150,31 @@ class TouchView: UILabel {
         transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
     }
     
+    private func style(with touch: UITouch) {
+        layer.cornerRadius = ShowTime.size.height / 2
+        layer.borderColor = ShowTime.strokeColor.cgColor
+        layer.borderWidth = ShowTime.strokeWidth
+        backgroundColor = ShowTime.fillColor
+        text = ShowTime.shouldShowMultipleTapCount && touch.tapCount > 1 ? "\(touch.tapCount)" : nil
+        textAlignment = .center
+        textColor = ShowTime.multipleTapCountTextColor
+        font = ShowTime.multipleTapCountTextFont
+        clipsToBounds = true
+        isUserInteractionEnabled = false
+    }
+    
 }
 
 internal var _touches = [UITouch : TouchView]()
 
 extension UIWindow {
     
-    fileprivate class func swizzle() { // `initialize()` removed in Swift 4
+    open override var canBecomeFirstResponder: Bool {
+        UIWindow.swizzle()
+        return super.canBecomeFirstResponder
+    }
+    
+    private class func swizzle() { // `initialize()` removed in Swift 4
         struct Swizzled { static var once = false } // Workaround for missing dispatch_once in Swift 3
         guard !Swizzled.once else { return }
         Swizzled.once = true
@@ -172,10 +185,7 @@ extension UIWindow {
     
     @objc private func swizzled_sendEvent(_ event: UIEvent) {
         self.swizzled_sendEvent(event)
-        guard ShowTime.shouldEnable else {
-            removeAllTouchViews()
-            return
-        }
+        guard ShowTime.shouldEnable else { return removeAllTouchViews() }
         event.allTouches?.forEach {
             if ShowTime.shouldIgnoreApplePencilEvents && $0.isApplePencil { return }
             switch $0.phase {
@@ -202,9 +212,7 @@ extension UIWindow {
     }
     
     private func removeAllTouchViews() {
-        _touches.keys.forEach { touch in
-            removeTouchView(associatedWith: touch)
-        }
+        _touches.keys.forEach { removeTouchView(associatedWith: $0) }
     }
     
     private func removeTouchView(associatedWith touch: UITouch) {
