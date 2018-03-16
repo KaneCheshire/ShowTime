@@ -222,7 +222,7 @@ extension UIWindow {
     }
 }
 
-fileprivate extension UITouch {
+private extension UITouch {
     
     /// Normalizes the level of force betwenn 0 and 1 regardless of device.
     /// Will always be 0 for devices that don't support 3D Touch.

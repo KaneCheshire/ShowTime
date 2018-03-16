@@ -11,7 +11,7 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* ShowTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ShowTimeTests.swift */; };
 		A077C43F4B38DA493B5D04BB /* Pods_ShowTime_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A010FC2B5E4C55FF1F0BE15 /* Pods_ShowTime_Example.framework */; };
 		C30E907C201B490E00DF30B5 /* ObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30E907B201B490E00DF30B5 /* ObjCViewController.m */; };
 		FE89F459F687C4D8FA2B42A8 /* Pods_ShowTime_Example_ShowTime_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98718DFA6C77F6F4D331EA83 /* Pods_ShowTime_Example_ShowTime_Tests.framework */; };
@@ -41,7 +41,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* ShowTime_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowTime_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* ShowTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTimeTests.swift; sourceTree = "<group>"; };
 		8A010FC2B5E4C55FF1F0BE15 /* Pods_ShowTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98718DFA6C77F6F4D331EA83 /* Pods_ShowTime_Example_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example_ShowTime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372A9325FC6B0A5B2E9808B /* Pods_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +119,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* ShowTimeTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -400,7 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* ShowTimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
