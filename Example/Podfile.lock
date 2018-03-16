@@ -1,5 +1,5 @@
 PODS:
-  - ShowTime (2.2.0)
+  - ShowTime (2.3.0)
 
 DEPENDENCIES:
   - ShowTime (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ShowTime: 797dc82355bc996441bab25539ce3f23cddcab83
+  ShowTime: ea2a2918f9a23a773598e2f131ebe2ec8e28f2c1
 
 PODFILE CHECKSUM: bba545224e4192a9e661fc07800b7f70c6456b46
 
