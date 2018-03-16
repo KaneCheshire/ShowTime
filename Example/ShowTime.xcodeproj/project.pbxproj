@@ -84,7 +84,7 @@
 		C345581D205BAE6F00364603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3822CD4201B547900D825F3 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		CCCF095274BF5A0ED5FBD44C /* Pods-ShowTime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTime_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTime_Tests/Pods-ShowTime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E3F2ECCA67E6BB07BC6B5E49 /* ShowTime.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ShowTime.podspec; path = ../ShowTime.podspec; sourceTree = "<group>"; };
+		E3F2ECCA67E6BB07BC6B5E49 /* ShowTime.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ShowTime.podspec; path = ../ShowTime.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED813A37AC77EB860FFA0C46 /* Pods_ShowTimeTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTimeTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 

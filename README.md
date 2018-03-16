@@ -33,57 +33,26 @@ Showing your gestures during demos gives your audience a much clearer context on
 
 ## Installation (Swift 4)
 
-Integrating ShowTime with Swift 4 takes one extra step unfortunately, due to removal of a required function ShowTime uses for swizzling.
-
 ### Cocoapods
 
-- Step 1: Add `pod 'ShowTime', '2.1.0'` to your Podfile and run `pod update` in Terminal.
-- Step 2: Enable ShowTime somewhere (like your `AppDelegate`) :
-
-```
-// Swift:
-
-ShowTime.enabled = .always
-ShowTime.enabled = .debugOnly
-
-// Objective-C:
-
-ShowTime.enabled = EnabledAlways;
-ShowTime.enabled = EnabledDebugOnly;
-
-```
-
-That's all you need to do, but you're free to change some of the many options!
+- Step 1: Add `pod 'ShowTime', '~> 2'` to your Podfile and run `pod update` in Terminal.
+- Step 2: There is no step 2, ShowTime works as soon as you launch your app, but you can configure it if you wish!
 
 ### Manual
 
-- Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/2.0.1/ShowTime.swift) into your project or copy the contents of it where ever you like.
-- Step 2: Enable ShowTime somewhere (like your `AppDelegate`) :
-
-```
-// Swift:
-
-ShowTime.enabled = .always
-ShowTime.enabled = .debugOnly
-
-// Objective-C:
-
-ShowTime.enabled = EnabledAlways;
-ShowTime.enabled = EnabledDebugOnly;
-```
-
-That's all you need to do, but you're free to change some of the many options!
+- Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/2.3.0/ShowTime.swift) into your project or copy the contents of it where ever you like.
 
 ## Installation (Swift 3)
 
 ### Cocoapods
 
-- Step 1: Add `pod 'ShowTime', '1.0.1'` to your Podfile and run `pod update` in Terminal. You don't need to do anything else, ShowTime can automatically enable itself with Swift 3.
+- Step 1: Add `pod 'ShowTime', '~> 1'` to your Podfile and run `pod update` in Terminal.
+- Step 2: There is no step 2, ShowTime works as soon as you launch your app, but you can configure it if you wish!
 
 ### Manual
 
 - Step 1: [Switch to tag/branch `1.0.1`](https://github.com/KaneCheshire/ShowTime/tree/1.0.1) and drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/1.0.1/ShowTime.swift) into your project, or copy the contents of it where ever you like.
-- Step 2: There is no step 2; you're ready to go.
+- Step 2: There is no step 2, ShowTime works as soon as you launch your app, but you can configure it if you wish!
 
 **Note: If you use the latest version of ShowTime without switching to [`1.0.1`](https://github.com/KaneCheshire/ShowTime/tree/1.0.1) you'll end up with the Swift 4 version and will have to enable it manually**
 
@@ -101,18 +70,18 @@ Here's a list of options:
 // - .never
 // - .debugOnly
 //
-// `.never` by default,
+// `.always` by default,
 // so set to `.always` or `.debugOnly`
 // somewhere like your AppDelegate.
 ShowTime.enabled: ShowTime.Enabled
 
 
 // The fill (background) color of a visual touch.
-// Twitter blue with 50% opacity by default.
+// "Twitter blue" with 50% opacity by default.
 ShowTime.fillColor: UIColor
 
 // The colour of the stroke (outline) of a visual touch.
-// Twitter blue by default.
+// "Twitter blue" by default.
 ShowTime.strokeColor: UIColor
 
 // The width (thickness) of the stroke around a visual touch.
@@ -164,7 +133,7 @@ ShowTime.shouldIgnoreApplePencilEvents: Bool
 
 ShowTime is a **one-size-fits-all** solution to showing your taps and gestures while showing off your hard work in demos and videos. ShowTime works with both conventional **single-window apps**, as well as **multi-window apps**.
 
-To achieve this, ShowTime uses _method swizzling_. [Method swizzling](http://nshipster.com/swift-objc-runtime/) is only possible with the Objective-C runtime, so will only work with Swift types that inherit from `NSObject`. That's okay, because `UIWindow` does inherit from `NSObject`, so ShowTime can hook into the `initialize()` method and do some swizzlin'. (In Swift 4, `initialize()` is no longer allowed to be used so you must enable ShowTime manually)
+To achieve this, ShowTime uses _method swizzling_. [Method swizzling](http://nshipster.com/swift-objc-runtime/) is only possible with the Objective-C runtime, so will only work with Swift types that inherit from `NSObject`. That's okay, because `UIWindow` does inherit from `NSObject`, so ShowTime can swizzle the `sendEvent(_:)` method.
 
 Swizzling is just a friendly term used for swapping out the default implementation of a method and replacing it with your own (which calls the default implementation, a bit like calling a `super` implementation of a `class`), so that you have more control over what happens with that method without having to subclass. The benefit – but also danger – of this is that **_all_** objects instantiated will use the new implementation, so swizzling should be used wisely and sparingly, especially in production code.
 
@@ -175,11 +144,8 @@ ShowTime swizzles the `sendEvent(_:)` method on `UIWindow`, intercepts the event
 ### Can I use this in production?
 Yes, I've never seen any weird crashes but it's never been stress tested, so to do so is at your own risk.
 
-### Why do I need to enable ShowTime now?
-In Swift 3, it was possible to automatically swizzle `UIWindow` without doing anything at start up. In Swift 4 that ability was removed which means one extra step is needed to kick off the swizzling to enable ShowTime. I figured the best place to do this is when you actually set ShowTime to be enabled, so as soon as you set `ShowTime.enabled` to either `.always` or  `.debugOnly`, ShowTime will do a one-time swizzle of `UIWindow` under the hood. 
-
 ### Why would I want to show the number of multiple taps?
-The thing to remember here is that people watching a demo of your app don't know exactly what your fingers are doing, which is why ShowTime exists.
+People watching a demo of your app don't know exactly what your fingers are doing, so showing how many times you've tapped on a specific part of the screen really helps people understand the gestures you're carrying out.
 
 Double tapping makes sense if you're watching someone's hands, but often this can be easily missed if you're watching it on a screen. Showing the number of multiple taps by setting `ShowTime.shouldShowMultipleTapCount` to `true` shows a number inside the tap itself, clearly demonstrating to your audience that you just tapped twice (or more) in succession in the same place.
 
