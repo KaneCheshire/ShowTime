@@ -313,15 +313,18 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = VMWT6544W3;
 						LastSwiftMigration = 0920;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = VMWT6544W3;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 					C3455813205BAE6E00364603 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = VMWT6544W3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -689,6 +692,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = VMWT6544W3;
 				INFOPLIST_FILE = ShowTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -709,6 +713,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = VMWT6544W3;
 				INFOPLIST_FILE = ShowTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -724,6 +729,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3125EDC62DB0A9F8D45E9B41 /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = VMWT6544W3;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -743,6 +749,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 242CC857B408D6A30483BB0F /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = VMWT6544W3;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -766,6 +773,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VMWT6544W3;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ShowTimeTodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
@@ -790,6 +798,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VMWT6544W3;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ShowTimeTodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;

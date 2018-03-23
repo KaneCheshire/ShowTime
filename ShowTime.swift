@@ -6,6 +6,11 @@
 //  Copyright © 2016 Kane Cheshire. All rights reserved.
 //
 
+extension FloatingPoint {
+	var degreesToRadians: Self { return self * .pi / 180 }
+	var radiansToDegrees: Self { return self * 180 / .pi }
+}
+
 import UIKit
 
 /// ShowTime displays your taps and swipes when you're presenting or demoing.
@@ -72,6 +77,8 @@ public final class ShowTime: NSObject {
     
     /// Whether touch events from Apple Pencil are ignored. (true by default)
     @objc public static var shouldIgnoreApplePencilEvents = true
+	
+	@objc public static var notch = true
     
     static var shouldEnable: Bool {
         guard enabled != .never else { return false }
@@ -167,11 +174,54 @@ class TouchView: UILabel {
 
 internal var _touches = [UITouch : TouchView]()
 
+final class Notch: CAShapeLayer {
+	
+	override init() {
+		super.init()
+		setup()
+	}
+	
+	required init?(coder aDecoder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
+	
+	private func setup() {
+		let path = UIBezierPath()
+		path.move(to: .zero)
+		
+		path.addLine(to: CGPoint(x: 209, y: 0))
+		path.addLine(to: CGPoint(x: 209, y: 15))
+		path.addArc(withCenter: CGPoint(x: 199, y: 22.5), radius: 10, startAngle: CGFloat(90.0.degreesToRadians), endAngle: CGFloat(180.0.degreesToRadians), clockwise: true)
+		path.addLine(to: CGPoint(x: 0, y: 30))
+		path.addLine(to: CGPoint(x: 0, y: 0))
+		
+		self.fillColor = UIColor.red.cgColor
+		self.path = path.cgPath
+	}
+	
+}
+
 extension UIWindow {
+	
+	static let notch: UIView = {
+		let view = UIView(frame: CGRect(x: 83, y: 0, width: 209, height: 30))
+		view.backgroundColor = .black
+		view.layer.cornerRadius = 20
+		if #available(iOS 11.0, *) {
+				view.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+		}
+		return view
+	}()
     
     open override var layer: CALayer {
         UIWindow.swizzle()
-        return super.layer
+			let layer = super.layer
+			let notch = Notch()
+			notch.frame = CGRect(x: 83, y: 30, width: 209, height: 30)
+			layer.addSublayer(notch)
+//				addSubview(UIWindow.notch)
+//				bringSubview(toFront: UIWindow.notch)
+        return layer
     }
     
     private class func swizzle() { // `initialize()` removed in Swift 4
@@ -198,7 +248,9 @@ extension UIWindow {
     
     private func touchBegan(_ touch: UITouch) {
         let touchView = TouchView(touch: touch, relativeTo: self)
-        self.addSubview(touchView)
+        addSubview(touchView)
+//			bringSubview(toFront: UIWindow.notch)
+//		insertSubview(touchView, belowSubview: UIWindow.notch)
         _touches[touch] = touchView
     }
     
