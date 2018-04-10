@@ -31,7 +31,6 @@ class ShowTimeTests: XCTestCase {
         XCTAssertEqual(touchView.layer.cornerRadius, ShowTime.size.height / 2)
         XCTAssertEqual(touchView.layer.borderColor, ShowTime.strokeColor.cgColor)
         XCTAssertEqual(touchView.layer.borderWidth, ShowTime.strokeWidth)
-        XCTAssertEqual(touchView.backgroundColor, ShowTime.fillColor)
         XCTAssertFalse(ShowTime.shouldShowMultipleTapCount)
         XCTAssertNil(touchView.text)
         XCTAssertEqual(touchView.textAlignment, .center)
@@ -173,6 +172,26 @@ class ShowTimeTests: XCTestCase {
         
         XCTAssertTrue(_touches.isEmpty)
         ShowTime.enabled = defaultState
+    }
+    
+    func test_autoFillColorSetsAlpha() {
+        ShowTime.fillColor = .auto
+        ShowTime.strokeColor = .red
+        XCTAssertEqual(ShowTime.fillColor, .auto)
+        XCTAssertEqual(ShowTime.strokeColor, .red)
+        let view = TouchView(touch: UITouch(), relativeTo: UIView())
+        XCTAssertEqual(view.backgroundColor, UIColor.red.withAlphaComponent(0.5))
+        XCTAssertEqual(view.layer.borderColor, UIColor.red.cgColor)
+    }
+    
+    func test_specificFillColorSet() {
+        ShowTime.fillColor = .yellow
+        ShowTime.strokeColor = .black
+        XCTAssertEqual(ShowTime.fillColor, .yellow)
+        XCTAssertEqual(ShowTime.strokeColor, .black)
+        let view = TouchView(touch: UITouch(), relativeTo: UIView())
+        XCTAssertEqual(view.backgroundColor, .yellow)
+        XCTAssertEqual(view.layer.borderColor, UIColor.black.cgColor)
     }
     
 }
