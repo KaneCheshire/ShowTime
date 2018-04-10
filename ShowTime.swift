@@ -37,14 +37,16 @@ public final class ShowTime: NSObject {
     
     /// Whether ShowTime is enabled.
     /// ShowTime automatically enables itself by default.
-    ///(`.always` by default)
+    /// (`.always` by default)
     @objc public static var enabled: ShowTime.Enabled = .always
     
-    /// The fill (background) colour of the visual touches. (Twitter Blue with 50% alpha by default)
-    @objc public static var fillColor = UIColor(red: 0.21, green: 0.61, blue: 0.92, alpha: 0.5)
-    
-    /// The colour of the stroke (outline) of the visual touches. (Twitter Blue by default)
+    /// The colour of the stroke (outline) of the visual touches. ("Twitter Blue" by default)
     @objc public static var strokeColor = UIColor(red: 0.21, green: 0.61, blue: 0.92, alpha: 1)
+    
+    /// The fill (background) colour of the visual touches.
+    /// If set to `nil`, ShowTime automatically uses the stroke color with 50% alpha.
+    /// (`nil` by default)
+    @objc public static var fillColor: UIColor = .auto
     
     /// The width (thickness) of the stroke around the visual touches. (3pt by default)
     @objc public static var strokeWidth: CGFloat = 3
@@ -84,6 +86,14 @@ public final class ShowTime: NSObject {
         }
         return true
     }
+    
+}
+
+public extension UIColor {
+    
+    /// Represents a ShowTime-defined "automatic" color.
+    /// For example, setting ShowTime.fillColor to .auto results in a fill color that is 50% alpha of the stroke color.
+    static let auto = UIColor(red: -1, green: -1, blue: -1, alpha: 1)
     
 }
 
@@ -154,7 +164,7 @@ class TouchView: UILabel {
         layer.cornerRadius = ShowTime.size.height / 2
         layer.borderColor = ShowTime.strokeColor.cgColor
         layer.borderWidth = ShowTime.strokeWidth
-        backgroundColor = ShowTime.fillColor
+        backgroundColor = ShowTime.fillColor == .auto ? ShowTime.strokeColor.withAlphaComponent(0.5) : ShowTime.fillColor
         text = ShowTime.shouldShowMultipleTapCount && touch.tapCount > 1 ? "\(touch.tapCount)" : nil
         textAlignment = .center
         textColor = ShowTime.multipleTapCountTextColor

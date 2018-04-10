@@ -70,14 +70,14 @@ Here's a list of options:
 // - .never
 // - .debugOnly
 //
-// `.always` by default,
-// so set to `.always` or `.debugOnly`
-// somewhere like your AppDelegate.
+// `.always` by default.
 ShowTime.enabled: ShowTime.Enabled
 
 
 // The fill (background) color of a visual touch.
-// "Twitter blue" with 50% opacity by default.
+// When set to `.auto`, ShowTime automatically uses the stroke color with a 50% alpha.
+// This makes it super quick to change ShowTime to fit in better with your brand.
+// `.auto` by default.
 ShowTime.fillColor: UIColor
 
 // The colour of the stroke (outline) of a visual touch.
