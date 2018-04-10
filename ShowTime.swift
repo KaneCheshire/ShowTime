@@ -62,8 +62,8 @@ public final class ShowTime: NSObject {
     public static var disappearAnimation: ShowTime.Animation = .standard
     
     /// The delay, in seconds, before the visual touch disappears after a touch ends.
-    /// (`0.1`s by default)
-    @objc public static var disappearDelay: TimeInterval = 0.1
+    /// (`0.2`s by default)
+    @objc public static var disappearDelay: TimeInterval = 0.2
     
     /// Whether the visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap).
     /// (`false` by default)

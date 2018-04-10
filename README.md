@@ -33,6 +33,8 @@ By default, the size of the visual touches are 44pt; this mirrors Apple's guidel
 
 Showing your gestures during demos gives your audience a much clearer context on what's happening on your device. Try ShowTime for your next demo, it's insanely easy to set up!
 
+**ADDED BONUS:** Adding ShowTime as a pod to your XCUI automation test target will show the taps and gestures while your automation tests run. 
+
 ![ShowTime](http://kanecheshire.com/images/github/showtime-demo-4.gif)
 
 ## Installation (Swift 4)
@@ -110,7 +112,7 @@ ShowTime.size: CGSize
 ShowTime.disappearAnimation: ShowTime.Animation
 
 // The delay, in seconds, before the visual touch disappears after a touch ends.
-// `0.1` by default.
+// `0.2` by default.
 ShowTime.disappearDelay: TimeInterval
 
 // Whether visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap).
