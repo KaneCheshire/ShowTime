@@ -40,39 +40,49 @@ public final class ShowTime: NSObject {
     /// (`.always` by default)
     @objc public static var enabled: ShowTime.Enabled = .always
     
-    /// The colour of the stroke (outline) of the visual touches. ("Twitter Blue" by default)
-    @objc public static var strokeColor = UIColor(red: 0.21, green: 0.61, blue: 0.92, alpha: 1)
-    
     /// The fill (background) colour of the visual touches.
-    /// If set to `nil`, ShowTime automatically uses the stroke color with 50% alpha.
-    /// (`nil` by default)
+    /// If set to `.auto`, ShowTime automatically uses the stroke color with 50% alpha.
+    /// (`.auto` by default)
     @objc public static var fillColor: UIColor = .auto
     
-    /// The width (thickness) of the stroke around the visual touches. (3pt by default)
+    /// The colour of the stroke (outline) of the visual touches.
+    /// ("Twitter Blue" by default)
+    @objc public static var strokeColor = UIColor(red: 0.21, green: 0.61, blue: 0.92, alpha: 1)
+    
+    /// The width (thickness) of the stroke around the visual touches.
+    /// (3pt by default)
     @objc public static var strokeWidth: CGFloat = 3
     
-    /// The size of the touch circles. (44pt x 44pt by default)
+    /// The size of the touch circles.
+    /// (44pt x 44pt by default)
     @objc public static var size = CGSize(width: 44, height: 44)
     
-    /// The style of animation to use when hiding a visual touch. (`.standard` by default)
+    /// The style of animation to use when hiding a visual touch.
+    /// (`.standard` by default)
     public static var disappearAnimation: ShowTime.Animation = .standard
     
-    /// The delay, in seconds, before the visual touch disappears after a touch ends. (0.1s by default)
+    /// The delay, in seconds, before the visual touch disappears after a touch ends.
+    /// (`0.1`s by default)
     @objc public static var disappearDelay: TimeInterval = 0.1
     
-    /// Whether the visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap). (false by default)
+    /// Whether the visual touches should indicate a multiple tap (i.e. show a number 2 for a double tap).
+    /// (`false` by default)
     @objc public static var shouldShowMultipleTapCount = false
     
-    /// The colour of the text to use when showing multiple tap counts. (black by default)
+    /// The colour of the text to use when showing multiple tap counts.
+    /// (`.black` by default)
     @objc public static var multipleTapCountTextColor: UIColor = .black
     
-    /// The font of the test to use when showing multiple tap counts. (System 17 bold by default)
+    /// The font of the test to use when showing multiple tap counts.
+    /// (System 17 bold by default)
     @objc public static var multipleTapCountTextFont: UIFont = .systemFont(ofSize: 17, weight: .bold)
     
-    /// Whether the visual touch should visually show how much force is applied. (true by default)
+    /// Whether the visual touch should visually show how much force is applied.
+    /// (`true` by default)
     @objc public static var shouldShowForce = true
     
-    /// Whether touch events from Apple Pencil are ignored. (true by default)
+    /// Whether touch events from Apple Pencil are ignored.
+    /// (`true` by default)
     @objc public static var shouldIgnoreApplePencilEvents = true
     
     static var shouldEnable: Bool {
@@ -92,7 +102,7 @@ public final class ShowTime: NSObject {
 public extension UIColor {
     
     /// Represents a ShowTime-defined "automatic" color.
-    /// For example, setting ShowTime.fillColor to .auto results in a fill color that is 50% alpha of the stroke color.
+    /// For example, setting `ShowTime.fillColor` to `.auto` results in a fill color that is 50% alpha of the stroke color.
     static let auto = UIColor(red: -1, green: -1, blue: -1, alpha: 1)
     
 }
