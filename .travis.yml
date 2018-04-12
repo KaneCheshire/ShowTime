@@ -10,5 +10,5 @@ language: objective-c
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- xcodebuild test -workspace Example/ShowTime.xcworkspace -scheme ShowTime-Example -sdk iphonesimulator11.3 -destination 'platform=iOS Simulator,name=iPhone X,OS=11.3' ONLY_ACTIVE_ARCH=NO | xcpretty
+- xcodebuild test -workspace Example/ShowTime.xcworkspace -scheme ShowTime-Example -sdk iphonesimulator11.3 -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.3' ONLY_ACTIVE_ARCH=NO | xcpretty
 # - pod lib lint --allow-warnings
