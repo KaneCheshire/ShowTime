@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1546ABD5CB100BA510CA401BFB63786D"
+               BlueprintIdentifier = "CCC87C598E81986DCD0DAD318896D592"
                BuildableName = "ShowTime.framework"
                BlueprintName = "ShowTime-iOS11.2"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1546ABD5CB100BA510CA401BFB63786D"
+            BlueprintIdentifier = "CCC87C598E81986DCD0DAD318896D592"
             BuildableName = "ShowTime.framework"
             BlueprintName = "ShowTime-iOS11.2"
             ReferencedContainer = "container:Pods.xcodeproj">

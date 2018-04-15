@@ -134,11 +134,11 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/ShowTime-iOS8.3/ShowTime.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ShowTime-iOS9.3/ShowTime.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ShowTime-iOS11.2/ShowTime.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/ShowTime-iOS8.3/ShowTime.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ShowTime-iOS9.3/ShowTime.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ShowTime-iOS11.2/ShowTime.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

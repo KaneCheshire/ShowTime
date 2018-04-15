@@ -15,14 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    
+
 //    ShowTime.enabled = .never
     
 //     Uncomment to modify ShowTime display settings
 //     See ObjCViewController.m for Objective-C support
     
 //    ShowTime.shouldIgnoreApplePencilEvents = false
-//    ShowTime.disappearDelay = 0
+//    ShowTime.disappearDelay = 0.5
 //    ShowTime.shouldShowMultipleTapCount = true
 //    ShowTime.multipleTapCountTextFont = .italicSystemFont(ofSize: 20)
 //    ShowTime.disappearAnimation = .scaleDown
