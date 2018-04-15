@@ -1,5 +1,11 @@
 # Changelog
 
+# 2.4.0
+
+- Added default option for `fillColor` as `.auto`, which derives the color from the stroke color
+- Default `disppearDelay` changed from `0.1` seconds to `0.2` seconds
+- Added snapshot tests using the `PixelTest` framework
+
 # 2.3.0
 
 - Re-enabled automatic swizzlin'
