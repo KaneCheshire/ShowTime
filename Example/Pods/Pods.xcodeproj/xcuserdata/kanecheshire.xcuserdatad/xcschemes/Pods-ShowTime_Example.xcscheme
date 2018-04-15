@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33920C246013728386AA2D1D724646EB"
+               BlueprintIdentifier = "69FDC6C21A1B6497451A644D1463C43D"
                BuildableName = "Pods_ShowTime_Example.framework"
                BlueprintName = "Pods-ShowTime_Example"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "33920C246013728386AA2D1D724646EB"
+            BlueprintIdentifier = "69FDC6C21A1B6497451A644D1463C43D"
             BuildableName = "Pods_ShowTime_Example.framework"
             BlueprintName = "Pods-ShowTime_Example"
             ReferencedContainer = "container:Pods.xcodeproj">

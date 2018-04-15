@@ -198,32 +198,6 @@ class ShowTimeTests: XCTestCase {
 
 extension ShowTimeTests {
     
-    class MockTouch: UITouch {
-        
-        let taps: Int
-        var _phase: UITouchPhase
-        let _type: UITouchType
-        
-        init(tapCount: Int = 1, phase: UITouchPhase = .began, type: UITouchType = .direct) {
-            self.taps = tapCount
-            self._phase = phase
-            self._type = type
-        }
-        
-        override var tapCount: Int {
-            return taps
-        }
-        
-        override var phase: UITouchPhase {
-            return _phase
-        }
-        
-        override var type: UITouchType {
-            return _type
-        }
-        
-    }
-    
     class MockEvent: UIEvent {
         
         let touches: [UITouch]
@@ -236,6 +210,32 @@ extension ShowTimeTests {
             return Set(touches)
         }
         
+    }
+    
+}
+
+class MockTouch: UITouch {
+    
+    let taps: Int
+    var _phase: UITouchPhase
+    let _type: UITouchType
+    
+    init(tapCount: Int = 1, phase: UITouchPhase = .began, type: UITouchType = .direct) {
+        self.taps = tapCount
+        self._phase = phase
+        self._type = type
+    }
+    
+    override var tapCount: Int {
+        return taps
+    }
+    
+    override var phase: UITouchPhase {
+        return _phase
+    }
+    
+    override var type: UITouchType {
+        return _type
     }
     
 }
