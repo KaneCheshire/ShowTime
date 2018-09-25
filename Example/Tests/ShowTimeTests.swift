@@ -217,10 +217,10 @@ extension ShowTimeTests {
 class MockTouch: UITouch {
     
     let taps: Int
-    var _phase: UITouchPhase
-    let _type: UITouchType
+    var _phase: UITouch.Phase
+    let _type: UITouch.TouchType
     
-    init(tapCount: Int = 1, phase: UITouchPhase = .began, type: UITouchType = .direct) {
+    init(tapCount: Int = 1, phase: UITouch.Phase = .began, type: UITouch.TouchType = .direct) {
         self.taps = tapCount
         self._phase = phase
         self._type = type
@@ -230,11 +230,11 @@ class MockTouch: UITouch {
         return taps
     }
     
-    override var phase: UITouchPhase {
+    override var phase: UITouch.Phase {
         return _phase
     }
     
-    override var type: UITouchType {
+    override var type: UITouch.TouchType {
         return _type
     }
     
