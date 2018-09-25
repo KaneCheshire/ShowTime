@@ -13,11 +13,14 @@
 		032A5C3B99A89EAC0CCC26AFBFCAC8EA /* FileManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B0C7A3246F6585E1EA4A5039A33E19 /* FileManagerType.swift */; };
 		03B39CD262340FB961193A7BFFEE043A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA703D5114C37F1C43E819529DBA4EF7 /* XCTest.framework */; };
 		052BABFC40D716871BB8A07E91A718A7 /* LayoutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF42FCEA30CDCDD67AADF3C387CA0BB /* LayoutCoordinator.swift */; };
+		060AC9AE203A18BE8294A42F18C902A0 /* Pods-ShowTimeTodayExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6078CCB5103712CEFEA9773F80D7FDF /* Pods-ShowTimeTodayExtension-dummy.m */; };
 		0825D7A1C623EACDAB282628229B8B8F /* TestCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73341AC23498B029B5ACED1D00381EF /* TestCoordinatorType.swift */; };
 		0A13C631A3A220A68AA366ACE41A6443 /* PBXFrameworksBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C098FBEB645591F5A1DFEB9BD66F84E /* PBXFrameworksBuildPhase.swift */; };
 		0B164D5EBCDA63ADD0B30FCBA7ECF04A /* ObjectReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE6AE63C385FB4F07B6B5C807509B12 /* ObjectReference.swift */; };
 		0DA86B67331714EF9D5BCB6026C8CBCF /* PBXBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEADE2F2DB637DBB443CD7801B69139 /* PBXBuildPhase.swift */; };
+		0DB5E109BE588CA715698A506D727943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
 		0DC32A8F51740E76B226E6D387402BA7 /* UIImage+PixelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F289399ADAF556EEF957A052729027 /* UIImage+PixelTest.swift */; };
+		0ECF82BD73FD18C509774FF60290FA2F /* Pods-ShowTime_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEE2979067CCD4469F512986BCC7C6 /* Pods-ShowTime_Example-dummy.m */; };
 		0FCC9C53556934D83566AE271C4349BD /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79696801391527D5C9C2F016F8EA4AC /* Scale.swift */; };
 		1217AEF6A6F0148B88E2E6A62C33C56B /* AEXML-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C7289AD594D16AFDE53811BB508AFD /* AEXML-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		128498730C5665295CB2DB80C511724E /* PBXSourcesBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99072DA6FD846725E6E05B8282CBB60D /* PBXSourcesBuildPhase.swift */; };
@@ -32,9 +35,6 @@
 		24056797B710A0F75EBF31B26A744E43 /* PBXContainerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7134DE3AF000FFE6CD36765C0AD70948 /* PBXContainerItem.swift */; };
 		28D1D6F04F9C1771881BC9E0C979AA30 /* Array+PixelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD8067AF706F4B274DEB6F02B9394D /* Array+PixelTest.swift */; };
 		2BAD7B9FF4973B72642F9E31E93A28BE /* XCWorkspaceDataElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A02AD30F508EF2A087B19B0509AD24 /* XCWorkspaceDataElement.swift */; };
-		2C1F2068F8B09B6BC68DFEF8BC726FF6 /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7189F48562F942F43F8CF84E7096A6D /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m */; };
-		2D17B1907942B28134B52A70DE86A12A /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FABB28CE6E747E4EADC7AC17FAB064B /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DBECF33D7B3E8F78F2D81344A041B76 /* Pods-ShowTime_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DEE2979067CCD4469F512986BCC7C6 /* Pods-ShowTime_Example-dummy.m */; };
 		2FA2FCAA624157BC3794433DF0A51D87 /* PBXResourcesBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9A3FA6081547143CD2FF19F1A2665D /* PBXResourcesBuildPhase.swift */; };
 		309B6604BB94A4964FF12102C454D484 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E48675BCF4EACD437948BBD4F08299E /* AEXML.framework */; };
 		317C71F811A9F9C21708F8ECC1A40D04 /* PBXProjError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4803FDF06EB12C789DA437EE1BB6664 /* PBXProjError.swift */; };
@@ -45,35 +45,28 @@
 		4093FEF7E275D711AF22B38902F05FA8 /* PBXHeadersBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26534FD2C021FDDBAEBE7D3A70AD9297 /* PBXHeadersBuildPhase.swift */; };
 		40C4B40FA756F64AB2D7803FA01E0B7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1F0C423AF014EABB145EE0BFE3B765 /* UIKit.framework */; };
 		428DBAAD5F95417C6EFED56134FBE452 /* PBXBuildFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA1282A3A8E64B9AFB0D847181E7D9A /* PBXBuildFile.swift */; };
-		47F9AE9D59D069D2CBA3E0BDF9708AE2 /* ShowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E785C4BB33E8323A6775A9F532687D /* ShowTime.swift */; };
 		483E2963CF6D57CBE66F97996B885799 /* CommentedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D0F519A300473E1FDFFC31FF65758 /* CommentedString.swift */; };
 		48DB616B52AABC2252F17285627770F5 /* XCTestCase+AddAttachmentWithName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3145E2537ABEBF0736612B24174C4CB /* XCTestCase+AddAttachmentWithName.swift */; };
 		49C2E1B6BC2750DD948E62583DC949AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
-		4CC9BC43DDC785F9CBF4DA396A1E4E47 /* ShowTime-iOS9.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C3D097CA4CC33F5C7D297FBCCBBBD2 /* ShowTime-iOS9.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E8B8D416BEF47B83CEC82B413638284 /* XCScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC74A97796B37E38505D97F6365DA9 /* XCScheme.swift */; };
 		4FCFE101E334E9B446219001075CDA63 /* XcodeProj.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6703D4A7FC67748870E9602217AE20D /* XcodeProj.swift */; };
-		54E7604A0BEED7A48E53DE9206DDD330 /* ShowTime-iOS11.2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A38F92FF5786B54CA95F9778301AA6EE /* ShowTime-iOS11.2-dummy.m */; };
-		54F8D52A9BC2917EF25A9E4B0B20526B /* Pods-ShowTime_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F5871A55957FCCDDFE121A2B90080E /* Pods-ShowTime_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55C71CF2442214856BE4BE8862645B69 /* PBXReferenceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C9914220695D0581692BF48090978E /* PBXReferenceProxy.swift */; };
 		575256EAC40D3FC84F96D3717B6A1E09 /* PlistValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56896AC4D8B61D38672CDD42F0B07CEF /* PlistValue.swift */; };
-		5923AD35D3F5F10A576AC598E49AD7E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
 		5ACBE95D38C1E1A31C76A4D4A989526F /* LayoutCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA21D151F7631F38659A2A5FAA84EC /* LayoutCoordinatorType.swift */; };
-		5B5229257CAF8142BC61CBFB3A9A7DC4 /* Pods-ShowTimeTodayExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6078CCB5103712CEFEA9773F80D7FDF /* Pods-ShowTimeTodayExtension-dummy.m */; };
 		5BAB1D53772F616D5E48E88739A7CCA1 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB16A51B2FD9151F1B8D82BE69225BBF /* Module.swift */; };
 		6090D3D592B98E9D6B1B8EEC5E89A323 /* Decodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18913D77C0B1D131A380FA6CE3FD323 /* Decodable+Dictionary.swift */; };
 		60F2FDC4881C65ED9417EEFF3FF5C91A /* TargetBaseDirectoryCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E47AA38C83E38FE0C163EAA7B424ECE /* TargetBaseDirectoryCoordinatorType.swift */; };
 		6493DF1D304F7A9F5644558FCFE84033 /* xcproj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DE1DADCF07BAE9E25BCA2943F9042C /* xcproj.framework */; };
-		65B92D96E2C0C0A4B0D2E188BEDBB1A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
-		66047D76452B0E88D8B8B415AE9E1D62 /* ShowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E785C4BB33E8323A6775A9F532687D /* ShowTime.swift */; };
 		694817727BEB0AB642739E85783BE7DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
 		69A85051294FCF25AEABAFD047985C83 /* BuildSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8F87AF8A791E763CA0F6626842F7F6 /* BuildSettings.swift */; };
 		69CF3DC97C791EB0723311D799A4424B /* XCVersionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A1779878E4128A74C3F0EE3822BF1 /* XCVersionGroup.swift */; };
+		6AB5E02C93681747F05E6190B83DCA7F /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7189F48562F942F43F8CF84E7096A6D /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m */; };
 		6B42E38F1668AEFF2B51A47864B5454D /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676CEA61EF4E4E529A761C5FCB879F46 /* Parser.swift */; };
 		6E3A09468AC6CEB260FFAFCF2EB1D643 /* PBXProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E7C89FBD9B105716580B8D1B95CA /* PBXProject.swift */; };
 		6ED5B5CE6E6697D6E87170B8F7E20CF8 /* AEXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C408F20995B25669973649135E9A19C /* AEXML-dummy.m */; };
 		6F169B5DD3E191725142CD955A1B5216 /* PixelTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D529A22D3AED70E74BB1EE90F0DD6CE5 /* PixelTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F305D32FE1FD870D9F796159391B541 /* Pods-ShowTimeTodayExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B186929AFD6B227D088C3F49F3297D /* Pods-ShowTimeTodayExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD91AE011EF04BE988130597E1079D3 /* Writable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816EB266025946B98DE4C1B57F2E762 /* Writable.swift */; };
-		71FAE23416A6665D265334C13F0DD6E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
 		73B3CC8BC4360D7E370DF4253B676707 /* XCBreakpointList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDEFF0511BB77DB7AF3F35F8B114D0 /* XCBreakpointList.swift */; };
 		74D9B666A588D0E6C96300858BC30FB4 /* PBXProjObjects+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509204B868B9F140674A5A61E7F40F45 /* PBXProjObjects+Helpers.swift */; };
 		7877F3375A1E963D79E05FACF4080D12 /* FileCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC1B4275710E52CEE7919BDF087AA56 /* FileCoordinatorType.swift */; };
@@ -83,42 +76,45 @@
 		7D6B7800C2400396C8EDB569A40E0275 /* PBXNativeTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5274872AA762FEDAA149FF55F6BFA79 /* PBXNativeTarget.swift */; };
 		7DE4C8F250828D08CC47012F582668D8 /* XCWorkspaceDataGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7480A1600C371840B7B5804035621 /* XCWorkspaceDataGroup.swift */; };
 		7EA69A149B3673AD40481B0EC8FDAEC7 /* XCWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB125D2322283012CD669DE8DED9AD /* XCWorkspace.swift */; };
-		7F88487229080A261EE0A877E358971A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
+		7F9C6ACC5D7E8048AA3164500812EC4C /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FABB28CE6E747E4EADC7AC17FAB064B /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81485DAE38A2357827EF4150E293E03A /* AEXML+XcodeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1A699DE998ECA267D40CDE105E27D4 /* AEXML+XcodeFormat.swift */; };
 		8263C52F0F78F4C8B397B31E274CBD44 /* TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B4F2D9DF57BCE19D5C4107560C0A2 /* TestCoordinator.swift */; };
 		87BB09514497CEBA567187EB7AA23A14 /* PBXFileElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF555F9444BB4A1C493454DEC2846AB2 /* PBXFileElement.swift */; };
+		8C256BA950040CA31E47882AA731848D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
 		8D1B035D76CD82ADFE17AF331ECC1193 /* ResultsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F91866B6AE6E8CFCC1E2B29B4C554A9 /* ResultsCoordinator.swift */; };
 		93642FC1B9D1331F69CC67AB7B7ACCFF /* String+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B5F597137745F9F1C4AC813578689 /* String+Extras.swift */; };
 		94659AD6ED8F1DB290254EB3452A4F0F /* PBXCopyFilesBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1477259E246E27555C8B4DAA51D475B7 /* PBXCopyFilesBuildPhase.swift */; };
 		95A761519C1F608C88E3D2FD2728E914 /* TargetBaseDirectoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EBC9DBF7ACDC3D4148DF2DB7E0A9EE /* TargetBaseDirectoryCoordinator.swift */; };
-		9644C62ACC528313A49A35F4453B3359 /* ShowTime-iOS9.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26727AD8ECDC143A11A12FB3332D64FC /* ShowTime-iOS9.3-dummy.m */; };
 		967C1E7FDF508976A119E23027BF3155 /* XCWorkspaceDataFileRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFF57CDA465640B406D19F0ABE5491 /* XCWorkspaceDataFileRef.swift */; };
 		967FCD1BA4CCB464E30BCD4332D34034 /* PBXProj+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A85A6722F10BBD228AD00752EB40912 /* PBXProj+Helpers.swift */; };
 		96BAE64C8AFF902E4438600CFAB71B89 /* PBXAggregateTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C68172F6DFA0E8B92C9DF7CFDC0C8F9 /* PBXAggregateTarget.swift */; };
+		971823B13AB8AF467DE23DBE8EFE8870 /* ShowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2CCCF5CBEB6AB1781FC16BDE3A446 /* ShowTime.swift */; };
 		9B83B36D4AB182F62AA09ABDE4E985DF /* PathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27331D388820A5602FFB6D8DACBDF7EE /* PathKit.swift */; };
+		9BEA30A138A46F351551978E47E1A0A0 /* Pods-ShowTime_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F5871A55957FCCDDFE121A2B90080E /* Pods-ShowTime_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2FE8C640847F1358CAFDA6B78FDA1B2 /* UIView+PixelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2181A87A2BAF48F605E6E0BDE44564 /* UIView+PixelTest.swift */; };
 		A4F23EFEF0C12F8765654AE711DA793B /* NSObject+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B706C3C95B4905B8D9583D3193D3384 /* NSObject+Module.swift */; };
 		AA912F537F7956F57A53EAD107B7C7F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
 		B42F1CE5DFAF73ADA2B7ED9E7C0F70E3 /* PathKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72DCC51CCCEB40EB08AC38A54545804F /* PathKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9368354957FC86DECED4F0C87273D34 /* BuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6A4596F2699446113F57CB6F41E73 /* BuildPhase.swift */; };
+		BBD82024DB5F8ACEFDA699EAA5CD8F78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
 		BC11EF02CB2BDF4005D8E107DC79F39C /* Bool+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99A95984A59EFEFBC4EABBB8A5D61A /* Bool+Extras.swift */; };
 		BC87E2165995FD11C256F56EFC1ACE5D /* LayoutStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815A1944A95D9A8D91CC2CA917027DA /* LayoutStyle.swift */; };
 		BE228DD538DDF2F251D9BB97A8F822A6 /* PBXTargetDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34511AE76AE73A5A4006A1095652AB /* PBXTargetDependency.swift */; };
 		C0233DB89917747C4427A666E3499B43 /* KeyedDecodingContainer+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C98798CFFDDB03AAA334B39FD7B85F2 /* KeyedDecodingContainer+Additions.swift */; };
+		C2D02FFD2F3486ACCBD88FF8EF692968 /* ShowTime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F41EBA9AB965A59D9DB3E32D9EC5D6 /* ShowTime-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C472818B3FB9C8F0D34F443628377D35 /* PBXLegacyTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E869F388C8CA93F4D7D92866A9090A3B /* PBXLegacyTarget.swift */; };
+		C50D04DA357F562FBFD40C05D871D1E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
+		C59DF1A6E4C7127E5AC1F46E23827EDE /* ShowTime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F4B25989D9713688ED31286A7D88E0 /* ShowTime-dummy.m */; };
 		C97F2C87FEA8F0A9516E184C7ABE3C44 /* PBXRezBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D097675047C7D222A958F9751E5AAA8 /* PBXRezBuildPhase.swift */; };
 		CBE64D70292A7E24CDD6D61E19DE1EA3 /* PBXObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E91E07340095CA98E9AEBF06FB422 /* PBXObject.swift */; };
-		D1ED04F75B9A3D625F5466CD454F99F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */; };
 		D34E9B07C0188B400072BAD018E4AA6F /* Referenceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AA82AFF4F38FCB68E0E924822B41AB /* Referenceable.swift */; };
 		D417BB12AC64F2001C7685AC798EB8CA /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BDA110F5B84F7CD392F27977C02E1E /* Mode.swift */; };
 		D82A66B9A08605606936665163CDF9C7 /* PBXFileReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87AFD6417F5A0B08850E50618393AB /* PBXFileReference.swift */; };
 		DAA9FD6308086C1975FD2462562C31CE /* PBXProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBD1C6901405FA67988782813B50CA /* PBXProductType.swift */; };
 		DDA5F8EEF76B84B00E54E858FF1B3A5E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11F3FF1B8C613E510F36AC333C375F /* Error.swift */; };
 		DDF5B7DF9D8ABF41CFCAE39A6882E3FE /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43E70E215BC80A0AEA1CB5115BF775D /* Document.swift */; };
-		DF671D4D2D8551C5EFA1C168453706FF /* Pods-ShowTimeTodayExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B186929AFD6B227D088C3F49F3297D /* Pods-ShowTimeTodayExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2B7E899F46CF6BFB9C08228BB4B3FA0 /* ImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1893CFF736A5253F2A44D96D2CA28 /* ImageType.swift */; };
 		E2F08FAD313D4FCB6A41E0C15D474096 /* PixelTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E73200272332E192B0A1F9C1B782B041 /* PixelTest-dummy.m */; };
-		E3EDC45CCC9487236512E5FA3F29C084 /* ShowTime-iOS11.2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93EA5A15D8132D927DA74A0721D4DFFE /* ShowTime-iOS11.2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E423556673667E1DE87C25424259E602 /* xcproj-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A32AF9AC1716C6993075952DC8BF1B /* xcproj-dummy.m */; };
 		E4E3021523294B188D17572F8DFE1D99 /* PixelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12082FB5A7126F8CCBC2D6E84D060DF1 /* PixelTestCase.swift */; };
 		E6DB73F0F6FAC0B3B12CB1976FE2693F /* Dictionary+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53550E4898642633B5E0611B1C71B654 /* Dictionary+Extras.swift */; };
@@ -134,26 +130,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4B43940E7381B7B91C2415D04A27DDBB /* PBXContainerItemProxy */ = {
+		6C3D7A0D51A38570DEEB1786964804D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1EE1BE8D033C28D94D6EA1E0ED56DFAB;
-			remoteInfo = "ShowTime-iOS9.3";
-		};
-		4F020152DCB07DA8487C5EC838AD7666 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 939DA4FAAB94FC5EE0B3FCF4BAA2C49E;
-			remoteInfo = AEXML;
-		};
-		515C3207C4DC2B5CE0CA74A3392B6F2A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 806F19509532530C8CCECDD98A9D85AD;
-			remoteInfo = PixelTest;
+			remoteGlobalIDString = 9DCA19EB164C8A1D6637B47BC589D215;
+			remoteInfo = xcproj;
 		};
 		717C5B0FFF797466BA004589209E4CD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -162,12 +144,19 @@
 			remoteGlobalIDString = 9DCA19EB164C8A1D6637B47BC589D215;
 			remoteInfo = xcproj;
 		};
-		72E3E7A3B676F019FBCB065806713A7E /* PBXContainerItemProxy */ = {
+		74AE00AB20DB41B2EC497D48F30F16AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C1AF07A33859ADE0A7508CC314BFD06C;
-			remoteInfo = "ShowTime-iOS11.2";
+			remoteGlobalIDString = 7770C8F496E2D48A9B4CA8575972CC52;
+			remoteInfo = ShowTime;
+		};
+		836B67FBDA3F558932CA9058C37925F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7770C8F496E2D48A9B4CA8575972CC52;
+			remoteInfo = ShowTime;
 		};
 		84DBF65B497F218F56AFB0A97AA69600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -176,20 +165,6 @@
 			remoteGlobalIDString = 3F10EE522AA7AFABC01820722768066D;
 			remoteInfo = PathKit;
 		};
-		878D34C2D0B65EBA9A90EED904F8CBF8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9DCA19EB164C8A1D6637B47BC589D215;
-			remoteInfo = xcproj;
-		};
-		A6B8A0ABF76E9AE789E8D95945ABCA75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C1AF07A33859ADE0A7508CC314BFD06C;
-			remoteInfo = "ShowTime-iOS11.2";
-		};
 		AB5D120E7540462FC3C0C9986A097CB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -197,25 +172,37 @@
 			remoteGlobalIDString = 939DA4FAAB94FC5EE0B3FCF4BAA2C49E;
 			remoteInfo = AEXML;
 		};
-		F4B3FE39D2FF07DE9957EE1B5446C209 /* PBXContainerItemProxy */ = {
+		BB19B6B60B55B38B59C710F50C220015 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3F10EE522AA7AFABC01820722768066D;
 			remoteInfo = PathKit;
 		};
-		F74DF35D983DD3CAB9F1A47CF834A302 /* PBXContainerItemProxy */ = {
+		C3E07CF70E3457EF8027606565D985BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1EE1BE8D033C28D94D6EA1E0ED56DFAB;
-			remoteInfo = "ShowTime-iOS9.3";
+			remoteGlobalIDString = 939DA4FAAB94FC5EE0B3FCF4BAA2C49E;
+			remoteInfo = AEXML;
+		};
+		EC9F32E1949D055E5AFD0C5C17DCA560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7770C8F496E2D48A9B4CA8575972CC52;
+			remoteInfo = ShowTime;
+		};
+		F995552077DFB63CB84A5F89F3005D47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 806F19509532530C8CCECDD98A9D85AD;
+			remoteInfo = PixelTest;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		059ADABF6E09BB8C01C59FFCE4D82A76 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		05E785C4BB33E8323A6775A9F532687D /* ShowTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowTime.swift; sourceTree = "<group>"; };
 		06C9914220695D0581692BF48090978E /* PBXReferenceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXReferenceProxy.swift; path = Sources/xcproj/PBXReferenceProxy.swift; sourceTree = "<group>"; };
 		075A1779878E4128A74C3F0EE3822BF1 /* XCVersionGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCVersionGroup.swift; path = Sources/xcproj/XCVersionGroup.swift; sourceTree = "<group>"; };
 		0815A1944A95D9A8D91CC2CA917027DA /* LayoutStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutStyle.swift; path = PixelTest/Models/LayoutStyle.swift; sourceTree = "<group>"; };
@@ -235,12 +222,10 @@
 		1E99A95984A59EFEFBC4EABBB8A5D61A /* Bool+Extras.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bool+Extras.swift"; path = "Sources/xcproj/Bool+Extras.swift"; sourceTree = "<group>"; };
 		1F91866B6AE6E8CFCC1E2B29B4C554A9 /* ResultsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultsCoordinator.swift; path = PixelTest/Coordinators/ResultsCoordinator.swift; sourceTree = "<group>"; };
 		20EA941C1C591B3D2D7CCBBEB780BAA2 /* XCConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCConfig.swift; path = Sources/xcproj/XCConfig.swift; sourceTree = "<group>"; };
-		218B3AE308431ABE6FEDBE14B9C06EB6 /* Pods_ShowTimeTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTimeTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A454E3114EDEF08197E8A22E8EA115 /* PixelTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PixelTest.framework; path = PixelTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DD8067AF706F4B274DEB6F02B9394D /* Array+PixelTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+PixelTest.swift"; path = "PixelTest/Extensions/Array+PixelTest.swift"; sourceTree = "<group>"; };
 		23DFF57CDA465640B406D19F0ABE5491 /* XCWorkspaceDataFileRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCWorkspaceDataFileRef.swift; path = Sources/xcproj/XCWorkspaceDataFileRef.swift; sourceTree = "<group>"; };
-		249EF2936B4E65D783E942F3278508B2 /* ShowTime.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ShowTime.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		26534FD2C021FDDBAEBE7D3A70AD9297 /* PBXHeadersBuildPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXHeadersBuildPhase.swift; path = Sources/xcproj/PBXHeadersBuildPhase.swift; sourceTree = "<group>"; };
-		26727AD8ECDC143A11A12FB3332D64FC /* ShowTime-iOS9.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ShowTime-iOS9.3-dummy.m"; path = "../ShowTime-iOS9.3/ShowTime-iOS9.3-dummy.m"; sourceTree = "<group>"; };
 		27331D388820A5602FFB6D8DACBDF7EE /* PathKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathKit.swift; path = Sources/PathKit.swift; sourceTree = "<group>"; };
 		276A271337D117252023A2ED58086AD7 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = PixelTest/Models/Result.swift; sourceTree = "<group>"; };
 		2B01AD7096D6B0FFB815E2996BA71659 /* AEXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AEXML.xcconfig; sourceTree = "<group>"; };
@@ -248,10 +233,10 @@
 		2B9A3FA6081547143CD2FF19F1A2665D /* PBXResourcesBuildPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXResourcesBuildPhase.swift; path = Sources/xcproj/PBXResourcesBuildPhase.swift; sourceTree = "<group>"; };
 		2C408F20995B25669973649135E9A19C /* AEXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AEXML-dummy.m"; sourceTree = "<group>"; };
 		2D8796FEE81828D9814C000122C9F8F3 /* AEXML-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AEXML-Info.plist"; sourceTree = "<group>"; };
+		2EF7DA406756617B74076CAE7E515A2A /* Pods_ShowTime_Example_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTime_Example_ShowTime_Tests.framework; path = "Pods-ShowTime_Example-ShowTime_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E1893CFF736A5253F2A44D96D2CA28 /* ImageType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageType.swift; path = PixelTest/Models/ImageType.swift; sourceTree = "<group>"; };
 		32B6A4596F2699446113F57CB6F41E73 /* BuildPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BuildPhase.swift; path = Sources/xcproj/BuildPhase.swift; sourceTree = "<group>"; };
 		36DC049DA4BC1E3EEE523670E6D4FF4E /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3A818954AC238D1EE09C616FD990F2BF /* ShowTime-iOS9.3-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ShowTime-iOS9.3-Info.plist"; path = "../ShowTime-iOS9.3/ShowTime-iOS9.3-Info.plist"; sourceTree = "<group>"; };
 		3AAA21D151F7631F38659A2A5FAA84EC /* LayoutCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutCoordinatorType.swift; path = PixelTest/Protocols/LayoutCoordinatorType.swift; sourceTree = "<group>"; };
 		3D097675047C7D222A958F9751E5AAA8 /* PBXRezBuildPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXRezBuildPhase.swift; path = Sources/xcproj/PBXRezBuildPhase.swift; sourceTree = "<group>"; };
 		3E48675BCF4EACD437948BBD4F08299E /* AEXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -262,10 +247,11 @@
 		43480B767805E5196B469CE02106FC4D /* PixelTest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PixelTest-prefix.pch"; sourceTree = "<group>"; };
 		448093A64631724A4BBE5B2B0AB61DCF /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		45C21E0287453B6D5DC2D61C4A9A5474 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4776591D4F3A88B012248C300B395C31 /* ShowTime-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-prefix.pch"; sourceTree = "<group>"; };
 		49245DDBB95640C04DA9CB5AECE60024 /* PBXBuildRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXBuildRule.swift; path = Sources/xcproj/PBXBuildRule.swift; sourceTree = "<group>"; };
 		4B42F1D6F8E9BA948A4E5B50D33EC60D /* PBXVariantGroup+Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PBXVariantGroup+Deprecations.swift"; path = "Sources/xcproj/PBXVariantGroup+Deprecations.swift"; sourceTree = "<group>"; };
 		4B706C3C95B4905B8D9583D3193D3384 /* NSObject+Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Module.swift"; path = "PixelTest/Extensions/NSObject+Module.swift"; sourceTree = "<group>"; };
-		4BF20E55A017679FB0B5AE6A31879B35 /* ShowTime-iOS9.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ShowTime-iOS9.3.xcconfig"; path = "../ShowTime-iOS9.3/ShowTime-iOS9.3.xcconfig"; sourceTree = "<group>"; };
+		4CADA81B3E341A09E468BF7872A8BEE9 /* AEXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AEXML.framework; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC1B4275710E52CEE7919BDF087AA56 /* FileCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileCoordinatorType.swift; path = PixelTest/Protocols/FileCoordinatorType.swift; sourceTree = "<group>"; };
 		4D9D0F519A300473E1FDFFC31FF65758 /* CommentedString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentedString.swift; path = Sources/xcproj/CommentedString.swift; sourceTree = "<group>"; };
 		509204B868B9F140674A5A61E7F40F45 /* PBXProjObjects+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PBXProjObjects+Helpers.swift"; path = "Sources/xcproj/PBXProjObjects+Helpers.swift"; sourceTree = "<group>"; };
@@ -275,31 +261,32 @@
 		55B0C7A3246F6585E1EA4A5039A33E19 /* FileManagerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileManagerType.swift; path = PixelTest/Protocols/FileManagerType.swift; sourceTree = "<group>"; };
 		564E4C06EB6545DA28EDB5FB3899C183 /* xcproj-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "xcproj-umbrella.h"; sourceTree = "<group>"; };
 		56896AC4D8B61D38672CDD42F0B07CEF /* PlistValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlistValue.swift; path = Sources/xcproj/PlistValue.swift; sourceTree = "<group>"; };
-		58F1FEECDE7CBAEA02710354417DC173 /* ShowTime-iOS11.2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-iOS11.2-prefix.pch"; sourceTree = "<group>"; };
-		5AB9C11F768860735B7C426F19551B0C /* ShowTime-iOS11.2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ShowTime-iOS11.2.modulemap"; sourceTree = "<group>"; };
+		5943EBD8571F41C698C941913A75CEBD /* ShowTime-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShowTime-Info.plist"; sourceTree = "<group>"; };
+		59F4B25989D9713688ED31286A7D88E0 /* ShowTime-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShowTime-dummy.m"; sourceTree = "<group>"; };
 		5E3E91E07340095CA98E9AEBF06FB422 /* PBXObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXObject.swift; path = Sources/xcproj/PBXObject.swift; sourceTree = "<group>"; };
+		5F0B43A08FF23AAE9C8DF7B6A7711636 /* Pods_ShowTimeTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTimeTodayExtension.framework; path = "Pods-ShowTimeTodayExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DEE2979067CCD4469F512986BCC7C6 /* Pods-ShowTime_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowTime_Example-dummy.m"; sourceTree = "<group>"; };
+		64EE59A55EE73B074B99D486C9BA9F9E /* Pods_ShowTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTime_Example.framework; path = "Pods-ShowTime_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A49E7EE0C74688F494682EF5891DD7 /* PBXGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXGroup.swift; path = Sources/xcproj/PBXGroup.swift; sourceTree = "<group>"; };
 		676CEA61EF4E4E529A761C5FCB879F46 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/AEXML/Parser.swift; sourceTree = "<group>"; };
-		68DAE9FE20D44361535C0A9B74B8CE8D /* AEXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AA82AFF4F38FCB68E0E924822B41AB /* Referenceable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Referenceable.swift; path = Sources/xcproj/Referenceable.swift; sourceTree = "<group>"; };
 		6AEADE2F2DB637DBB443CD7801B69139 /* PBXBuildPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXBuildPhase.swift; path = Sources/xcproj/PBXBuildPhase.swift; sourceTree = "<group>"; };
 		6C98798CFFDDB03AAA334B39FD7B85F2 /* KeyedDecodingContainer+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyedDecodingContainer+Additions.swift"; path = "Sources/xcproj/KeyedDecodingContainer+Additions.swift"; sourceTree = "<group>"; };
 		6E100E781322F0E8723574C137DA5022 /* Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6E5D05A7448144961741A525C8274C7E /* Pods-ShowTime_Example-ShowTime_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-ShowTime_Tests-Info.plist"; sourceTree = "<group>"; };
+		6E89049F962F5D90CE6C32EAE104D436 /* ShowTime.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ShowTime.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6FB6CD47F1630492C6A9B2D11F67B897 /* ShowTime.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShowTime.xcconfig; sourceTree = "<group>"; };
 		7134DE3AF000FFE6CD36765C0AD70948 /* PBXContainerItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXContainerItem.swift; path = Sources/xcproj/PBXContainerItem.swift; sourceTree = "<group>"; };
 		72DCC51CCCEB40EB08AC38A54545804F /* PathKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PathKit-umbrella.h"; sourceTree = "<group>"; };
 		7A85A6722F10BBD228AD00752EB40912 /* PBXProj+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PBXProj+Helpers.swift"; path = "Sources/xcproj/PBXProj+Helpers.swift"; sourceTree = "<group>"; };
-		7BB8FE087544C934BB1D7CA41B0A9D19 /* ShowTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C43C58B7DD16DAF8735BFF81279B17A /* PBXShellScriptBuildPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXShellScriptBuildPhase.swift; path = Sources/xcproj/PBXShellScriptBuildPhase.swift; sourceTree = "<group>"; };
 		7FBC74A97796B37E38505D97F6365DA9 /* XCScheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCScheme.swift; path = Sources/xcproj/XCScheme.swift; sourceTree = "<group>"; };
+		83104585698E62B24EA9D6D64DCFA895 /* ShowTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShowTime.framework; path = ShowTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		858B5DAA2C2780049FBCE38381865BB3 /* PixelTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PixelTest-Info.plist"; sourceTree = "<group>"; };
-		8603952B9A5E48BEF76458CB8CB13BF5 /* PathKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PathKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8809E7C89FBD9B105716580B8D1B95CA /* PBXProject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXProject.swift; path = Sources/xcproj/PBXProject.swift; sourceTree = "<group>"; };
 		8816EB266025946B98DE4C1B57F2E762 /* Writable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Writable.swift; path = Sources/xcproj/Writable.swift; sourceTree = "<group>"; };
 		8BEC996C3E4448B3C5AA06AA8D15BCC4 /* xcproj.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = xcproj.xcconfig; sourceTree = "<group>"; };
 		8C09AF4D481F73B8CA789833C40CFF09 /* PathKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PathKit-prefix.pch"; sourceTree = "<group>"; };
-		8C9936EA5ADD2A5B7D606DBB8755CFFC /* ShowTime-iOS9.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ShowTime-iOS9.3.modulemap"; path = "../ShowTime-iOS9.3/ShowTime-iOS9.3.modulemap"; sourceTree = "<group>"; };
 		8F87AFD6417F5A0B08850E50618393AB /* PBXFileReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXFileReference.swift; path = Sources/xcproj/PBXFileReference.swift; sourceTree = "<group>"; };
 		8F8F87AF8A791E763CA0F6626842F7F6 /* BuildSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BuildSettings.swift; path = Sources/xcproj/BuildSettings.swift; sourceTree = "<group>"; };
 		8F93A1685028499A7A7A9425934C9FD0 /* xcproj-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "xcproj-Info.plist"; sourceTree = "<group>"; };
@@ -307,14 +294,12 @@
 		8FABB28CE6E747E4EADC7AC17FAB064B /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTime_Example-ShowTime_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8FE22BEECE0E99C5D17CA204D7C60F58 /* JSONDecoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecoding.swift; path = Sources/xcproj/JSONDecoding.swift; sourceTree = "<group>"; };
 		922A05449DC970F4E3131617F1251FF6 /* AEXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEXML-prefix.pch"; sourceTree = "<group>"; };
-		9368BC7AFBF2562AAC7CEC7ECF6EE898 /* ShowTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93EA5A15D8132D927DA74A0721D4DFFE /* ShowTime-iOS11.2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-iOS11.2-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93F289399ADAF556EEF957A052729027 /* UIImage+PixelTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+PixelTest.swift"; path = "PixelTest/Extensions/UIImage+PixelTest.swift"; sourceTree = "<group>"; };
 		952C33789AA9C9656BBF1E1697378B92 /* xcproj.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = xcproj.modulemap; sourceTree = "<group>"; };
 		97B186929AFD6B227D088C3F49F3297D /* Pods-ShowTimeTodayExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTimeTodayExtension-umbrella.h"; sourceTree = "<group>"; };
-		97C3D097CA4CC33F5C7D297FBCCBBBD2 /* ShowTime-iOS9.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ShowTime-iOS9.3-umbrella.h"; path = "../ShowTime-iOS9.3/ShowTime-iOS9.3-umbrella.h"; sourceTree = "<group>"; };
 		97C6CB3DD79B61D1F2174879B8DAC2B5 /* Pods-ShowTime_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShowTime_Example.modulemap"; sourceTree = "<group>"; };
+		97F66509ECE194083618F051967D44EC /* xcproj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = xcproj.framework; path = xcproj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C38DDFB085F044F0C4105AE8EADBA9 /* Pods-ShowTimeTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTimeTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
 		99072DA6FD846725E6E05B8282CBB60D /* PBXSourcesBuildPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXSourcesBuildPhase.swift; path = Sources/xcproj/PBXSourcesBuildPhase.swift; sourceTree = "<group>"; };
 		9A075A4D85AC231F68B1B10EA26119D2 /* Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Options.swift; path = Sources/AEXML/Options.swift; sourceTree = "<group>"; };
@@ -323,11 +308,10 @@
 		9E47AA38C83E38FE0C163EAA7B424ECE /* TargetBaseDirectoryCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TargetBaseDirectoryCoordinatorType.swift; path = PixelTest/Protocols/TargetBaseDirectoryCoordinatorType.swift; sourceTree = "<group>"; };
 		9EBBFEADD96F45054701EC964D582662 /* PixelTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PixelTest.modulemap; sourceTree = "<group>"; };
 		9ED1C9708EC2F8B50048DAC262EDE512 /* XCSharedData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCSharedData.swift; path = Sources/xcproj/XCSharedData.swift; sourceTree = "<group>"; };
-		9FA80AFC997D73719E7CFFB019B64C8A /* ShowTime-iOS11.2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShowTime-iOS11.2-Info.plist"; sourceTree = "<group>"; };
 		A0A02AD30F508EF2A087B19B0509AD24 /* XCWorkspaceDataElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCWorkspaceDataElement.swift; path = Sources/xcproj/XCWorkspaceDataElement.swift; sourceTree = "<group>"; };
 		A18913D77C0B1D131A380FA6CE3FD323 /* Decodable+Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Decodable+Dictionary.swift"; path = "Sources/xcproj/Decodable+Dictionary.swift"; sourceTree = "<group>"; };
-		A38F92FF5786B54CA95F9778301AA6EE /* ShowTime-iOS11.2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShowTime-iOS11.2-dummy.m"; sourceTree = "<group>"; };
 		A6078CCB5103712CEFEA9773F80D7FDF /* Pods-ShowTimeTodayExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowTimeTodayExtension-dummy.m"; sourceTree = "<group>"; };
+		A6F41EBA9AB965A59D9DB3E32D9EC5D6 /* ShowTime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-umbrella.h"; sourceTree = "<group>"; };
 		A79696801391527D5C9C2F016F8EA4AC /* Scale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scale.swift; path = PixelTest/Models/Scale.swift; sourceTree = "<group>"; };
 		A96B4F2D9DF57BCE19D5C4107560C0A2 /* TestCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCoordinator.swift; path = PixelTest/Coordinators/TestCoordinator.swift; sourceTree = "<group>"; };
 		A9FA723EB17011EADB3E22B683DFB5A0 /* XCConfigurationList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCConfigurationList.swift; path = Sources/xcproj/XCConfigurationList.swift; sourceTree = "<group>"; };
@@ -344,22 +328,22 @@
 		B6703D4A7FC67748870E9602217AE20D /* XcodeProj.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XcodeProj.swift; path = Sources/xcproj/XcodeProj.swift; sourceTree = "<group>"; };
 		B73341AC23498B029B5ACED1D00381EF /* TestCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCoordinatorType.swift; path = PixelTest/Protocols/TestCoordinatorType.swift; sourceTree = "<group>"; };
 		B73EEF90A3E3BD691FB48A0D22243569 /* FileCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileCoordinator.swift; path = PixelTest/Coordinators/FileCoordinator.swift; sourceTree = "<group>"; };
-		B98EF308273CED415D14C67C18CF7F46 /* Pods_ShowTime_Example_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example_ShowTime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6FA12DFB89B00DA032F4BD9A5F3534 /* Pods-ShowTimeTodayExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShowTimeTodayExtension.modulemap"; sourceTree = "<group>"; };
 		BCF3C8234DEEAB7EBABFE62C076F8D5B /* Pods-ShowTime_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BE069874CE019DE48CE517DAEBDCDBB6 /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BF04EF18FC0131402E4E9D515537C38C /* Pods-ShowTimeTodayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTimeTodayExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		BF0AC96F3368682F752C011486F52292 /* xcproj-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "xcproj-prefix.pch"; sourceTree = "<group>"; };
-		C873DEA8508D47B48D760EBFCC8FF0A8 /* Pods_ShowTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA2CCCF5CBEB6AB1781FC16BDE3A446 /* ShowTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowTime.swift; sourceTree = "<group>"; };
 		C896579D4D76F1A774F379AF926F325E /* PathKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PathKit.xcconfig; sourceTree = "<group>"; };
 		C8AB125D2322283012CD669DE8DED9AD /* XCWorkspace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCWorkspace.swift; path = Sources/xcproj/XCWorkspace.swift; sourceTree = "<group>"; };
 		C9DE1DADCF07BAE9E25BCA2943F9042C /* xcproj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xcproj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E1923E8CC3070D9CA7529B6FC326B9 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
 		CA703D5114C37F1C43E819529DBA4EF7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CB4B8F3CEA5E3D482CC36988E5FC61CF /* AEXML.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AEXML.modulemap; sourceTree = "<group>"; };
-		CCA48C572C0DFCDA20431B99BF2DE903 /* xcproj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xcproj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0C272972D0433214B585DA6F7A2AAB /* Pods-ShowTime_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTime_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CEFBD1C6901405FA67988782813B50CA /* PBXProductType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXProductType.swift; path = Sources/xcproj/PBXProductType.swift; sourceTree = "<group>"; };
 		CF0C00E914FE417197AA8EE1B95C8494 /* PBXSourceTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXSourceTree.swift; path = Sources/xcproj/PBXSourceTree.swift; sourceTree = "<group>"; };
+		D0E3110A7BFC96259C9A1EF17E9CA809 /* PathKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PathKit.framework; path = PathKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A32AF9AC1716C6993075952DC8BF1B /* xcproj-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "xcproj-dummy.m"; sourceTree = "<group>"; };
 		D529A22D3AED70E74BB1EE90F0DD6CE5 /* PixelTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PixelTest-umbrella.h"; sourceTree = "<group>"; };
 		D679C732643CFC7B701C7428327BDEC1 /* Pods-ShowTimeTodayExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTimeTodayExtension-Info.plist"; sourceTree = "<group>"; };
@@ -367,16 +351,15 @@
 		D71CF50D0DA5A92FF3755369299B761C /* PathKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PathKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB16A51B2FD9151F1B8D82BE69225BBF /* Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Module.swift; path = PixelTest/Models/Module.swift; sourceTree = "<group>"; };
 		DE27A76FE95E5513FE0C21D1FF6593CC /* PBXVariantGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXVariantGroup.swift; path = Sources/xcproj/PBXVariantGroup.swift; sourceTree = "<group>"; };
+		DE74B946BB0239BE1E52F002A74A585F /* ShowTime.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShowTime.modulemap; sourceTree = "<group>"; };
 		DF6152A44B32BCBCFA97F1028BB46940 /* Pods-ShowTimeTodayExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTimeTodayExtension-acknowledgements.plist"; sourceTree = "<group>"; };
 		E175BEF6680DD947D88C42809290F15F /* Pods-ShowTime_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E714CEFF9839817658D8EE901B02DBB8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		E73200272332E192B0A1F9C1B782B041 /* PixelTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PixelTest-dummy.m"; sourceTree = "<group>"; };
-		E74162B1CE3D5AEDD6BCE11F3F67BED7 /* ShowTime-iOS11.2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ShowTime-iOS11.2.xcconfig"; sourceTree = "<group>"; };
 		E7B50B6000FABF6831BFBD99BB127DA6 /* PBXProjEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXProjEncoder.swift; path = Sources/xcproj/PBXProjEncoder.swift; sourceTree = "<group>"; };
 		E869F388C8CA93F4D7D92866A9090A3B /* PBXLegacyTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXLegacyTarget.swift; path = Sources/xcproj/PBXLegacyTarget.swift; sourceTree = "<group>"; };
 		E9497775C3379F08A0B5385891274A80 /* PBXTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXTarget.swift; path = Sources/xcproj/PBXTarget.swift; sourceTree = "<group>"; };
 		EC2181A87A2BAF48F605E6E0BDE44564 /* UIView+PixelTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PixelTest.swift"; path = "PixelTest/Extensions/UIView+PixelTest.swift"; sourceTree = "<group>"; };
-		EC721B7D37DE6FFBE6F10573F8FDB63A /* PixelTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PixelTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE3A9601978E528F1851E7B7F9C57755 /* ShowTime-iOS9.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ShowTime-iOS9.3-prefix.pch"; path = "../ShowTime-iOS9.3/ShowTime-iOS9.3-prefix.pch"; sourceTree = "<group>"; };
 		F0BDA110F5B84F7CD392F27977C02E1E /* Mode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mode.swift; path = PixelTest/Models/Mode.swift; sourceTree = "<group>"; };
 		F11ECE435C03214B680A3A647E3D2928 /* PathKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PathKit-dummy.m"; sourceTree = "<group>"; };
 		F33B5F597137745F9F1C4AC813578689 /* String+Extras.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extras.swift"; path = "Sources/xcproj/String+Extras.swift"; sourceTree = "<group>"; };
@@ -384,7 +367,6 @@
 		F4878FF04F5D7DCCAE983F072C017B1C /* Pods-ShowTime_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-Info.plist"; sourceTree = "<group>"; };
 		F9EBC9DBF7ACDC3D4148DF2DB7E0A9EE /* TargetBaseDirectoryCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TargetBaseDirectoryCoordinator.swift; path = PixelTest/Coordinators/TargetBaseDirectoryCoordinator.swift; sourceTree = "<group>"; };
 		FC59230213B031B1AC73E808C5A30E90 /* PathKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PathKit-Info.plist"; sourceTree = "<group>"; };
-		FE6702187E07F7D9A466C498C6E77F1B /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		FF555F9444BB4A1C493454DEC2846AB2 /* PBXFileElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBXFileElement.swift; path = Sources/xcproj/PBXFileElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -400,6 +382,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1ABAF7B7A7CA9D6582586540AE468ABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C50D04DA357F562FBFD40C05D871D1E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		242A6B1489F3F10AE4A80D06A6EE9D9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,30 +397,6 @@
 				309B6604BB94A4964FF12102C454D484 /* AEXML.framework in Frameworks */,
 				AA912F537F7956F57A53EAD107B7C7F4 /* Foundation.framework in Frameworks */,
 				79AC969AC2306A9D7070453C81B0FF9A /* PathKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		39DF1324DC539AB7A08E74E8C485E403 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65B92D96E2C0C0A4B0D2E188BEDBB1A2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E41F629ACAAE377EFEF16F6182B1557 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71FAE23416A6665D265334C13F0DD6E2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D8972716EB715B06C54648C17807FED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5923AD35D3F5F10A576AC598E49AD7E4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,11 +408,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A263257B209DA06821B134481B88E501 /* Frameworks */ = {
+		A4001BB69BB264550296466D2491FC79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1ED04F75B9A3D625F5466CD454F99F4 /* Foundation.framework in Frameworks */,
+				BBD82024DB5F8ACEFDA699EAA5CD8F78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A613B7BF95B7D11FDA9C1F5228850FA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C256BA950040CA31E47882AA731848D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C4451E91D419121824DDEF71F97AE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB5E109BE588CA715698A506D727943 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,14 +437,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				694817727BEB0AB642739E85783BE7DD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F5F36C8399822D12AA3CE61A902BB230 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F88487229080A261EE0A877E358971A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,17 +498,8 @@
 				B3145E2537ABEBF0736612B24174C4CB /* XCTestCase+AddAttachmentWithName.swift */,
 				37369D7A430A409612609D8082BD8C8A /* Support Files */,
 			);
+			name = PixelTest;
 			path = PixelTest;
-			sourceTree = "<group>";
-		};
-		24C42947E05AE28FDC1F1E04633ABF34 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				FE6702187E07F7D9A466C498C6E77F1B /* LICENSE.md */,
-				059ADABF6E09BB8C01C59FFCE4D82A76 /* README.md */,
-				249EF2936B4E65D783E942F3278508B2 /* ShowTime.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		3295C91511180AC031145117D6C73726 /* Support Files */ = {
@@ -565,17 +530,6 @@
 			path = "../Target Support Files/PixelTest";
 			sourceTree = "<group>";
 		};
-		3DA2CBAE5274A38AB5F94DC9490E5F95 /* ShowTime */ = {
-			isa = PBXGroup;
-			children = (
-				05E785C4BB33E8323A6775A9F532687D /* ShowTime.swift */,
-				24C42947E05AE28FDC1F1E04633ABF34 /* Pod */,
-				C0A64941734D8D24A6D83CF9690B708D /* Support Files */,
-			);
-			name = ShowTime;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		3EE83635809C579F2701FFF25EECEF33 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +544,20 @@
 			path = "../Target Support Files/AEXML";
 			sourceTree = "<group>";
 		};
+		4D3DCE0313709B53BF26E0A5F8C054A3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE74B946BB0239BE1E52F002A74A585F /* ShowTime.modulemap */,
+				6FB6CD47F1630492C6A9B2D11F67B897 /* ShowTime.xcconfig */,
+				59F4B25989D9713688ED31286A7D88E0 /* ShowTime-dummy.m */,
+				5943EBD8571F41C698C941913A75CEBD /* ShowTime-Info.plist */,
+				4776591D4F3A88B012248C300B395C31 /* ShowTime-prefix.pch */,
+				A6F41EBA9AB965A59D9DB3E32D9EC5D6 /* ShowTime-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ShowTime";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -597,7 +565,7 @@
 				EAB4AE725EDB94D8DA063705A9174C82 /* Development Pods */,
 				9A40134AFEA2864E7275DC6012068883 /* Frameworks */,
 				9313E17C821B3E7B063BC4DFB424D454 /* Pods */,
-				FA25D42A2F2EF6A1B9C95F157D040D80 /* Products */,
+				8A33201EC15E38806EC3178ADF8915A1 /* Products */,
 				FAA31473B214E80AF092C8772F38BA81 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -612,7 +580,23 @@
 				676CEA61EF4E4E529A761C5FCB879F46 /* Parser.swift */,
 				3EE83635809C579F2701FFF25EECEF33 /* Support Files */,
 			);
+			name = AEXML;
 			path = AEXML;
+			sourceTree = "<group>";
+		};
+		8A33201EC15E38806EC3178ADF8915A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CADA81B3E341A09E468BF7872A8BEE9 /* AEXML.framework */,
+				D0E3110A7BFC96259C9A1EF17E9CA809 /* PathKit.framework */,
+				22A454E3114EDEF08197E8A22E8EA115 /* PixelTest.framework */,
+				64EE59A55EE73B074B99D486C9BA9F9E /* Pods_ShowTime_Example.framework */,
+				2EF7DA406756617B74076CAE7E515A2A /* Pods_ShowTime_Example_ShowTime_Tests.framework */,
+				5F0B43A08FF23AAE9C8DF7B6A7711636 /* Pods_ShowTimeTodayExtension.framework */,
+				83104585698E62B24EA9D6D64DCFA895 /* ShowTime.framework */,
+				97F66509ECE194083618F051967D44EC /* xcproj.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		91B988FC2B0378DD4DA5BEF4D8D10D32 /* Pods-ShowTime_Example */ = {
@@ -736,6 +720,7 @@
 				41A7480A1600C371840B7B5804035621 /* XCWorkspaceDataGroup.swift */,
 				3295C91511180AC031145117D6C73726 /* Support Files */,
 			);
+			name = xcproj;
 			path = xcproj;
 			sourceTree = "<group>";
 		};
@@ -745,27 +730,19 @@
 				27331D388820A5602FFB6D8DACBDF7EE /* PathKit.swift */,
 				D50DD0DC765B28A61D2D66D536EC1D44 /* Support Files */,
 			);
+			name = PathKit;
 			path = PathKit;
 			sourceTree = "<group>";
 		};
-		C0A64941734D8D24A6D83CF9690B708D /* Support Files */ = {
+		CC59A4B50C2257B2BCA9DEEEB55C621C /* ShowTime */ = {
 			isa = PBXGroup;
 			children = (
-				5AB9C11F768860735B7C426F19551B0C /* ShowTime-iOS11.2.modulemap */,
-				E74162B1CE3D5AEDD6BCE11F3F67BED7 /* ShowTime-iOS11.2.xcconfig */,
-				A38F92FF5786B54CA95F9778301AA6EE /* ShowTime-iOS11.2-dummy.m */,
-				9FA80AFC997D73719E7CFFB019B64C8A /* ShowTime-iOS11.2-Info.plist */,
-				58F1FEECDE7CBAEA02710354417DC173 /* ShowTime-iOS11.2-prefix.pch */,
-				93EA5A15D8132D927DA74A0721D4DFFE /* ShowTime-iOS11.2-umbrella.h */,
-				8C9936EA5ADD2A5B7D606DBB8755CFFC /* ShowTime-iOS9.3.modulemap */,
-				4BF20E55A017679FB0B5AE6A31879B35 /* ShowTime-iOS9.3.xcconfig */,
-				26727AD8ECDC143A11A12FB3332D64FC /* ShowTime-iOS9.3-dummy.m */,
-				3A818954AC238D1EE09C616FD990F2BF /* ShowTime-iOS9.3-Info.plist */,
-				EE3A9601978E528F1851E7B7F9C57755 /* ShowTime-iOS9.3-prefix.pch */,
-				97C3D097CA4CC33F5C7D297FBCCBBBD2 /* ShowTime-iOS9.3-umbrella.h */,
+				BFA2CCCF5CBEB6AB1781FC16BDE3A446 /* ShowTime.swift */,
+				F24E875E4165A805D62B834691728C83 /* Pod */,
+				4D3DCE0313709B53BF26E0A5F8C054A3 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ShowTime-iOS11.2";
+			name = ShowTime;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D50DD0DC765B28A61D2D66D536EC1D44 /* Support Files */ = {
@@ -785,25 +762,19 @@
 		EAB4AE725EDB94D8DA063705A9174C82 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3DA2CBAE5274A38AB5F94DC9490E5F95 /* ShowTime */,
+				CC59A4B50C2257B2BCA9DEEEB55C621C /* ShowTime */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		FA25D42A2F2EF6A1B9C95F157D040D80 /* Products */ = {
+		F24E875E4165A805D62B834691728C83 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				68DAE9FE20D44361535C0A9B74B8CE8D /* AEXML.framework */,
-				8603952B9A5E48BEF76458CB8CB13BF5 /* PathKit.framework */,
-				EC721B7D37DE6FFBE6F10573F8FDB63A /* PixelTest.framework */,
-				C873DEA8508D47B48D760EBFCC8FF0A8 /* Pods_ShowTime_Example.framework */,
-				B98EF308273CED415D14C67C18CF7F46 /* Pods_ShowTime_Example_ShowTime_Tests.framework */,
-				218B3AE308431ABE6FEDBE14B9C06EB6 /* Pods_ShowTimeTodayExtension.framework */,
-				9368BC7AFBF2562AAC7CEC7ECF6EE898 /* ShowTime.framework */,
-				7BB8FE087544C934BB1D7CA41B0A9D19 /* ShowTime.framework */,
-				CCA48C572C0DFCDA20431B99BF2DE903 /* xcproj.framework */,
+				C9E1923E8CC3070D9CA7529B6FC326B9 /* LICENSE.md */,
+				E714CEFF9839817658D8EE901B02DBB8 /* README.md */,
+				6E89049F962F5D90CE6C32EAE104D436 /* ShowTime.podspec */,
 			);
-			name = Products;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		FAA31473B214E80AF092C8772F38BA81 /* Targets Support Files */ = {
@@ -819,43 +790,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3526FA7433472FA71D5EF2D3360D27EC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF671D4D2D8551C5EFA1C168453706FF /* Pods-ShowTimeTodayExtension-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3CA2D0C44DE3A9A335D56E8AAA15427C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54F8D52A9BC2917EF25A9E4B0B20526B /* Pods-ShowTime_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3D0B62ADC2B9FFFAF26321B78E1A5434 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B42F1CE5DFAF73ADA2B7ED9E7C0F70E3 /* PathKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61C99A4C9E461E6F89E86F4646FC0A0D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D17B1907942B28134B52A70DE86A12A /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6BD523C85C7CD26620ECF630360C95E2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3EDC45CCC9487236512E5FA3F29C084 /* ShowTime-iOS11.2-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,11 +806,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B17E9E6E9C22592AE03CDC70EF6F04B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F9C6ACC5D7E8048AA3164500812EC4C /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B394874AFD7CAA7BE624F747F82EE14B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D02FFD2F3486ACCBD88FF8EF692968 /* ShowTime-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B9A9DCFE3D28E5E38095EC846C431E83 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6F169B5DD3E191725142CD955A1B5216 /* PixelTest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADE9A29CF0B17B2CDDFF4C8FF517A6A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F305D32FE1FD870D9F796159391B541 /* Pods-ShowTimeTodayExtension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -883,33 +846,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9BB227132478BD28638642AA8F834D1 /* Headers */ = {
+		CDAAF59F3836414FCE1C0E18AEA4931B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CC9BC43DDC785F9CBF4DA396A1E4E47 /* ShowTime-iOS9.3-umbrella.h in Headers */,
+				9BEA30A138A46F351551978E47E1A0A0 /* Pods-ShowTime_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1EE1BE8D033C28D94D6EA1E0ED56DFAB /* ShowTime-iOS9.3 */ = {
+		30D79AD2B08FF56CFF585795A62C34F6 /* Pods-ShowTimeTodayExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 224322B06B10C9F4DDDC4637A636C8D8 /* Build configuration list for PBXNativeTarget "ShowTime-iOS9.3" */;
+			buildConfigurationList = 1D64669A56B0A84A0DFFF485CD64AD76 /* Build configuration list for PBXNativeTarget "Pods-ShowTimeTodayExtension" */;
 			buildPhases = (
-				E9BB227132478BD28638642AA8F834D1 /* Headers */,
-				7CC9A509BCEAF9B4087CB6D7676D69EF /* Sources */,
-				3E41F629ACAAE377EFEF16F6182B1557 /* Frameworks */,
-				4240182144D256E19D04FCC18FAFE5D2 /* Resources */,
+				BADE9A29CF0B17B2CDDFF4C8FF517A6A /* Headers */,
+				184CCCE11F1E7DAB113A33B022A86596 /* Sources */,
+				E1C4451E91D419121824DDEF71F97AE3 /* Frameworks */,
+				01DD5D69973636AAFD13E2AC90923FAA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				73EFA3B1C37F07D858BD1A383A2261B2 /* PBXTargetDependency */,
 			);
-			name = "ShowTime-iOS9.3";
-			productName = "ShowTime-iOS9.3";
-			productReference = 9368BC7AFBF2562AAC7CEC7ECF6EE898 /* ShowTime.framework */;
+			name = "Pods-ShowTimeTodayExtension";
+			productName = "Pods-ShowTimeTodayExtension";
+			productReference = 5F0B43A08FF23AAE9C8DF7B6A7711636 /* Pods_ShowTimeTodayExtension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3F10EE522AA7AFABC01820722768066D /* PathKit */ = {
@@ -927,50 +891,25 @@
 			);
 			name = PathKit;
 			productName = PathKit;
-			productReference = 8603952B9A5E48BEF76458CB8CB13BF5 /* PathKit.framework */;
+			productReference = D0E3110A7BFC96259C9A1EF17E9CA809 /* PathKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		41E5394FF90ADD26B9F4050883A4BE82 /* Pods-ShowTime_Example-ShowTime_Tests */ = {
+		7770C8F496E2D48A9B4CA8575972CC52 /* ShowTime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A71B1F2A1F742A23C859EBCB09987AC /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example-ShowTime_Tests" */;
+			buildConfigurationList = 00B333203A5B03603B25C40D5E280115 /* Build configuration list for PBXNativeTarget "ShowTime" */;
 			buildPhases = (
-				61C99A4C9E461E6F89E86F4646FC0A0D /* Headers */,
-				24B2DFCC55BAE8372142F62EFF2BC34A /* Sources */,
-				F5F36C8399822D12AA3CE61A902BB230 /* Frameworks */,
-				3308CE9874DC2F203DCB8953AD820ECF /* Resources */,
+				B394874AFD7CAA7BE624F747F82EE14B /* Headers */,
+				0958E74E741F1F55727C9AA1866948F2 /* Sources */,
+				A613B7BF95B7D11FDA9C1F5228850FA8 /* Frameworks */,
+				20E7D6D329155FB14A6F226A1D2FF943 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0AE4FE8D4351C4E655DE2C912D07FB26 /* PBXTargetDependency */,
-				5C0DBA49BDDAD917E9D55DA6A0FD1A31 /* PBXTargetDependency */,
-				7ED80F9357C7FA939A22C9F16E0F9D02 /* PBXTargetDependency */,
-				27DF1DFDA0167EE36A32446FCF6EDD11 /* PBXTargetDependency */,
-				80B79F5951164E0C43CEF69D64DE6E9E /* PBXTargetDependency */,
 			);
-			name = "Pods-ShowTime_Example-ShowTime_Tests";
-			productName = "Pods-ShowTime_Example-ShowTime_Tests";
-			productReference = B98EF308273CED415D14C67C18CF7F46 /* Pods_ShowTime_Example_ShowTime_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7AA01169330EA41DFB22C5E25E494C05 /* Pods-ShowTime_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E0F604644AA7059239CFFD789F60A563 /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example" */;
-			buildPhases = (
-				3CA2D0C44DE3A9A335D56E8AAA15427C /* Headers */,
-				C125334230F058C2F43DFD2E8B00EE20 /* Sources */,
-				A263257B209DA06821B134481B88E501 /* Frameworks */,
-				43515C8BC67EEB504D2E3A36A3272BB5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0F040739EA10A565CB317F9B5DE75C3A /* PBXTargetDependency */,
-				B7CED411A2D1AE66CFC546F2FC650E08 /* PBXTargetDependency */,
-			);
-			name = "Pods-ShowTime_Example";
-			productName = "Pods-ShowTime_Example";
-			productReference = C873DEA8508D47B48D760EBFCC8FF0A8 /* Pods_ShowTime_Example.framework */;
+			name = ShowTime;
+			productName = ShowTime;
+			productReference = 83104585698E62B24EA9D6D64DCFA895 /* ShowTime.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		806F19509532530C8CCECDD98A9D85AD /* PixelTest */ = {
@@ -989,7 +928,7 @@
 			);
 			name = PixelTest;
 			productName = PixelTest;
-			productReference = EC721B7D37DE6FFBE6F10573F8FDB63A /* PixelTest.framework */;
+			productReference = 22A454E3114EDEF08197E8A22E8EA115 /* PixelTest.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		939DA4FAAB94FC5EE0B3FCF4BAA2C49E /* AEXML */ = {
@@ -1007,7 +946,7 @@
 			);
 			name = AEXML;
 			productName = AEXML;
-			productReference = 68DAE9FE20D44361535C0A9B74B8CE8D /* AEXML.framework */;
+			productReference = 4CADA81B3E341A09E468BF7872A8BEE9 /* AEXML.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9DCA19EB164C8A1D6637B47BC589D215 /* xcproj */ = {
@@ -1027,44 +966,49 @@
 			);
 			name = xcproj;
 			productName = xcproj;
-			productReference = CCA48C572C0DFCDA20431B99BF2DE903 /* xcproj.framework */;
+			productReference = 97F66509ECE194083618F051967D44EC /* xcproj.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C1AF07A33859ADE0A7508CC314BFD06C /* ShowTime-iOS11.2 */ = {
+		A4F3D390B31E6AF22097F32DC1766CF4 /* Pods-ShowTime_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B874FB1831522AB230C956AFC521973 /* Build configuration list for PBXNativeTarget "ShowTime-iOS11.2" */;
+			buildConfigurationList = ECDA579C78C5EA6A7B2B768B4BB74ED8 /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example" */;
 			buildPhases = (
-				6BD523C85C7CD26620ECF630360C95E2 /* Headers */,
-				9D2374AFAD7328C9787178BACE34112E /* Sources */,
-				39DF1324DC539AB7A08E74E8C485E403 /* Frameworks */,
-				FDCA88E835FF48EAF2CFA8F4CC62F676 /* Resources */,
+				CDAAF59F3836414FCE1C0E18AEA4931B /* Headers */,
+				BBA1CD2A8A13E82717D89200A7DFF830 /* Sources */,
+				A4001BB69BB264550296466D2491FC79 /* Frameworks */,
+				A5DD408B92B26B4F088E3D25BF297630 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				25868793F45E9004EFD5D21BB45AEC0C /* PBXTargetDependency */,
 			);
-			name = "ShowTime-iOS11.2";
-			productName = "ShowTime-iOS11.2";
-			productReference = 7BB8FE087544C934BB1D7CA41B0A9D19 /* ShowTime.framework */;
+			name = "Pods-ShowTime_Example";
+			productName = "Pods-ShowTime_Example";
+			productReference = 64EE59A55EE73B074B99D486C9BA9F9E /* Pods_ShowTime_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C7DE66AFA73608B0BED44AFDD2BF32B7 /* Pods-ShowTimeTodayExtension */ = {
+		BED7990C8DBC976A5BA2E02A6BB29294 /* Pods-ShowTime_Example-ShowTime_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 989EF799E0BCCC1AA017A354E6D4289B /* Build configuration list for PBXNativeTarget "Pods-ShowTimeTodayExtension" */;
+			buildConfigurationList = 95474D4CE2E26C97B25FA6D4BD9E790D /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example-ShowTime_Tests" */;
 			buildPhases = (
-				3526FA7433472FA71D5EF2D3360D27EC /* Headers */,
-				E96EB4F95AEB45D173F27A7B08047922 /* Sources */,
-				4D8972716EB715B06C54648C17807FED /* Frameworks */,
-				EE0B2FC6AA5D71907DE1FD10ACA7C8BC /* Resources */,
+				B17E9E6E9C22592AE03CDC70EF6F04B0 /* Headers */,
+				1A3D11D7F70B70AB14F981638C86DC5D /* Sources */,
+				1ABAF7B7A7CA9D6582586540AE468ABC /* Frameworks */,
+				C036D2CEE3CD18B63DB7B42735EFFE2F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				29373C91CE5B5860052C2860BB782DE7 /* PBXTargetDependency */,
+				3F79DD2BF2D5C251B600A57D962A997B /* PBXTargetDependency */,
+				643F17ABBD65BAF4931DD2C608511028 /* PBXTargetDependency */,
+				5DB6EB579C1F0BC8716C5B109B75136A /* PBXTargetDependency */,
+				4C0E04B1BC1A7E9C12075FDFE180F2F1 /* PBXTargetDependency */,
+				FBAEC3D9417EA0909D62186396A83581 /* PBXTargetDependency */,
 			);
-			name = "Pods-ShowTimeTodayExtension";
-			productName = "Pods-ShowTimeTodayExtension";
-			productReference = 218B3AE308431ABE6FEDBE14B9C06EB6 /* Pods_ShowTimeTodayExtension.framework */;
+			name = "Pods-ShowTime_Example-ShowTime_Tests";
+			productName = "Pods-ShowTime_Example-ShowTime_Tests";
+			productReference = 2EF7DA406756617B74076CAE7E515A2A /* Pods_ShowTime_Example_ShowTime_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1075,23 +1019,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					1EE1BE8D033C28D94D6EA1E0ED56DFAB = {
-						LastSwiftMigration = 1000;
-					};
-					3F10EE522AA7AFABC01820722768066D = {
-						LastSwiftMigration = 1000;
-					};
-					806F19509532530C8CCECDD98A9D85AD = {
-						LastSwiftMigration = 1000;
-					};
-					9DCA19EB164C8A1D6637B47BC589D215 = {
-						LastSwiftMigration = 1000;
-					};
-					C1AF07A33859ADE0A7508CC314BFD06C = {
-						LastSwiftMigration = 1000;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1101,24 +1028,30 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FA25D42A2F2EF6A1B9C95F157D040D80 /* Products */;
+			productRefGroup = 8A33201EC15E38806EC3178ADF8915A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				939DA4FAAB94FC5EE0B3FCF4BAA2C49E /* AEXML */,
 				3F10EE522AA7AFABC01820722768066D /* PathKit */,
 				806F19509532530C8CCECDD98A9D85AD /* PixelTest */,
-				7AA01169330EA41DFB22C5E25E494C05 /* Pods-ShowTime_Example */,
-				41E5394FF90ADD26B9F4050883A4BE82 /* Pods-ShowTime_Example-ShowTime_Tests */,
-				C7DE66AFA73608B0BED44AFDD2BF32B7 /* Pods-ShowTimeTodayExtension */,
-				C1AF07A33859ADE0A7508CC314BFD06C /* ShowTime-iOS11.2 */,
-				1EE1BE8D033C28D94D6EA1E0ED56DFAB /* ShowTime-iOS9.3 */,
+				A4F3D390B31E6AF22097F32DC1766CF4 /* Pods-ShowTime_Example */,
+				BED7990C8DBC976A5BA2E02A6BB29294 /* Pods-ShowTime_Example-ShowTime_Tests */,
+				30D79AD2B08FF56CFF585795A62C34F6 /* Pods-ShowTimeTodayExtension */,
+				7770C8F496E2D48A9B4CA8575972CC52 /* ShowTime */,
 				9DCA19EB164C8A1D6637B47BC589D215 /* xcproj */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		01DD5D69973636AAFD13E2AC90923FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10673AF3A5A24DAD38BB88B10477FBE8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1126,21 +1059,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3308CE9874DC2F203DCB8953AD820ECF /* Resources */ = {
+		20E7D6D329155FB14A6F226A1D2FF943 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4240182144D256E19D04FCC18FAFE5D2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		43515C8BC67EEB504D2E3A36A3272BB5 /* Resources */ = {
+		A5DD408B92B26B4F088E3D25BF297630 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1154,14 +1080,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC750A9AE18C284ABDA9986F81F88880 /* Resources */ = {
+		C036D2CEE3CD18B63DB7B42735EFFE2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE0B2FC6AA5D71907DE1FD10ACA7C8BC /* Resources */ = {
+		CC750A9AE18C284ABDA9986F81F88880 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1175,16 +1101,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDCA88E835FF48EAF2CFA8F4CC62F676 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0958E74E741F1F55727C9AA1866948F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59DF1A6E4C7127E5AC1F46E23827EDE /* ShowTime-dummy.m in Sources */,
+				971823B13AB8AF467DE23DBE8EFE8870 /* ShowTime.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		132528D8BDE3D37349DF1D60BCE3275A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1198,11 +1126,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24B2DFCC55BAE8372142F62EFF2BC34A /* Sources */ = {
+		184CCCE11F1E7DAB113A33B022A86596 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C1F2068F8B09B6BC68DFEF8BC726FF6 /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m in Sources */,
+				060AC9AE203A18BE8294A42F18C902A0 /* Pods-ShowTimeTodayExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A3D11D7F70B70AB14F981638C86DC5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB5E02C93681747F05E6190B83DCA7F /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1306,37 +1242,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CC9A509BCEAF9B4087CB6D7676D69EF /* Sources */ = {
+		BBA1CD2A8A13E82717D89200A7DFF830 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9644C62ACC528313A49A35F4453B3359 /* ShowTime-iOS9.3-dummy.m in Sources */,
-				47F9AE9D59D069D2CBA3E0BDF9708AE2 /* ShowTime.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D2374AFAD7328C9787178BACE34112E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54E7604A0BEED7A48E53DE9206DDD330 /* ShowTime-iOS11.2-dummy.m in Sources */,
-				66047D76452B0E88D8B8B415AE9E1D62 /* ShowTime.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C125334230F058C2F43DFD2E8B00EE20 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2DBECF33D7B3E8F78F2D81344A041B76 /* Pods-ShowTime_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E96EB4F95AEB45D173F27A7B08047922 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B5229257CAF8142BC61CBFB3A9A7DC4 /* Pods-ShowTimeTodayExtension-dummy.m in Sources */,
+				0ECF82BD73FD18C509774FF60290FA2F /* Pods-ShowTime_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1352,35 +1262,41 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0AE4FE8D4351C4E655DE2C912D07FB26 /* PBXTargetDependency */ = {
+		25868793F45E9004EFD5D21BB45AEC0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ShowTime;
+			target = 7770C8F496E2D48A9B4CA8575972CC52 /* ShowTime */;
+			targetProxy = 836B67FBDA3F558932CA9058C37925F1 /* PBXContainerItemProxy */;
+		};
+		3F79DD2BF2D5C251B600A57D962A997B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AEXML;
 			target = 939DA4FAAB94FC5EE0B3FCF4BAA2C49E /* AEXML */;
-			targetProxy = 4F020152DCB07DA8487C5EC838AD7666 /* PBXContainerItemProxy */;
+			targetProxy = C3E07CF70E3457EF8027606565D985BB /* PBXContainerItemProxy */;
 		};
-		0F040739EA10A565CB317F9B5DE75C3A /* PBXTargetDependency */ = {
+		4C0E04B1BC1A7E9C12075FDFE180F2F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "ShowTime-iOS11.2";
-			target = C1AF07A33859ADE0A7508CC314BFD06C /* ShowTime-iOS11.2 */;
-			targetProxy = A6B8A0ABF76E9AE789E8D95945ABCA75 /* PBXContainerItemProxy */;
+			name = ShowTime;
+			target = 7770C8F496E2D48A9B4CA8575972CC52 /* ShowTime */;
+			targetProxy = 74AE00AB20DB41B2EC497D48F30F16AA /* PBXContainerItemProxy */;
 		};
-		27DF1DFDA0167EE36A32446FCF6EDD11 /* PBXTargetDependency */ = {
+		5DB6EB579C1F0BC8716C5B109B75136A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "ShowTime-iOS9.3";
-			target = 1EE1BE8D033C28D94D6EA1E0ED56DFAB /* ShowTime-iOS9.3 */;
-			targetProxy = 4B43940E7381B7B91C2415D04A27DDBB /* PBXContainerItemProxy */;
+			name = PixelTest;
+			target = 806F19509532530C8CCECDD98A9D85AD /* PixelTest */;
+			targetProxy = F995552077DFB63CB84A5F89F3005D47 /* PBXContainerItemProxy */;
 		};
-		29373C91CE5B5860052C2860BB782DE7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ShowTime-iOS11.2";
-			target = C1AF07A33859ADE0A7508CC314BFD06C /* ShowTime-iOS11.2 */;
-			targetProxy = 72E3E7A3B676F019FBCB065806713A7E /* PBXContainerItemProxy */;
-		};
-		5C0DBA49BDDAD917E9D55DA6A0FD1A31 /* PBXTargetDependency */ = {
+		643F17ABBD65BAF4931DD2C608511028 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PathKit;
 			target = 3F10EE522AA7AFABC01820722768066D /* PathKit */;
-			targetProxy = F4B3FE39D2FF07DE9957EE1B5446C209 /* PBXContainerItemProxy */;
+			targetProxy = BB19B6B60B55B38B59C710F50C220015 /* PBXContainerItemProxy */;
+		};
+		73EFA3B1C37F07D858BD1A383A2261B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ShowTime;
+			target = 7770C8F496E2D48A9B4CA8575972CC52 /* ShowTime */;
+			targetProxy = EC9F32E1949D055E5AFD0C5C17DCA560 /* PBXContainerItemProxy */;
 		};
 		7C3151236153EDC55143FAC4B54B8D44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1388,29 +1304,11 @@
 			target = 3F10EE522AA7AFABC01820722768066D /* PathKit */;
 			targetProxy = 84DBF65B497F218F56AFB0A97AA69600 /* PBXContainerItemProxy */;
 		};
-		7ED80F9357C7FA939A22C9F16E0F9D02 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PixelTest;
-			target = 806F19509532530C8CCECDD98A9D85AD /* PixelTest */;
-			targetProxy = 515C3207C4DC2B5CE0CA74A3392B6F2A /* PBXContainerItemProxy */;
-		};
-		80B79F5951164E0C43CEF69D64DE6E9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = xcproj;
-			target = 9DCA19EB164C8A1D6637B47BC589D215 /* xcproj */;
-			targetProxy = 878D34C2D0B65EBA9A90EED904F8CBF8 /* PBXContainerItemProxy */;
-		};
 		A65336EC3BE0C1CE76D6F0F24D99FA24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = xcproj;
 			target = 9DCA19EB164C8A1D6637B47BC589D215 /* xcproj */;
 			targetProxy = 717C5B0FFF797466BA004589209E4CD0 /* PBXContainerItemProxy */;
-		};
-		B7CED411A2D1AE66CFC546F2FC650E08 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ShowTime-iOS9.3";
-			target = 1EE1BE8D033C28D94D6EA1E0ED56DFAB /* ShowTime-iOS9.3 */;
-			targetProxy = F74DF35D983DD3CAB9F1A47CF834A302 /* PBXContainerItemProxy */;
 		};
 		CA49F058699413614AF12DCDB3A6124B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1418,46 +1316,18 @@
 			target = 939DA4FAAB94FC5EE0B3FCF4BAA2C49E /* AEXML */;
 			targetProxy = AB5D120E7540462FC3C0C9986A097CB3 /* PBXContainerItemProxy */;
 		};
+		FBAEC3D9417EA0909D62186396A83581 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = xcproj;
+			target = 9DCA19EB164C8A1D6637B47BC589D215 /* xcproj */;
+			targetProxy = 6C3D7A0D51A38570DEEB1786964804D6 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0136189F8A02C87C87248DD325DF8132 /* Release */ = {
+		08E352EDC451A999DE88A68E4770ADE6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B01AD7096D6B0FFB815E2996BA71659 /* AEXML.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AEXML/AEXML-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AEXML/AEXML-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AEXML/AEXML.modulemap";
-				PRODUCT_MODULE_NAME = AEXML;
-				PRODUCT_NAME = AEXML;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		066D42608BE6453FABB54A5321CF06D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E74162B1CE3D5AEDD6BCE11F3F67BED7 /* ShowTime-iOS11.2.xcconfig */;
+			baseConfigurationReference = 6FB6CD47F1630492C6A9B2D11F67B897 /* ShowTime.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -1470,52 +1340,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ShowTime-iOS11.2/ShowTime-iOS11.2-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShowTime-iOS11.2/ShowTime-iOS11.2-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ShowTime/ShowTime-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShowTime/ShowTime-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShowTime-iOS11.2/ShowTime-iOS11.2.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ShowTime/ShowTime.modulemap";
 				PRODUCT_MODULE_NAME = ShowTime;
 				PRODUCT_NAME = ShowTime;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1490C7D0B73C7EFEAFB4B9908DF55500 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E74162B1CE3D5AEDD6BCE11F3F67BED7 /* ShowTime-iOS11.2.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ShowTime-iOS11.2/ShowTime-iOS11.2-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShowTime-iOS11.2/ShowTime-iOS11.2-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShowTime-iOS11.2/ShowTime-iOS11.2.modulemap";
-				PRODUCT_MODULE_NAME = ShowTime;
-				PRODUCT_NAME = ShowTime;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1524,11 +1361,13 @@
 			};
 			name = Release;
 		};
-		25F5735902D3B9F0BB76BD6BA227D682 /* Debug */ = {
+		0FB3085AD7E297BFF41DD47F11E5EA6E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36DC049DA4BC1E3EEE523670E6D4FF4E /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */;
+			baseConfigurationReference = AE6CAABDB1BDBB38E6C0036FE1B4ED31 /* Pods-ShowTime_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1538,12 +1377,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1551,18 +1390,20 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		321F6E48066838F842AD03C4F8A5FBD2 /* Debug */ = {
+		320CEDE50C78CDF53D26B5A8DE91AA2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BF20E55A017679FB0B5AE6A31879B35 /* ShowTime-iOS9.3.xcconfig */;
+			baseConfigurationReference = 0938A8BD3089902BC9AB7A0D170B7628 /* PixelTest.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1572,14 +1413,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ShowTime-iOS9.3/ShowTime-iOS9.3-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShowTime-iOS9.3/ShowTime-iOS9.3-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PixelTest/PixelTest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PixelTest/PixelTest-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShowTime-iOS9.3/ShowTime-iOS9.3.modulemap";
-				PRODUCT_MODULE_NAME = ShowTime;
-				PRODUCT_NAME = ShowTime;
+				MODULEMAP_FILE = "Target Support Files/PixelTest/PixelTest.modulemap";
+				PRODUCT_MODULE_NAME = PixelTest;
+				PRODUCT_NAME = PixelTest;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1591,9 +1432,9 @@
 			};
 			name = Debug;
 		};
-		3F7EC2A702A49F866DD148E8EF251647 /* Release */ = {
+		5890C8998300D252B83116024275E510 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98C38DDFB085F044F0C4105AE8EADBA9 /* Pods-ShowTimeTodayExtension.release.xcconfig */;
+			baseConfigurationReference = BF04EF18FC0131402E4E9D515537C38C /* Pods-ShowTimeTodayExtension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -1621,7 +1462,76 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5ED0AB041528BB444772F6B9902177A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB6CD47F1630492C6A9B2D11F67B897 /* ShowTime.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ShowTime/ShowTime-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShowTime/ShowTime-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ShowTime/ShowTime.modulemap";
+				PRODUCT_MODULE_NAME = ShowTime;
+				PRODUCT_NAME = ShowTime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		619FC1016B7D67DF56AFF6F35B496912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B01AD7096D6B0FFB815E2996BA71659 /* AEXML.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AEXML/AEXML-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AEXML/AEXML-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AEXML/AEXML.modulemap";
+				PRODUCT_MODULE_NAME = AEXML;
+				PRODUCT_NAME = AEXML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1629,7 +1539,7 @@
 			};
 			name = Release;
 		};
-		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
+		7FC7B8135FDED1560A80CA98EC6F7207 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1679,7 +1589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1688,114 +1598,11 @@
 			};
 			name = Release;
 		};
-		5B0EB7DA6DA508E2A3073D34D8FA179E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E0E6F65756547F111AEC2A419D208F4 /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		69F9AAD71C9168B9EB1F115DDC985A3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0938A8BD3089902BC9AB7A0D170B7628 /* PixelTest.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PixelTest/PixelTest-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PixelTest/PixelTest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PixelTest/PixelTest.modulemap";
-				PRODUCT_MODULE_NAME = PixelTest;
-				PRODUCT_NAME = PixelTest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6B1E5773D36D11A28A262E4185B37EC5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE6CAABDB1BDBB38E6C0036FE1B4ED31 /* Pods-ShowTime_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7E8A911C31291CAF717F31724F6CE112 /* Debug */ = {
+		803C9CF34D10FBC48BA11968314358F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C896579D4D76F1A774F379AF926F325E /* PathKit.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1817,18 +1624,18 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8873CC65BC90D2DF541603F146B80AC8 /* Debug */ = {
+		9E1398340EE9898240A58F0381BBCE13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BEC996C3E4448B3C5AA06AA8D15BCC4 /* xcproj.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1849,20 +1656,56 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		9681CDB6CF6E05104A9D262304709B96 /* Debug */ = {
+		A5E80500F4E90A9CA360E93141264F91 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF04EF18FC0131402E4E9D515537C38C /* Pods-ShowTimeTodayExtension.debug.xcconfig */;
+			baseConfigurationReference = 0938A8BD3089902BC9AB7A0D170B7628 /* PixelTest.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PixelTest/PixelTest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PixelTest/PixelTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PixelTest/PixelTest.modulemap";
+				PRODUCT_MODULE_NAME = PixelTest;
+				PRODUCT_NAME = PixelTest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7247520DEB7586FA14D3D3A080A5E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36DC049DA4BC1E3EEE523670E6D4FF4E /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1874,12 +1717,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShowTimeTodayExtension/Pods-ShowTimeTodayExtension-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShowTimeTodayExtension/Pods-ShowTimeTodayExtension.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1895,109 +1738,7 @@
 			};
 			name = Debug;
 		};
-		A097659D519E82BE8F38476A99216819 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10C66D58F4823A380ED7E0554656F732 /* Pods-ShowTime_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AAC7FCB7C54883D0D1C1E786C4260752 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BEC996C3E4448B3C5AA06AA8D15BCC4 /* xcproj.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/xcproj/xcproj-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/xcproj/xcproj-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/xcproj/xcproj.modulemap";
-				PRODUCT_MODULE_NAME = xcproj;
-				PRODUCT_NAME = xcproj;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AE1944AA9C2A3363C846666A4F307FB8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BF20E55A017679FB0B5AE6A31879B35 /* ShowTime-iOS9.3.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ShowTime-iOS9.3/ShowTime-iOS9.3-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShowTime-iOS9.3/ShowTime-iOS9.3-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShowTime-iOS9.3/ShowTime-iOS9.3.modulemap";
-				PRODUCT_MODULE_NAME = ShowTime;
-				PRODUCT_NAME = ShowTime;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
+		B4A339C5C9837FC180FD2D276CBB365A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2050,7 +1791,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2061,11 +1802,13 @@
 			};
 			name = Debug;
 		};
-		CA755871EF4F62C0435EA15541BEE5EB /* Release */ = {
+		B527F3B30C93656F8626F39D19DBA804 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0938A8BD3089902BC9AB7A0D170B7628 /* PixelTest.xcconfig */;
+			baseConfigurationReference = 10C66D58F4823A380ED7E0554656F732 /* Pods-ShowTime_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2075,31 +1818,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PixelTest/PixelTest-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PixelTest/PixelTest-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PixelTest/PixelTest.modulemap";
-				PRODUCT_MODULE_NAME = PixelTest;
-				PRODUCT_NAME = PixelTest;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		E35EFDBA64CFD10251BB1217C6E4067F /* Release */ = {
+		B5A78EC4756614BEAFED0FB2025D9D2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C896579D4D76F1A774F379AF926F325E /* PathKit.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2120,8 +1864,9 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2129,11 +1874,88 @@
 			};
 			name = Release;
 		};
-		FA9F011E686C451735F852345899DA4E /* Debug */ = {
+		C04A421041929244F93E0900212C4DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C38DDFB085F044F0C4105AE8EADBA9 /* Pods-ShowTimeTodayExtension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowTimeTodayExtension/Pods-ShowTimeTodayExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowTimeTodayExtension/Pods-ShowTimeTodayExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C57AE3FE85BAE3770CB7CAFFAA936636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E0E6F65756547F111AEC2A419D208F4 /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC616376BC5F11D890970155BC7BC985 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B01AD7096D6B0FFB815E2996BA71659 /* AEXML.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2162,23 +1984,56 @@
 			};
 			name = Debug;
 		};
+		FDA8C825EE2EB5AB917AF6D95D53926A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BEC996C3E4448B3C5AA06AA8D15BCC4 /* xcproj.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/xcproj/xcproj-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/xcproj/xcproj-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/xcproj/xcproj.modulemap";
+				PRODUCT_MODULE_NAME = xcproj;
+				PRODUCT_NAME = xcproj;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		224322B06B10C9F4DDDC4637A636C8D8 /* Build configuration list for PBXNativeTarget "ShowTime-iOS9.3" */ = {
+		00B333203A5B03603B25C40D5E280115 /* Build configuration list for PBXNativeTarget "ShowTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				321F6E48066838F842AD03C4F8A5FBD2 /* Debug */,
-				AE1944AA9C2A3363C846666A4F307FB8 /* Release */,
+				5ED0AB041528BB444772F6B9902177A1 /* Debug */,
+				08E352EDC451A999DE88A68E4770ADE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B874FB1831522AB230C956AFC521973 /* Build configuration list for PBXNativeTarget "ShowTime-iOS11.2" */ = {
+		1D64669A56B0A84A0DFFF485CD64AD76 /* Build configuration list for PBXNativeTarget "Pods-ShowTimeTodayExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				066D42608BE6453FABB54A5321CF06D2 /* Debug */,
-				1490C7D0B73C7EFEAFB4B9908DF55500 /* Release */,
+				5890C8998300D252B83116024275E510 /* Debug */,
+				C04A421041929244F93E0900212C4DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2186,26 +2041,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEFDB93BF207328A04F1220475D02C3B /* Debug */,
-				56A05ADD3BABDA1B56D1F979845809B1 /* Release */,
+				B4A339C5C9837FC180FD2D276CBB365A /* Debug */,
+				7FC7B8135FDED1560A80CA98EC6F7207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A71B1F2A1F742A23C859EBCB09987AC /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example-ShowTime_Tests" */ = {
+		95474D4CE2E26C97B25FA6D4BD9E790D /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example-ShowTime_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25F5735902D3B9F0BB76BD6BA227D682 /* Debug */,
-				5B0EB7DA6DA508E2A3073D34D8FA179E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		989EF799E0BCCC1AA017A354E6D4289B /* Build configuration list for PBXNativeTarget "Pods-ShowTimeTodayExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9681CDB6CF6E05104A9D262304709B96 /* Debug */,
-				3F7EC2A702A49F866DD148E8EF251647 /* Release */,
+				A7247520DEB7586FA14D3D3A080A5E04 /* Debug */,
+				C57AE3FE85BAE3770CB7CAFFAA936636 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2213,8 +2059,8 @@
 		9AB29991F3ACF9460267083D41DBA643 /* Build configuration list for PBXNativeTarget "xcproj" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8873CC65BC90D2DF541603F146B80AC8 /* Debug */,
-				AAC7FCB7C54883D0D1C1E786C4260752 /* Release */,
+				FDA8C825EE2EB5AB917AF6D95D53926A /* Debug */,
+				9E1398340EE9898240A58F0381BBCE13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2222,8 +2068,8 @@
 		A909730DFB417A5749F3D0C05988225D /* Build configuration list for PBXNativeTarget "PathKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E8A911C31291CAF717F31724F6CE112 /* Debug */,
-				E35EFDBA64CFD10251BB1217C6E4067F /* Release */,
+				803C9CF34D10FBC48BA11968314358F6 /* Debug */,
+				B5A78EC4756614BEAFED0FB2025D9D2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2231,17 +2077,8 @@
 		AAE765CBF99FFC78A38B73E03C159416 /* Build configuration list for PBXNativeTarget "PixelTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69F9AAD71C9168B9EB1F115DDC985A3F /* Debug */,
-				CA755871EF4F62C0435EA15541BEE5EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E0F604644AA7059239CFFD789F60A563 /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A097659D519E82BE8F38476A99216819 /* Debug */,
-				6B1E5773D36D11A28A262E4185B37EC5 /* Release */,
+				320CEDE50C78CDF53D26B5A8DE91AA2E /* Debug */,
+				A5E80500F4E90A9CA360E93141264F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2249,8 +2086,17 @@
 		E35E6AA414D91179E03510FF66D5F9E4 /* Build configuration list for PBXNativeTarget "AEXML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA9F011E686C451735F852345899DA4E /* Debug */,
-				0136189F8A02C87C87248DD325DF8132 /* Release */,
+				FC616376BC5F11D890970155BC7BC985 /* Debug */,
+				619FC1016B7D67DF56AFF6F35B496912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECDA579C78C5EA6A7B2B768B4BB74ED8 /* Build configuration list for PBXNativeTarget "Pods-ShowTime_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B527F3B30C93656F8626F39D19DBA804 /* Debug */,
+				0FB3085AD7E297BFF41DD47F11E5EA6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

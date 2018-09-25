@@ -404,7 +404,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ShowTime-iOS9.3/ShowTime.framework",
+				"${BUILT_PRODUCTS_DIR}/ShowTime/ShowTime.framework",
 				"${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework",
 				"${BUILT_PRODUCTS_DIR}/PathKit/PathKit.framework",
 				"${BUILT_PRODUCTS_DIR}/PixelTest/PixelTest.framework",
@@ -466,8 +466,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ShowTime-iOS9.3/ShowTime.framework",
-				"${BUILT_PRODUCTS_DIR}/ShowTime-iOS11.2/ShowTime.framework",
+				"${BUILT_PRODUCTS_DIR}/ShowTime/ShowTime.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -663,7 +662,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9BCL7VAFF4;
 				INFOPLIST_FILE = ShowTime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -684,7 +683,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9BCL7VAFF4;
 				INFOPLIST_FILE = ShowTime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
