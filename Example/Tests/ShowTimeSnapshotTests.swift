@@ -24,62 +24,62 @@ class ShowTimeSnapshotTests: PixelTestCase {
         mode = .test
     }
     
-    func test_init() throws {
-        try createAndVerifyTouchView()
+    func test_init() {
+        createAndVerifyTouchView()
     }
     
-    func test_fillColor_auto_usesStrokeColor() throws {
+    func test_fillColor_auto_usesStrokeColor() {
         ShowTime.fillColor = .auto
         ShowTime.strokeColor = .red
-        try createAndVerifyTouchView()
+        createAndVerifyTouchView()
     }
     
-    func test_fillColor_specific_usesSpecificColor() throws {
+    func test_fillColor_specific_usesSpecificColor() {
         ShowTime.fillColor = .orange
         ShowTime.strokeColor = .yellow
-        try createAndVerifyTouchView()
+        createAndVerifyTouchView()
     }
     
-    func test_specificSize() throws {
+    func test_specificSize() {
         ShowTime.size = CGSize(width: 22, height: 22) // TODO: Make it impossible to choose a height different from a width
-        try createAndVerifyTouchView()
+        createAndVerifyTouchView()
     }
     
-    func test_strokeWidth() throws {
+    func test_strokeWidth() {
         ShowTime.strokeWidth = 1
-        try createAndVerifyTouchView()
+        createAndVerifyTouchView()
     }
     
-    func test_multipleTapCount_off() throws {
+    func test_multipleTapCount_off() {
         ShowTime.shouldShowMultipleTapCount = false
-        try createAndVerifyTouchView(tapCount: 2)
+        createAndVerifyTouchView(tapCount: 2)
     }
     
-    func test_multipleTapCount_on() throws {
+    func test_multipleTapCount_on() {
         ShowTime.shouldShowMultipleTapCount = true
-        try createAndVerifyTouchView(tapCount: 2)
+        createAndVerifyTouchView(tapCount: 2)
     }
     
-    func test_multipleTapCount_customFont() throws {
+    func test_multipleTapCount_customFont() {
         ShowTime.shouldShowMultipleTapCount = true
         ShowTime.multipleTapCountTextFont = .italicSystemFont(ofSize: 10)
-        try createAndVerifyTouchView(tapCount: 2)
+        createAndVerifyTouchView(tapCount: 2)
     }
     
-    func test_multipleTapCount_customColor() throws {
+    func test_multipleTapCount_customColor() {
         ShowTime.shouldShowMultipleTapCount = true
         ShowTime.multipleTapCountTextColor = .white
-        try createAndVerifyTouchView(tapCount: 2)
+        createAndVerifyTouchView(tapCount: 2)
     }
     
 }
 
 private extension ShowTimeSnapshotTests {
     
-    func createAndVerifyTouchView(tapCount: Int = 1, line: UInt = #line, function: StaticString = #function) throws {
+    func createAndVerifyTouchView(tapCount: Int = 1, line: UInt = #line, function: StaticString = #function) {
         let touch = MockTouch(tapCount: tapCount, phase: .moved, type: .direct)
         let view = TouchView(touch: touch, relativeTo: UIView())
-        try verify(view, layoutStyle: .fixed(width: view.frame.width, height: view.frame.height), function: function, line: line)
+        verify(view, layoutStyle: .fixed(width: view.frame.width, height: view.frame.height), function: function, line: line)
     }
     
 }
