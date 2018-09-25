@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A9E37AEC0D6514381722EA3A027EA150"
+               BlueprintIdentifier = "30D79AD2B08FF56CFF585795A62C34F6"
                BuildableName = "Pods_ShowTimeTodayExtension.framework"
                BlueprintName = "Pods-ShowTimeTodayExtension"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A9E37AEC0D6514381722EA3A027EA150"
+            BlueprintIdentifier = "30D79AD2B08FF56CFF585795A62C34F6"
             BuildableName = "Pods_ShowTimeTodayExtension.framework"
             BlueprintName = "Pods-ShowTimeTodayExtension"
             ReferencedContainer = "container:Pods.xcodeproj">
