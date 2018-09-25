@@ -251,7 +251,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				E8A80A04E2770BBED5AEA4F8 /* [CP] Embed Pods Frameworks */,
-				CD96C685BE9DEBC1E8AEFC8F /* [CP] Copy Pods Resources */,
 				C3455824205BAE6F00364603 /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -273,7 +272,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				65513A81D039352E1ECA0B0D /* [CP] Embed Pods Frameworks */,
-				5C9AB75801A5EB6C2A39FC53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,7 +291,6 @@
 				C3455810205BAE6E00364603 /* Sources */,
 				C3455811205BAE6E00364603 /* Frameworks */,
 				C3455812205BAE6E00364603 /* Resources */,
-				41B92C6EDF34E40CFD717C1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -316,15 +313,18 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9BCL7VAFF4;
 						LastSwiftMigration = 0920;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9BCL7VAFF4;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 					C3455813205BAE6E00364603 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 9BCL7VAFF4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -343,8 +343,8 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* ShowTime_Example */,
-				607FACE41AFB9204008FA782 /* ShowTime_Tests */,
 				C3455813205BAE6E00364603 /* ShowTimeTodayExtension */,
+				607FACE41AFB9204008FA782 /* ShowTime_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -396,43 +396,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		41B92C6EDF34E40CFD717C1C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShowTimeTodayExtension/Pods-ShowTimeTodayExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5C9AB75801A5EB6C2A39FC53 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		65513A81D039352E1ECA0B0D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ShowTime-iOS9.3/ShowTime.framework",
 				"${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework",
 				"${BUILT_PRODUCTS_DIR}/PathKit/PathKit.framework",
@@ -449,7 +419,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowTime_Example-ShowTime_Tests/Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8E3AEA0C17477DA294E1B209 /* [CP] Check Pods Manifest.lock */ = {
@@ -468,21 +438,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD96C685BE9DEBC1E8AEFC8F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1E35C6D2F2014DC8EEC2842 /* [CP] Check Pods Manifest.lock */ = {
@@ -509,7 +464,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ShowTime-iOS9.3/ShowTime.framework",
 				"${BUILT_PRODUCTS_DIR}/ShowTime-iOS11.2/ShowTime.framework",
 			);
@@ -519,7 +474,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowTime_Example/Pods-ShowTime_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -701,6 +656,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9BCL7VAFF4;
 				INFOPLIST_FILE = ShowTime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -722,6 +678,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9BCL7VAFF4;
 				INFOPLIST_FILE = ShowTime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -738,6 +695,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3125EDC62DB0A9F8D45E9B41 /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 9BCL7VAFF4;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -757,6 +715,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 242CC857B408D6A30483BB0F /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 9BCL7VAFF4;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -780,6 +739,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9BCL7VAFF4;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ShowTimeTodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
@@ -804,6 +764,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BCL7VAFF4;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ShowTimeTodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;

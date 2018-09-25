@@ -13,9 +13,15 @@ import Foundation
 /// - native: Uses the device's native scale. (@2x on an iPhone SE, @3x on an iPhone 8 Plus)
 /// - explicit: Forces an explicit scale, regardless of device.
 public enum Scale {
+    
     case native
     case explicit(CGFloat)
     
+    // MARK: - Properties -
+    // MARK: Internal
+    
+    /// The value of the scale using the explicit value, or screen value if native.
+    /// I.e. Native would return 3.0 on iPhone X, 2.0 on iPhone SE.
     var explicitOrScreenNativeValue: CGFloat {
         switch self {
         case .native: return UIScreen.main.scale
@@ -23,6 +29,8 @@ public enum Scale {
         }
     }
     
+    /// The value of the scale using the explit value, or core graphics value if native.
+    /// I.e. Native would return 0, meaning use whatever the device's native value is.
     var explicitOrCoreGraphicsValue: CGFloat {
         switch self {
         case .native: return 0

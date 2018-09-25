@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CCC87C598E81986DCD0DAD318896D592"
+               BlueprintIdentifier = "C1AF07A33859ADE0A7508CC314BFD06C"
                BuildableName = "ShowTime.framework"
                BlueprintName = "ShowTime-iOS11.2"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CCC87C598E81986DCD0DAD318896D592"
+            BlueprintIdentifier = "C1AF07A33859ADE0A7508CC314BFD06C"
             BuildableName = "ShowTime.framework"
             BlueprintName = "ShowTime-iOS11.2"
             ReferencedContainer = "container:Pods.xcodeproj">
