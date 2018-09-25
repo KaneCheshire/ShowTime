@@ -1,5 +1,9 @@
 # Changelog
 
+# 2.5.0
+
+- Xcode 10/Swift 4.2 support
+
 # 2.4.0
 
 - Added default option for `fillColor` as `.auto`, which derives the color from the stroke color
