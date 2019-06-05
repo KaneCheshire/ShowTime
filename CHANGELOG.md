@@ -1,5 +1,9 @@
 # Changelog
 
+# Pending
+
+- Swift Package Manager support. ShowTime will no longer support Cocoapods as of version 3 after Xcode 11 is released. 
+
 # 2.5.0
 
 - Xcode 10/Swift 4.2 support

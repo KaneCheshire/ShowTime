@@ -11,6 +11,9 @@ let package = Package(
             name: "ShowTime",
             targets: ["ShowTime"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/KaneCheshire/PixelTest.git", .branch("feature/spm"))
+    ],
     targets: [
         .target(
             name: "ShowTime",
@@ -18,6 +21,6 @@ let package = Package(
             path: "Sources"),
         .testTarget(
             name: "ShowTimeTests",
-            dependencies: ["ShowTime"]),
+            dependencies: ["ShowTime", "PixelTest"]),
     ]
 )

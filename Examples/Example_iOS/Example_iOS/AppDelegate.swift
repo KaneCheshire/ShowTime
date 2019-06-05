@@ -8,6 +8,8 @@
 
 import UIKit
 
+// TODO: Today extension
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

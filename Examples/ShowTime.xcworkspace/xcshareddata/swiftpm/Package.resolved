@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PixelTest",
+        "repositoryURL": "https://github.com/KaneCheshire/PixelTest.git",
+        "state": {
+          "branch": "feature/spm",
+          "revision": "8f843c65395c57f4dbfea1316d1b0797db4844b3",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

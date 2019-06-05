@@ -1,6 +1,0 @@
-framework module Pods_ShowTime_Example {
-  umbrella header "Pods-ShowTime_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}
