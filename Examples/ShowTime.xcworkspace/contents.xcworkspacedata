@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ShowTime">
+      location = "group:..">
    </FileRef>
    <FileRef
-      location = "group:Example_OS/Example_OS.xcodeproj">
+      location = "group:Example_iOS/Example_iOS.xcodeproj">
    </FileRef>
 </Workspace>

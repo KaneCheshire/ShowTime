@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Example_OS
+//  Example_iOS
 //
 //  Created by Kane Cheshire on 05/06/2019.
 //  Copyright © 2019 kane.codes. All rights reserved.
@@ -12,6 +12,7 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

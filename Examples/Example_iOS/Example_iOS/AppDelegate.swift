@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Example_OS
+//  Example_iOS
 //
 //  Created by Kane Cheshire on 05/06/2019.
 //  Copyright © 2019 kane.codes. All rights reserved.
