@@ -1,8 +1,8 @@
 # Changelog
 
-# Pending
+# 2.5.1
 
-- Xcode 11.4/iOS 13.4 support
+- Xcode 11.4/iOS 13.4/Swift 5 support
 
 # 2.5.0
 
