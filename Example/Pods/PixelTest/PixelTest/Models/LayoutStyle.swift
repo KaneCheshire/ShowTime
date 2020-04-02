@@ -28,3 +28,10 @@ public enum LayoutStyle {
         }
     }
 }
+
+public extension LayoutStyle {
+    
+    /// Default `dynamicHeight` with a `fixedWidth` of `320`, i.e. iPhone SE size.
+    static let dynamicHeight: LayoutStyle = .dynamicHeight(fixedWidth: 320)
+    
+}
