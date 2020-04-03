@@ -2,15 +2,13 @@
 [![Version](https://img.shields.io/cocoapods/v/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
 [![License](https://img.shields.io/cocoapods/l/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
 [![Platform](https://img.shields.io/cocoapods/p/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/matteocrippa/awesome-swift)
 
 # It's ShowTime 🎥
 
-- [Installation (Swift 4)](#installation-swift-4)
+- [Installation](#installation)
     - [Cocoapods](#cocoapods)
     - [Manual](#manual)
-- [Installation (Swift 3)](#installation-swift-3)
-    - [Cocoapods](#cocoapods-1)
-    - [Manual](#manual-1)
 - [Usage](#usage)
 - [How it works](#how-it-works)
 - [Useful info](#useful-info)
@@ -27,40 +25,27 @@ ShowTime works with **single- and multi-window setups**, as well as in **iOS wid
 
 Check out **[How it works](#how-it-works)**.
 
-It takes less than a minute to install ShowTime, consider using it when you're sharing or recording your screen through QuickTime or AirPlay. 
+It takes less than a minute to install ShowTime, consider using it when you're sharing or recording your screen through QuickTime or AirPlay.
 
 By default, the size of the visual touches are 44pt; this mirrors Apple's guidelines for minimum hit size for buttons on iOS. You're free to change this, of course!
 
 Showing your gestures during demos gives your audience a much clearer context on what's happening on your device. Try ShowTime for your next demo, it's insanely easy to set up!
 
-**ADDED BONUS:** Adding ShowTime as a pod to your XCUI automation test target will show the taps and gestures while your automation tests run. 
+**ADDED BONUS:** Adding ShowTime as a pod to your app in debug mode will show taps
+and gestures in your XCUI automation tests while the tests run!
 
 ![ShowTime](http://kanecheshire.com/images/github/showtime-demo-4.gif)
 
-## Installation (Swift 4)
+## Installation
 
 ### Cocoapods
 
-- Step 1: Add `pod 'ShowTime', '~> 2'` to your Podfile and run `pod update` in Terminal.
-- Step 2: There is no step 2, ShowTime works as soon as you launch your app, but you can configure it if you wish!
+- Step 1: Add `pod 'ShowTime'` to your Podfile and run `pod update` in Terminal.
+- Step 2: There is no step 2, ShowTime works as soon as you launch your app, but you can [configure](#usage) it if you wish!
 
 ### Manual
 
-- Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/2.3.0/ShowTime.swift) into your project or copy the contents of it where ever you like.
-
-## Installation (Swift 3)
-
-### Cocoapods
-
-- Step 1: Add `pod 'ShowTime', '~> 1'` to your Podfile and run `pod update` in Terminal.
-- Step 2: There is no step 2, ShowTime works as soon as you launch your app, but you can configure it if you wish!
-
-### Manual
-
-- Step 1: [Switch to tag/branch `1.0.1`](https://github.com/KaneCheshire/ShowTime/tree/1.0.1) and drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/1.0.1/ShowTime.swift) into your project, or copy the contents of it where ever you like.
-- Step 2: There is no step 2, ShowTime works as soon as you launch your app, but you can configure it if you wish!
-
-**Note: If you use the latest version of ShowTime without switching to [`1.0.1`](https://github.com/KaneCheshire/ShowTime/tree/1.0.1) you'll end up with the Swift 4 version which won't work with projects using Swift 3**
+- Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/master/ShowTime.swift) into your project or copy the contents of it where ever you like.
 
 ## Usage
 

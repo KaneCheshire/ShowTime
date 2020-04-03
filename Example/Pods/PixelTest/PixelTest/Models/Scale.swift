@@ -16,9 +16,10 @@ public enum Scale {
     
     case native
     case explicit(CGFloat)
-    
-    // MARK: - Properties -
-    // MARK: Internal
+
+}
+
+extension Scale {
     
     /// The value of the scale using the explicit value, or screen value if native.
     /// I.e. Native would return 3.0 on iPhone X, 2.0 on iPhone SE.
@@ -37,4 +38,5 @@ public enum Scale {
         case .explicit(let explicit): return explicit
         }
     }
+    
 }
