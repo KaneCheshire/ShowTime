@@ -50,6 +50,7 @@ and gestures in your XCUI automation tests while the tests run!
 ### Swift Package Manager
 
 - Step 1: In Xcode 11+, add `https://github.com/KaneCheshire/ShowTime.git` to the list of Swift Package dependencies, [see here](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) for more information.
+- Step 2: There is no step 2, ShowTime works as soon as you launch your app, but you can [configure](#usage) it if you wish!
 
 ## Usage
 

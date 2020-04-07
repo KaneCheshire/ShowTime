@@ -20,6 +20,6 @@
     "ios": "8.2"
   },
   "swift_versions": "5.0",
-  "source_files": "ShowTime.swift",
+  "source_files": "Sources/ShowTime/ShowTime.swift",
   "swift_version": "5.0"
 }
