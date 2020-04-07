@@ -2,3 +2,6 @@
 /Example/ShowTime.xcworkspace/xcuserdata/kanecheshire.xcuserdatad/UserInterfaceState.xcuserstate
 *.xcuserstate
 .DS_Store
+
+.build/
+.swiftpm/
