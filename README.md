@@ -47,6 +47,10 @@ and gestures in your XCUI automation tests while the tests run!
 
 - Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/master/ShowTime.swift) into your project or copy the contents of it where ever you like.
 
+### Swift Package Manager
+
+- Step 1: In Xcode 11+, add `https://github.com/KaneCheshire/ShowTime.git` to the list of Swift Package dependencies, [see here](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) for more information.
+
 ## Usage
 
 ShowTime works out of the box (you don't even need to import the framework anywhere), but you can customise it to turn it on or off, change the colour of the taps, and even choose whether to display the number of taps for multiple taps.
