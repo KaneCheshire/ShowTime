@@ -218,7 +218,7 @@ extension UIWindow {
     }
     
     private func touchBegan(_ touch: UITouch) {
-		guard _touches[touch] == nil else { return } // Fixes a bug in iOS 13.4 which sends duplicated touch events with a pointer
+        guard _touches[touch] == nil else { return } // Fixes a bug in iOS 13.4 which sends duplicated touch events with a pointer
         let touchView = TouchView(touch: touch, relativeTo: self)
         addSubview(touchView)
         _touches[touch] = touchView
