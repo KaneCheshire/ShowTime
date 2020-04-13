@@ -1,5 +1,10 @@
 # Changelog
 
+# 2.5.2
+
+- Adds support for Swift Package Manager (@maxxfrazer)
+- Fixes an issue in iPadOS 13.4 when using a pointer, that would show a "stuck" touch view.
+
 # 2.5.1
 
 - Xcode 11.4/iOS 13.4/Swift 5 support
