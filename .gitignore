@@ -1,4 +1,7 @@
-/ShowTime.xcodeproj/xcuserdata/kanecheshire.xcuserdatad/xcdebugger
-/Example/ShowTime.xcworkspace/xcuserdata/kanecheshire.xcuserdatad/UserInterfaceState.xcuserstate
+/ShowTime.xcodeproj/xcuserdata/*
+/Example/ShowTime.xcworkspace/xcuserdata/*
 *.xcuserstate
 .DS_Store
+
+.build/
+.swiftpm/
