@@ -151,8 +151,8 @@ class TouchView: UILabel {
             case .scaleUp: self.animateScaleUp()
             case .custom(let custom): custom(self)
             }
-            }, completion: { [weak self] _ in
-                self?.removeFromSuperview()
+            }, completion: { _ in
+                self.removeFromSuperview()
         })
     }
     
@@ -204,7 +204,7 @@ extension UIWindow {
     }
     
     @objc private func swizzled_sendEvent(_ event: UIEvent) {
-        self.swizzled_sendEvent(event)
+        swizzled_sendEvent(event)
         guard ShowTime.shouldEnable else { return removeAllTouchViews() }
         event.allTouches?.forEach {
             if ShowTime.shouldIgnoreApplePencilEvents && $0.isApplePencil { return }
@@ -212,14 +212,15 @@ extension UIWindow {
             case .began: touchBegan($0)
             case .moved, .stationary: touchMoved($0)
             case .cancelled, .ended: touchEnded($0)
-            @unknown default: return
+            default: return
             }
         }
     }
     
     private func touchBegan(_ touch: UITouch) {
+		guard _touches[touch] == nil else { return } // Fixes a bug in iOS 13.4 which sends duplicated touch events with a pointer
         let touchView = TouchView(touch: touch, relativeTo: self)
-        self.addSubview(touchView)
+        addSubview(touchView)
         _touches[touch] = touchView
     }
     

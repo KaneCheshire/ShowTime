@@ -7,48 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09F36ECB742439348653C6B39DFD5CC7 /* PlaceholderImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60206A97607E3DEE9A1E79AA2BFA710D /* PlaceholderImageGenerator.swift */; };
-		0A22E9F85E311264501F23A3EDD6BA14 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD500DE6EB30F065E3120C8D79371ED /* Errors.swift */; };
+		09F36ECB742439348653C6B39DFD5CC7 /* PlaceholderImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43897CB4CD4C2F2B4AEBEA5D573607D /* PlaceholderImageGenerator.swift */; };
+		0A22E9F85E311264501F23A3EDD6BA14 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F23ED38CD1B08FDE0E82746D33686B9 /* Errors.swift */; };
 		0BCA985268796DF8FD516782F203D52F /* Pods-ShowTime_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CA8B226B67DD6D3204E2D6C2FC44F4 /* Pods-ShowTime_Example-dummy.m */; };
-		0D3C19B673AFD0787B8C4962E4C2C1D5 /* InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0288CC62464C6358B8AAB6F172E7AEFE /* InfoPlist.swift */; };
-		0FB3454948FF33CEE9384EC0695C46E1 /* XCTestCase+AddAttachmentWithName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB35D1E83470A2C16830E2686EE8913 /* XCTestCase+AddAttachmentWithName.swift */; };
-		12DFD50E2074930A03CEE6DEE7223528 /* UIImage+PixelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0192DB390A7ED78049F779EBDBDD8CB4 /* UIImage+PixelTest.swift */; };
-		15E465088861E8CF7AF1C42541911A2D /* PixelTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8AB42D42544A4F77BFCC4BF232817BA /* PixelTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B6BB52D60818CE54B3AA6E2E32C3A03 /* LayoutCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D84469332629C46CFFDEF9A3F7788 /* LayoutCoordinatorType.swift */; };
-		22A3D7C39443BB0F70F87DBF8BF02F2B /* UIImage+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A802F8AB30DC8D140813FF04417F6F /* UIImage+Placeholder.swift */; };
+		0D3C19B673AFD0787B8C4962E4C2C1D5 /* InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFDAF4DA78EF678BAD99DBA7C03ADE /* InfoPlist.swift */; };
+		0FB3454948FF33CEE9384EC0695C46E1 /* XCTestCase+AddAttachmentWithName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D535F1E41E6C0EA16FD26CF783524 /* XCTestCase+AddAttachmentWithName.swift */; };
+		12DFD50E2074930A03CEE6DEE7223528 /* UIImage+PixelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B27EB3314B318214A12DB44B3D375 /* UIImage+PixelTest.swift */; };
+		15E465088861E8CF7AF1C42541911A2D /* PixelTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F91B1788DA42A81248D7B12A5B1670 /* PixelTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B6BB52D60818CE54B3AA6E2E32C3A03 /* LayoutCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF22CDB950313C22D0966C1F1C392148 /* LayoutCoordinatorType.swift */; };
+		22A3D7C39443BB0F70F87DBF8BF02F2B /* UIImage+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C03985B93A2A833BECDF0608EF458 /* UIImage+Placeholder.swift */; };
 		267805C828A9D1D94D9CACAE5C603CDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10720798F5DB94D1CFE0EE52E3A844E1 /* Foundation.framework */; };
-		2688C5BFC60DA6363E15AADADE3AA493 /* PixelTest+VerifyConveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B7D786D1213F6A182F9D102EED0187 /* PixelTest+VerifyConveniences.swift */; };
-		27CB0A5EB157C02C3FDFCC594331324E /* ShowTime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FA38FDA1B656FB8C42985541C9A34D5 /* ShowTime-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		297110319FA126220FEA17D44DD9A973 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26E14D3D129CA4298B2BA9CBD0E9FA /* Mode.swift */; };
+		2688C5BFC60DA6363E15AADADE3AA493 /* PixelTest+VerifyConveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B91A42920D2E7992C015709553FB6 /* PixelTest+VerifyConveniences.swift */; };
+		27CB0A5EB157C02C3FDFCC594331324E /* ShowTime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8D9428BC855E71E40E223B86A1BEE8F /* ShowTime-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		297110319FA126220FEA17D44DD9A973 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6D8AF57229805EC451653DD19712C5 /* Mode.swift */; };
 		299541F8A3E193E3C62118F07752617A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10720798F5DB94D1CFE0EE52E3A844E1 /* Foundation.framework */; };
-		3227A45F9AF97BADD4437F6D34334A57 /* FileCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB648A6618AB5C92D08C41EBBF1CF3 /* FileCoordinatorType.swift */; };
+		3227A45F9AF97BADD4437F6D34334A57 /* FileCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DDA4E78EE1A79CFD765CC084EC3E8D /* FileCoordinatorType.swift */; };
 		3C09FC14F69BE3182BFB319263F186A8 /* Pods-ShowTimeTodayExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB90A64C40E7D88C99D332564F8A55FD /* Pods-ShowTimeTodayExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C892CB7517172243FF2DA110515208C /* ShowTime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A93D9EA1A298358AB9722D381CC8AE5 /* ShowTime-dummy.m */; };
-		438213685690E0CC70E00BE41E788CE6 /* TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35CE51634EB391C29E388D2925B3F5 /* TestCoordinator.swift */; };
-		4447B2C0A916F7BCD28C875454D606BE /* PixelTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B92E956E59E87055D3AF112CA4346F /* PixelTest-dummy.m */; };
-		55043A470BF3392B9C49E5F2E1FD79EF /* PixelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3E35F4B7443C5597EC6F7109F55CA /* PixelTestCase.swift */; };
-		57FF7140A31F4CD3613EC3C86E5D5820 /* String+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4454A1A45AD32B351061A186058630 /* String+Content.swift */; };
-		5865EB9200B57F9F88E8BA1818BBF413 /* LayoutStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6184EED7C02677E26F9829E6FD6ABD6C /* LayoutStyle.swift */; };
-		5E13536793152AA805F1F296B0D60C3E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE71B7FA6173C3B05886F0886F5E57 /* Configuration.swift */; };
-		657E0689BE204FB65ACE08BFDD68BFD2 /* XCTestCase+InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF154F0A1F8ABE6C8D43EDF57AC137 /* XCTestCase+InfoPlist.swift */; };
-		705C2E5B3E26D23AE535B3EC5865BAEA /* UIView+PixelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10496A73569636C50097825C6E726643 /* UIView+PixelTest.swift */; };
-		80AEC4B42A8A1F159CE005B112E06F05 /* FileManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49087FD6E5571C2D0D91621EAAC415 /* FileManagerType.swift */; };
-		87E1E3B67D117091F59B36E19381AC10 /* ImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5788EED68E097F0C1CE253BC6C6E18B3 /* ImageType.swift */; };
+		3C892CB7517172243FF2DA110515208C /* ShowTime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3703424CAC8E10825C519DA74E5247A1 /* ShowTime-dummy.m */; };
+		438213685690E0CC70E00BE41E788CE6 /* TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568052AF213A42AEDDBC1A6279224DB3 /* TestCoordinator.swift */; };
+		4447B2C0A916F7BCD28C875454D606BE /* PixelTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9CF45B60800EFC5517EE2DFE002EE2 /* PixelTest-dummy.m */; };
+		55043A470BF3392B9C49E5F2E1FD79EF /* PixelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088C6578CB3CC4E61DCC87E868FE8AC5 /* PixelTestCase.swift */; };
+		57FF7140A31F4CD3613EC3C86E5D5820 /* String+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CFB8FBA800C0FE310148720126E1F8 /* String+Content.swift */; };
+		5865EB9200B57F9F88E8BA1818BBF413 /* LayoutStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7991F92E2DDB6C5AACB76ACC2C042D /* LayoutStyle.swift */; };
+		5E13536793152AA805F1F296B0D60C3E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C95B00233CC950071D025224031EA /* Configuration.swift */; };
+		657E0689BE204FB65ACE08BFDD68BFD2 /* XCTestCase+InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABBAB46D308491917FC9E20AE7C3DE /* XCTestCase+InfoPlist.swift */; };
+		705C2E5B3E26D23AE535B3EC5865BAEA /* UIView+PixelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFA9E984E64290DDF7FB01B1E305908 /* UIView+PixelTest.swift */; };
+		80AEC4B42A8A1F159CE005B112E06F05 /* FileManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F5000C8B619BE7F424895F6132C105 /* FileManagerType.swift */; };
+		87E1E3B67D117091F59B36E19381AC10 /* ImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01145D1C79E05A376C1298934C6BDA1 /* ImageType.swift */; };
 		9635257C5C62FDAD26D84BA0A2711A3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10720798F5DB94D1CFE0EE52E3A844E1 /* Foundation.framework */; };
-		A1AF8927927DC41EF3032F5C15CF39E8 /* RecordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CAB0E24E8E33E7B6ED5593AEC177E5 /* RecordCoordinator.swift */; };
-		AC5FE88505F381677C16B751B374B1D4 /* ResultsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D9E3FF366CF160DC37DBD81CE85828 /* ResultsCoordinator.swift */; };
-		ACFBEF01CAFFFCE8567E247D7B696B7A /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BD7A2A7511EB9C932EA1D2859524 /* Scale.swift */; };
-		AF493C996737575AF429CFBF53814507 /* TestCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE047DA7DDD51C3857ED57CF9F4E4EC /* TestCoordinatorType.swift */; };
-		B7FB5404FF0CC5764D639E827F8C9F7A /* RecordCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A7229A3D2875F58EC79394B5F0974C /* RecordCoordinatorType.swift */; };
-		BA42C86F6872AC87ADF7110F65920109 /* ShowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD3585AC5E47E8825A721BFA67F3A2B /* ShowTime.swift */; };
+		A1AF8927927DC41EF3032F5C15CF39E8 /* RecordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34288392E2943A0B42B3B142E102018 /* RecordCoordinator.swift */; };
+		AC5FE88505F381677C16B751B374B1D4 /* ResultsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87EFB7377FDF2CA65CC9615200BBC4D /* ResultsCoordinator.swift */; };
+		ACFBEF01CAFFFCE8567E247D7B696B7A /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4FC288C1231A5FE80307BC6ECDAFD /* Scale.swift */; };
+		AF493C996737575AF429CFBF53814507 /* TestCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE25A600CC3EC93BD7882FC57911ED33 /* TestCoordinatorType.swift */; };
+		B7FB5404FF0CC5764D639E827F8C9F7A /* RecordCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BE32C9E026352C050D6BE888E501A8 /* RecordCoordinatorType.swift */; };
+		BA42C86F6872AC87ADF7110F65920109 /* ShowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6141740DD3CE32E98CED9F2B1244CF /* ShowTime.swift */; };
 		BA64DE5841911EC83C1484A7F367F150 /* Pods-ShowTimeTodayExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC012A913BEBFDC4D438CD2785E044C /* Pods-ShowTimeTodayExtension-dummy.m */; };
 		BB1B30464B0F371B3B4F53C1B4F78365 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314B25FC63A2DE537971096596F6B6CF /* UIKit.framework */; };
 		BD8574CE20AA18F3AAB2ACBB8A1AD019 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D70BF75F62472300149937331A6D04A /* XCTest.framework */; };
 		D511ABEDA23079E18684189C5C43B2BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10720798F5DB94D1CFE0EE52E3A844E1 /* Foundation.framework */; };
 		E19F9C22E1A0F36C33B01135DA78718A /* Pods-ShowTime_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 396400E530F55EF1A3990DC14C29F29B /* Pods-ShowTime_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1F39318061EC706FAA65413001489D7 /* LayoutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFCA01B12B601C37675E424C869AD32 /* LayoutCoordinator.swift */; };
+		E1F39318061EC706FAA65413001489D7 /* LayoutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB80F2032793BD096982A748C3A92BE6 /* LayoutCoordinator.swift */; };
 		EA4BD146A10C801A99B788F9599438A4 /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1DFED1207BD8DA92A0E6BC2FEC9C /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m */; };
-		EED7E58598D4C38690FBA5545DEA90F7 /* FileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045487C197B3BA91CCA570FD9961C04D /* FileCoordinator.swift */; };
+		EED7E58598D4C38690FBA5545DEA90F7 /* FileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBABF043F5B2DF097FA057C28708494 /* FileCoordinator.swift */; };
 		EF4E4F8677E849C1DCAED2AF09727851 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10720798F5DB94D1CFE0EE52E3A844E1 /* Foundation.framework */; };
 		F6B482FC7BA79E5F72EF3C648D4206C8 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAEF5CB5681B1C2A30DD8085E7448799 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -86,84 +86,82 @@
 
 /* Begin PBXFileReference section */
 		014387D25C300AB8D77DB6D3842C549A /* Pods-ShowTimeTodayExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTimeTodayExtension-Info.plist"; sourceTree = "<group>"; };
-		0192DB390A7ED78049F779EBDBDD8CB4 /* UIImage+PixelTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+PixelTest.swift"; path = "PixelTest/Extensions/UIImage+PixelTest.swift"; sourceTree = "<group>"; };
-		0288CC62464C6358B8AAB6F172E7AEFE /* InfoPlist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfoPlist.swift; path = PixelTest/Models/InfoPlist.swift; sourceTree = "<group>"; };
-		045487C197B3BA91CCA570FD9961C04D /* FileCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileCoordinator.swift; path = PixelTest/Coordinators/FileCoordinator.swift; sourceTree = "<group>"; };
-		0A35CE51634EB391C29E388D2925B3F5 /* TestCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCoordinator.swift; path = PixelTest/Coordinators/TestCoordinator.swift; sourceTree = "<group>"; };
-		0BB3E35F4B7443C5597EC6F7109F55CA /* PixelTestCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PixelTestCase.swift; path = PixelTest/PixelTestCase.swift; sourceTree = "<group>"; };
-		10496A73569636C50097825C6E726643 /* UIView+PixelTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PixelTest.swift"; path = "PixelTest/Extensions/UIView+PixelTest.swift"; sourceTree = "<group>"; };
+		088C6578CB3CC4E61DCC87E868FE8AC5 /* PixelTestCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PixelTestCase.swift; path = PixelTest/PixelTestCase.swift; sourceTree = "<group>"; };
+		08E8BFE437D3D8D48541F9BCCF7D4E21 /* ShowTime.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ShowTime.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		091C03985B93A2A833BECDF0608EF458 /* UIImage+Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Placeholder.swift"; path = "PixelTest/Extensions/UIImage+Placeholder.swift"; sourceTree = "<group>"; };
+		0F0C2E6E4BC4E74846D5377A20DD8D65 /* ShowTime-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-prefix.pch"; sourceTree = "<group>"; };
 		10720798F5DB94D1CFE0EE52E3A844E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		15F116B846D3986A5036F071FA199CFA /* PixelTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PixelTest.debug.xcconfig; sourceTree = "<group>"; };
-		18A802F8AB30DC8D140813FF04417F6F /* UIImage+Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Placeholder.swift"; path = "PixelTest/Extensions/UIImage+Placeholder.swift"; sourceTree = "<group>"; };
 		191A3C82FBE74D46583A387031E1F9F3 /* Pods-ShowTime_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1A1D81A224A0F9E3ADA45C7C21CE137D /* Pods-ShowTime_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-Info.plist"; sourceTree = "<group>"; };
-		20B92E956E59E87055D3AF112CA4346F /* PixelTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PixelTest-dummy.m"; sourceTree = "<group>"; };
+		20F91B1788DA42A81248D7B12A5B1670 /* PixelTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PixelTest-umbrella.h"; sourceTree = "<group>"; };
 		246C5312AD287517A78640A4FAF48421 /* ShowTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShowTime.framework; path = ShowTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26719205B1D821FA2C6D80749FFC407D /* Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		27D884F06C250A848DC3944B127DE5AC /* PixelTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PixelTest.framework; path = PixelTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		30BE71B7FA6173C3B05886F0886F5E57 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = PixelTest/Models/Configuration.swift; sourceTree = "<group>"; };
 		314B25FC63A2DE537971096596F6B6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		32CB5F5FB725B1A4E5073076953601DF /* ShowTime.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShowTime.xcconfig; sourceTree = "<group>"; };
+		3335C31E88E603EE5BE5CF1826747C3A /* PixelTest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PixelTest-prefix.pch"; sourceTree = "<group>"; };
+		369CA4736211D33D8679EB43FB6379D6 /* PixelTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PixelTest.xcconfig; sourceTree = "<group>"; };
+		3703424CAC8E10825C519DA74E5247A1 /* ShowTime-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShowTime-dummy.m"; sourceTree = "<group>"; };
 		396400E530F55EF1A3990DC14C29F29B /* Pods-ShowTime_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTime_Example-umbrella.h"; sourceTree = "<group>"; };
-		3B26E14D3D129CA4298B2BA9CBD0E9FA /* Mode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mode.swift; path = PixelTest/Models/Mode.swift; sourceTree = "<group>"; };
-		3F4454A1A45AD32B351061A186058630 /* String+Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Content.swift"; path = "PixelTest/Extensions/String+Content.swift"; sourceTree = "<group>"; };
-		418FB048388B60DD9AA5B977D7C7EEE9 /* PixelTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PixelTest.release.xcconfig; sourceTree = "<group>"; };
+		3C0D535F1E41E6C0EA16FD26CF783524 /* XCTestCase+AddAttachmentWithName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+AddAttachmentWithName.swift"; path = "PixelTest/Extensions/XCTestCase+AddAttachmentWithName.swift"; sourceTree = "<group>"; };
 		47CD64A6EAFEF3A42ED334E5E1436B09 /* Pods-ShowTime_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShowTime_Example.modulemap"; sourceTree = "<group>"; };
-		4CB35D1E83470A2C16830E2686EE8913 /* XCTestCase+AddAttachmentWithName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+AddAttachmentWithName.swift"; path = "PixelTest/Extensions/XCTestCase+AddAttachmentWithName.swift"; sourceTree = "<group>"; };
-		4E2D84469332629C46CFFDEF9A3F7788 /* LayoutCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutCoordinatorType.swift; path = PixelTest/Protocols/LayoutCoordinatorType.swift; sourceTree = "<group>"; };
-		50C2425A434BBC04BAA53C9CA786F8E9 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
-		5788EED68E097F0C1CE253BC6C6E18B3 /* ImageType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageType.swift; path = PixelTest/Models/ImageType.swift; sourceTree = "<group>"; };
+		4B4B27EB3314B318214A12DB44B3D375 /* UIImage+PixelTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+PixelTest.swift"; path = "PixelTest/Extensions/UIImage+PixelTest.swift"; sourceTree = "<group>"; };
+		50F5000C8B619BE7F424895F6132C105 /* FileManagerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileManagerType.swift; path = PixelTest/Protocols/FileManagerType.swift; sourceTree = "<group>"; };
+		54BE32C9E026352C050D6BE888E501A8 /* RecordCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordCoordinatorType.swift; path = PixelTest/Protocols/RecordCoordinatorType.swift; sourceTree = "<group>"; };
+		568052AF213A42AEDDBC1A6279224DB3 /* TestCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCoordinator.swift; path = PixelTest/Coordinators/TestCoordinator.swift; sourceTree = "<group>"; };
 		5A1F1DFED1207BD8DA92A0E6BC2FEC9C /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowTime_Example-ShowTime_Tests-dummy.m"; sourceTree = "<group>"; };
 		5A80FEF07D5ECC9D9FF381EAD4BE98E6 /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B9CF45B60800EFC5517EE2DFE002EE2 /* PixelTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PixelTest-dummy.m"; sourceTree = "<group>"; };
 		5BC012A913BEBFDC4D438CD2785E044C /* Pods-ShowTimeTodayExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowTimeTodayExtension-dummy.m"; sourceTree = "<group>"; };
-		5CD500DE6EB30F065E3120C8D79371ED /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = PixelTest/Models/Errors.swift; sourceTree = "<group>"; };
-		60206A97607E3DEE9A1E79AA2BFA710D /* PlaceholderImageGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderImageGenerator.swift; path = PixelTest/Models/PlaceholderImageGenerator.swift; sourceTree = "<group>"; };
 		60BCFD8483B52FFE5A82A4A03A11CCB8 /* Pods-ShowTimeTodayExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTimeTodayExtension-acknowledgements.plist"; sourceTree = "<group>"; };
-		6184EED7C02677E26F9829E6FD6ABD6C /* LayoutStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutStyle.swift; path = PixelTest/Models/LayoutStyle.swift; sourceTree = "<group>"; };
+		620B91A42920D2E7992C015709553FB6 /* PixelTest+VerifyConveniences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PixelTest+VerifyConveniences.swift"; path = "PixelTest/PixelTest+VerifyConveniences.swift"; sourceTree = "<group>"; };
 		63CA8B226B67DD6D3204E2D6C2FC44F4 /* Pods-ShowTime_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowTime_Example-dummy.m"; sourceTree = "<group>"; };
-		6CA7F1675FE943431F17CF4F4D708A41 /* ShowTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShowTime.release.xcconfig; sourceTree = "<group>"; };
+		6CBABF043F5B2DF097FA057C28708494 /* FileCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileCoordinator.swift; path = PixelTest/Coordinators/FileCoordinator.swift; sourceTree = "<group>"; };
 		6D70BF75F62472300149937331A6D04A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6F9745CBB742022F91208E95520BE910 /* Pods-ShowTimeTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTimeTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
-		6FBB648A6618AB5C92D08C41EBBF1CF3 /* FileCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileCoordinatorType.swift; path = PixelTest/Protocols/FileCoordinatorType.swift; sourceTree = "<group>"; };
-		749C73171DC7E0DB9860E084E377C039 /* PixelTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PixelTest.modulemap; sourceTree = "<group>"; };
-		7A93D9EA1A298358AB9722D381CC8AE5 /* ShowTime-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShowTime-dummy.m"; sourceTree = "<group>"; };
-		7B49087FD6E5571C2D0D91621EAAC415 /* FileManagerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileManagerType.swift; path = PixelTest/Protocols/FileManagerType.swift; sourceTree = "<group>"; };
+		768C95B00233CC950071D025224031EA /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = PixelTest/Models/Configuration.swift; sourceTree = "<group>"; };
 		7B5FE6FF8ABB5FCF521C328BD74642E2 /* Pods_ShowTimeTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTimeTodayExtension.framework; path = "Pods-ShowTimeTodayExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF4FC288C1231A5FE80307BC6ECDAFD /* Scale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scale.swift; path = PixelTest/Models/Scale.swift; sourceTree = "<group>"; };
 		7D7528BA6BBACECE3D023443D3EF0A18 /* Pods-ShowTime_Example-ShowTime_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShowTime_Example-ShowTime_Tests.modulemap"; sourceTree = "<group>"; };
-		7DE047DA7DDD51C3857ED57CF9F4E4EC /* TestCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCoordinatorType.swift; path = PixelTest/Protocols/TestCoordinatorType.swift; sourceTree = "<group>"; };
 		7E9A799019B812061A722AFDFDE23696 /* Pods-ShowTimeTodayExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTimeTodayExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		82B7D786D1213F6A182F9D102EED0187 /* PixelTest+VerifyConveniences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PixelTest+VerifyConveniences.swift"; path = "PixelTest/PixelTest+VerifyConveniences.swift"; sourceTree = "<group>"; };
-		88D9E3FF366CF160DC37DBD81CE85828 /* ResultsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultsCoordinator.swift; path = PixelTest/Coordinators/ResultsCoordinator.swift; sourceTree = "<group>"; };
-		8CD3585AC5E47E8825A721BFA67F3A2B /* ShowTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShowTime.swift; path = Sources/ShowTime/ShowTime.swift; sourceTree = "<group>"; };
+		81DDA4E78EE1A79CFD765CC084EC3E8D /* FileCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileCoordinatorType.swift; path = PixelTest/Protocols/FileCoordinatorType.swift; sourceTree = "<group>"; };
 		8CEC4DEF66E14AAEAFF2E02E3900CED5 /* Pods_ShowTime_Example_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTime_Example_ShowTime_Tests.framework; path = "Pods-ShowTime_Example-ShowTime_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F23ED38CD1B08FDE0E82746D33686B9 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = PixelTest/Models/Errors.swift; sourceTree = "<group>"; };
 		90BDD1BBA118D508DEEBB1B1697A0F8F /* Pods-ShowTimeTodayExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShowTimeTodayExtension.modulemap"; sourceTree = "<group>"; };
 		95B0433121CAE83FF0D196FEF99FEF97 /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9979076F0A62451D8A444BE63CA1AD36 /* ShowTime-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShowTime-Info.plist"; sourceTree = "<group>"; };
+		9C4A44005FF5963A404CB788A3DA8881 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EFCA01B12B601C37675E424C869AD32 /* LayoutCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutCoordinator.swift; path = PixelTest/Coordinators/LayoutCoordinator.swift; sourceTree = "<group>"; };
-		9FA38FDA1B656FB8C42985541C9A34D5 /* ShowTime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-umbrella.h"; sourceTree = "<group>"; };
-		A0AF154F0A1F8ABE6C8D43EDF57AC137 /* XCTestCase+InfoPlist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+InfoPlist.swift"; path = "PixelTest/Extensions/XCTestCase+InfoPlist.swift"; sourceTree = "<group>"; };
-		A8AB42D42544A4F77BFCC4BF232817BA /* PixelTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PixelTest-umbrella.h"; sourceTree = "<group>"; };
-		AF15CBACB5465AF2DE91B6B85D41E6C8 /* ShowTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShowTime.debug.xcconfig; sourceTree = "<group>"; };
+		A01145D1C79E05A376C1298934C6BDA1 /* ImageType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageType.swift; path = PixelTest/Models/ImageType.swift; sourceTree = "<group>"; };
+		A4CFB8FBA800C0FE310148720126E1F8 /* String+Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Content.swift"; path = "PixelTest/Extensions/String+Content.swift"; sourceTree = "<group>"; };
+		A8EFDAF4DA78EF678BAD99DBA7C03ADE /* InfoPlist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfoPlist.swift; path = PixelTest/Models/InfoPlist.swift; sourceTree = "<group>"; };
+		AF6141740DD3CE32E98CED9F2B1244CF /* ShowTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShowTime.swift; path = Sources/ShowTime/ShowTime.swift; sourceTree = "<group>"; };
+		AFB0279006B28BB4E87DC848367E9046 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		B0BB85CE08E43397E09AA238C7E6A3A1 /* Pods-ShowTime_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B2BE7D53D20CD029A9AD0E126CF18D0D /* Pods-ShowTime_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B3A7229A3D2875F58EC79394B5F0974C /* RecordCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordCoordinatorType.swift; path = PixelTest/Protocols/RecordCoordinatorType.swift; sourceTree = "<group>"; };
 		B5AE568F0E915D98F77F76786E50C8CA /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B5CAB0E24E8E33E7B6ED5593AEC177E5 /* RecordCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordCoordinator.swift; path = PixelTest/Coordinators/RecordCoordinator.swift; sourceTree = "<group>"; };
 		B61B3E0B8E29BB9549A40D8E967F8C87 /* Pods_ShowTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTime_Example.framework; path = "Pods-ShowTime_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA2CECC06931157B554F15DE4A4BA4FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B87EFB7377FDF2CA65CC9615200BBC4D /* ResultsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultsCoordinator.swift; path = PixelTest/Coordinators/ResultsCoordinator.swift; sourceTree = "<group>"; };
+		B8D9428BC855E71E40E223B86A1BEE8F /* ShowTime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-umbrella.h"; sourceTree = "<group>"; };
 		BB90A64C40E7D88C99D332564F8A55FD /* Pods-ShowTimeTodayExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTimeTodayExtension-umbrella.h"; sourceTree = "<group>"; };
-		BC29DC25C27F6E2B5D3C6497628FFBD9 /* PixelTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PixelTest-Info.plist"; sourceTree = "<group>"; };
-		BCEC3DA23D548A9FE81777CE68B61931 /* PixelTest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PixelTest-prefix.pch"; sourceTree = "<group>"; };
-		C7C9E1751095BA349BBEC909C7DC302A /* ShowTime.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ShowTime.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE25A600CC3EC93BD7882FC57911ED33 /* TestCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCoordinatorType.swift; path = PixelTest/Protocols/TestCoordinatorType.swift; sourceTree = "<group>"; };
 		C93BE64C80FBD814BC41EFB78ABA7BC6 /* Pods-ShowTimeTodayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTimeTodayExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		CA47493240E304EE47627CA91EC8576A /* Pods-ShowTime_Example-ShowTime_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-ShowTime_Tests-Info.plist"; sourceTree = "<group>"; };
-		CFE3D1BC24C345C93ECBF4E4F9FE3072 /* ShowTime-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-prefix.pch"; sourceTree = "<group>"; };
 		CFE5E5C85CF19A7EE691C8E3E1C91A31 /* Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example-ShowTime_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D928CF2E95E2C891B5CE17C8F58846F2 /* ShowTime.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShowTime.modulemap; sourceTree = "<group>"; };
-		E158BD7A2A7511EB9C932EA1D2859524 /* Scale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scale.swift; path = PixelTest/Models/Scale.swift; sourceTree = "<group>"; };
+		D0BE77297F11EF9E8781D0D2B235887F /* PixelTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PixelTest.modulemap; sourceTree = "<group>"; };
+		D34288392E2943A0B42B3B142E102018 /* RecordCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordCoordinator.swift; path = PixelTest/Coordinators/RecordCoordinator.swift; sourceTree = "<group>"; };
+		DA6D8AF57229805EC451653DD19712C5 /* Mode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mode.swift; path = PixelTest/Models/Mode.swift; sourceTree = "<group>"; };
+		DB80F2032793BD096982A748C3A92BE6 /* LayoutCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutCoordinator.swift; path = PixelTest/Coordinators/LayoutCoordinator.swift; sourceTree = "<group>"; };
+		DF22CDB950313C22D0966C1F1C392148 /* LayoutCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutCoordinatorType.swift; path = PixelTest/Protocols/LayoutCoordinatorType.swift; sourceTree = "<group>"; };
+		E43897CB4CD4C2F2B4AEBEA5D573607D /* PlaceholderImageGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaceholderImageGenerator.swift; path = PixelTest/Models/PlaceholderImageGenerator.swift; sourceTree = "<group>"; };
 		EAEF5CB5681B1C2A30DD8085E7448799 /* Pods-ShowTime_Example-ShowTime_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTime_Example-ShowTime_Tests-umbrella.h"; sourceTree = "<group>"; };
+		EB34473CA75065BBA4B448F0BD7D8183 /* ShowTime-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShowTime-Info.plist"; sourceTree = "<group>"; };
 		EC0B270E8B8EC6C9620296DDC3A1C2E4 /* Pods-ShowTime_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTime_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF7991F92E2DDB6C5AACB76ACC2C042D /* LayoutStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutStyle.swift; path = PixelTest/Models/LayoutStyle.swift; sourceTree = "<group>"; };
 		F1FBFDA43DEBD339C71631D231F65A7F /* Pods-ShowTime_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F6FF83EC024A9584209E0B772E2C81A8 /* PixelTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PixelTest-Info.plist"; sourceTree = "<group>"; };
+		F7ABB039BBF4491609F6BA20483D80F0 /* ShowTime.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShowTime.modulemap; sourceTree = "<group>"; };
+		FBABBAB46D308491917FC9E20AE7C3DE /* XCTestCase+InfoPlist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+InfoPlist.swift"; path = "PixelTest/Extensions/XCTestCase+InfoPlist.swift"; sourceTree = "<group>"; };
+		FFFA9E984E64290DDF7FB01B1E305908 /* UIView+PixelTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PixelTest.swift"; path = "PixelTest/Extensions/UIView+PixelTest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,17 +210,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		026EAC7A579F0B4A759F085F9D49E590 /* ShowTime */ = {
-			isa = PBXGroup;
-			children = (
-				8CD3585AC5E47E8825A721BFA67F3A2B /* ShowTime.swift */,
-				71BDFF497F1B96A48CB744924A3FD3B7 /* Pod */,
-				5238A20497C917128787C955386ABF6F /* Support Files */,
-			);
-			name = ShowTime;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +228,52 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		15217AEFF28930A15B95322771FC9607 /* ShowTime */ = {
+			isa = PBXGroup;
+			children = (
+				AF6141740DD3CE32E98CED9F2B1244CF /* ShowTime.swift */,
+				44E73E485FA4E7A310F01F2EB1184C76 /* Pod */,
+				3E226031E4924FB32714BBF437D0F9ED /* Support Files */,
+			);
+			name = ShowTime;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1F34784C46CF98C27CA9E1E29002D7F2 /* PixelTest */ = {
+			isa = PBXGroup;
+			children = (
+				768C95B00233CC950071D025224031EA /* Configuration.swift */,
+				8F23ED38CD1B08FDE0E82746D33686B9 /* Errors.swift */,
+				6CBABF043F5B2DF097FA057C28708494 /* FileCoordinator.swift */,
+				81DDA4E78EE1A79CFD765CC084EC3E8D /* FileCoordinatorType.swift */,
+				50F5000C8B619BE7F424895F6132C105 /* FileManagerType.swift */,
+				A01145D1C79E05A376C1298934C6BDA1 /* ImageType.swift */,
+				A8EFDAF4DA78EF678BAD99DBA7C03ADE /* InfoPlist.swift */,
+				DB80F2032793BD096982A748C3A92BE6 /* LayoutCoordinator.swift */,
+				DF22CDB950313C22D0966C1F1C392148 /* LayoutCoordinatorType.swift */,
+				EF7991F92E2DDB6C5AACB76ACC2C042D /* LayoutStyle.swift */,
+				DA6D8AF57229805EC451653DD19712C5 /* Mode.swift */,
+				620B91A42920D2E7992C015709553FB6 /* PixelTest+VerifyConveniences.swift */,
+				088C6578CB3CC4E61DCC87E868FE8AC5 /* PixelTestCase.swift */,
+				E43897CB4CD4C2F2B4AEBEA5D573607D /* PlaceholderImageGenerator.swift */,
+				D34288392E2943A0B42B3B142E102018 /* RecordCoordinator.swift */,
+				54BE32C9E026352C050D6BE888E501A8 /* RecordCoordinatorType.swift */,
+				B87EFB7377FDF2CA65CC9615200BBC4D /* ResultsCoordinator.swift */,
+				7CF4FC288C1231A5FE80307BC6ECDAFD /* Scale.swift */,
+				A4CFB8FBA800C0FE310148720126E1F8 /* String+Content.swift */,
+				568052AF213A42AEDDBC1A6279224DB3 /* TestCoordinator.swift */,
+				BE25A600CC3EC93BD7882FC57911ED33 /* TestCoordinatorType.swift */,
+				4B4B27EB3314B318214A12DB44B3D375 /* UIImage+PixelTest.swift */,
+				091C03985B93A2A833BECDF0608EF458 /* UIImage+Placeholder.swift */,
+				FFFA9E984E64290DDF7FB01B1E305908 /* UIView+PixelTest.swift */,
+				3C0D535F1E41E6C0EA16FD26CF783524 /* XCTestCase+AddAttachmentWithName.swift */,
+				FBABBAB46D308491917FC9E20AE7C3DE /* XCTestCase+InfoPlist.swift */,
+				29B13705DABE58CE9F5E9E42E140A8DC /* Support Files */,
+			);
+			name = PixelTest;
+			path = PixelTest;
+			sourceTree = "<group>";
+		};
 		267BCCF53A9B8C1DAFF6942B1C91ACDB /* Pods-ShowTimeTodayExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,12 +290,40 @@
 			path = "Target Support Files/Pods-ShowTimeTodayExtension";
 			sourceTree = "<group>";
 		};
+		29B13705DABE58CE9F5E9E42E140A8DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0BE77297F11EF9E8781D0D2B235887F /* PixelTest.modulemap */,
+				369CA4736211D33D8679EB43FB6379D6 /* PixelTest.xcconfig */,
+				5B9CF45B60800EFC5517EE2DFE002EE2 /* PixelTest-dummy.m */,
+				F6FF83EC024A9584209E0B772E2C81A8 /* PixelTest-Info.plist */,
+				3335C31E88E603EE5BE5CF1826747C3A /* PixelTest-prefix.pch */,
+				20F91B1788DA42A81248D7B12A5B1670 /* PixelTest-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PixelTest";
+			sourceTree = "<group>";
+		};
 		372944304614DC3B843B9F46CE8FE1B3 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				026EAC7A579F0B4A759F085F9D49E590 /* ShowTime */,
+				15217AEFF28930A15B95322771FC9607 /* ShowTime */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3E226031E4924FB32714BBF437D0F9ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7ABB039BBF4491609F6BA20483D80F0 /* ShowTime.modulemap */,
+				32CB5F5FB725B1A4E5073076953601DF /* ShowTime.xcconfig */,
+				3703424CAC8E10825C519DA74E5247A1 /* ShowTime-dummy.m */,
+				EB34473CA75065BBA4B448F0BD7D8183 /* ShowTime-Info.plist */,
+				0F0C2E6E4BC4E74846D5377A20DD8D65 /* ShowTime-prefix.pch */,
+				B8D9428BC855E71E40E223B86A1BEE8F /* ShowTime-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ShowTime";
 			sourceTree = "<group>";
 		};
 		3EB7C49733567C9707DC4C42374E8323 /* iOS */ = {
@@ -275,6 +336,16 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		44E73E485FA4E7A310F01F2EB1184C76 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9C4A44005FF5963A404CB788A3DA8881 /* LICENSE.md */,
+				AFB0279006B28BB4E87DC848367E9046 /* README.md */,
+				08E8BFE437D3D8D48541F9BCCF7D4E21 /* ShowTime.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		4D4A0DDF6B91D1712858B4728A5BBBDD /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,21 +356,6 @@
 				246C5312AD287517A78640A4FAF48421 /* ShowTime.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5238A20497C917128787C955386ABF6F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D928CF2E95E2C891B5CE17C8F58846F2 /* ShowTime.modulemap */,
-				7A93D9EA1A298358AB9722D381CC8AE5 /* ShowTime-dummy.m */,
-				9979076F0A62451D8A444BE63CA1AD36 /* ShowTime-Info.plist */,
-				CFE3D1BC24C345C93ECBF4E4F9FE3072 /* ShowTime-prefix.pch */,
-				9FA38FDA1B656FB8C42985541C9A34D5 /* ShowTime-umbrella.h */,
-				AF15CBACB5465AF2DE91B6B85D41E6C8 /* ShowTime.debug.xcconfig */,
-				6CA7F1675FE943431F17CF4F4D708A41 /* ShowTime.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ShowTime";
 			sourceTree = "<group>";
 		};
 		62542B449F51F78FF328DC61504DEB00 /* Pods-ShowTime_Example-ShowTime_Tests */ = {
@@ -319,16 +375,6 @@
 			path = "Target Support Files/Pods-ShowTime_Example-ShowTime_Tests";
 			sourceTree = "<group>";
 		};
-		71BDFF497F1B96A48CB744924A3FD3B7 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				50C2425A434BBC04BAA53C9CA786F8E9 /* LICENSE.md */,
-				BA2CECC06931157B554F15DE4A4BA4FD /* README.md */,
-				C7C9E1751095BA349BBEC909C7DC302A /* ShowTime.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		978DEFD8FDCEFB34624EC2865148598C /* Pods-ShowTime_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,45 +392,10 @@
 			path = "Target Support Files/Pods-ShowTime_Example";
 			sourceTree = "<group>";
 		};
-		AA625422448FE9140A6730E570740971 /* PixelTest */ = {
-			isa = PBXGroup;
-			children = (
-				30BE71B7FA6173C3B05886F0886F5E57 /* Configuration.swift */,
-				5CD500DE6EB30F065E3120C8D79371ED /* Errors.swift */,
-				045487C197B3BA91CCA570FD9961C04D /* FileCoordinator.swift */,
-				6FBB648A6618AB5C92D08C41EBBF1CF3 /* FileCoordinatorType.swift */,
-				7B49087FD6E5571C2D0D91621EAAC415 /* FileManagerType.swift */,
-				5788EED68E097F0C1CE253BC6C6E18B3 /* ImageType.swift */,
-				0288CC62464C6358B8AAB6F172E7AEFE /* InfoPlist.swift */,
-				9EFCA01B12B601C37675E424C869AD32 /* LayoutCoordinator.swift */,
-				4E2D84469332629C46CFFDEF9A3F7788 /* LayoutCoordinatorType.swift */,
-				6184EED7C02677E26F9829E6FD6ABD6C /* LayoutStyle.swift */,
-				3B26E14D3D129CA4298B2BA9CBD0E9FA /* Mode.swift */,
-				82B7D786D1213F6A182F9D102EED0187 /* PixelTest+VerifyConveniences.swift */,
-				0BB3E35F4B7443C5597EC6F7109F55CA /* PixelTestCase.swift */,
-				60206A97607E3DEE9A1E79AA2BFA710D /* PlaceholderImageGenerator.swift */,
-				B5CAB0E24E8E33E7B6ED5593AEC177E5 /* RecordCoordinator.swift */,
-				B3A7229A3D2875F58EC79394B5F0974C /* RecordCoordinatorType.swift */,
-				88D9E3FF366CF160DC37DBD81CE85828 /* ResultsCoordinator.swift */,
-				E158BD7A2A7511EB9C932EA1D2859524 /* Scale.swift */,
-				3F4454A1A45AD32B351061A186058630 /* String+Content.swift */,
-				0A35CE51634EB391C29E388D2925B3F5 /* TestCoordinator.swift */,
-				7DE047DA7DDD51C3857ED57CF9F4E4EC /* TestCoordinatorType.swift */,
-				0192DB390A7ED78049F779EBDBDD8CB4 /* UIImage+PixelTest.swift */,
-				18A802F8AB30DC8D140813FF04417F6F /* UIImage+Placeholder.swift */,
-				10496A73569636C50097825C6E726643 /* UIView+PixelTest.swift */,
-				4CB35D1E83470A2C16830E2686EE8913 /* XCTestCase+AddAttachmentWithName.swift */,
-				A0AF154F0A1F8ABE6C8D43EDF57AC137 /* XCTestCase+InfoPlist.swift */,
-				E177524D0D742A2FC364CAD7A3379B75 /* Support Files */,
-			);
-			name = PixelTest;
-			path = PixelTest;
-			sourceTree = "<group>";
-		};
 		C01D93B1270715D987DC5AF3B56CBB78 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AA625422448FE9140A6730E570740971 /* PixelTest */,
+				1F34784C46CF98C27CA9E1E29002D7F2 /* PixelTest */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -399,21 +410,6 @@
 				4D4A0DDF6B91D1712858B4728A5BBBDD /* Products */,
 				09237694EBEC51EE332720D690D2A57D /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		E177524D0D742A2FC364CAD7A3379B75 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				749C73171DC7E0DB9860E084E377C039 /* PixelTest.modulemap */,
-				20B92E956E59E87055D3AF112CA4346F /* PixelTest-dummy.m */,
-				BC29DC25C27F6E2B5D3C6497628FFBD9 /* PixelTest-Info.plist */,
-				BCEC3DA23D548A9FE81777CE68B61931 /* PixelTest-prefix.pch */,
-				A8AB42D42544A4F77BFCC4BF232817BA /* PixelTest-umbrella.h */,
-				15F116B846D3986A5036F071FA199CFA /* PixelTest.debug.xcconfig */,
-				418FB048388B60DD9AA5B977D7C7EEE9 /* PixelTest.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PixelTest";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -723,70 +719,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		040B3C23F3536587D5A4EB91C89D63A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF15CBACB5465AF2DE91B6B85D41E6C8 /* ShowTime.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ShowTime/ShowTime-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShowTime/ShowTime-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShowTime/ShowTime.modulemap";
-				PRODUCT_MODULE_NAME = ShowTime;
-				PRODUCT_NAME = ShowTime;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		24ECBDA9EB4F7AEEE38AE68BC985B08F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15F116B846D3986A5036F071FA199CFA /* PixelTest.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PixelTest/PixelTest-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PixelTest/PixelTest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PixelTest/PixelTest.modulemap";
-				PRODUCT_MODULE_NAME = PixelTest;
-				PRODUCT_NAME = PixelTest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		2F55A3566E4E4FC936EAEAB624C33C12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -883,39 +815,6 @@
 			};
 			name = Release;
 		};
-		6E25DDD89A1C4FFCF6011652AF654AE1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 418FB048388B60DD9AA5B977D7C7EEE9 /* PixelTest.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PixelTest/PixelTest-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PixelTest/PixelTest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PixelTest/PixelTest.modulemap";
-				PRODUCT_MODULE_NAME = PixelTest;
-				PRODUCT_NAME = PixelTest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		959DAB4EC1BE4ADE4B22644C3E349521 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -979,39 +878,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		9C013AE42837DDBED81C8A67FA1E1264 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CA7F1675FE943431F17CF4F4D708A41 /* ShowTime.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ShowTime/ShowTime-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShowTime/ShowTime-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShowTime/ShowTime.modulemap";
-				PRODUCT_MODULE_NAME = ShowTime;
-				PRODUCT_NAME = ShowTime;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		B301612E85893DAF1CE31699ED2136D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1119,6 +985,39 @@
 			};
 			name = Debug;
 		};
+		D679C1A9695E2212CC3CA8C3D39E5347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 369CA4736211D33D8679EB43FB6379D6 /* PixelTest.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PixelTest/PixelTest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PixelTest/PixelTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PixelTest/PixelTest.modulemap";
+				PRODUCT_MODULE_NAME = PixelTest;
+				PRODUCT_NAME = PixelTest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DA30AF360D89DE5C56020A2F6A1C06D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6F9745CBB742022F91208E95520BE910 /* Pods-ShowTimeTodayExtension.release.xcconfig */;
@@ -1155,6 +1054,38 @@
 			};
 			name = Release;
 		};
+		E98F6328642CEAA27F7D96D45881820D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32CB5F5FB725B1A4E5073076953601DF /* ShowTime.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ShowTime/ShowTime-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShowTime/ShowTime-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ShowTime/ShowTime.modulemap";
+				PRODUCT_MODULE_NAME = ShowTime;
+				PRODUCT_NAME = ShowTime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		F24B719333059A872C6A729514B95D5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C93BE64C80FBD814BC41EFB78ABA7BC6 /* Pods-ShowTimeTodayExtension.debug.xcconfig */;
@@ -1190,14 +1121,79 @@
 			};
 			name = Debug;
 		};
+		F3926A45977C33F456A219225A06C014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 369CA4736211D33D8679EB43FB6379D6 /* PixelTest.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PixelTest/PixelTest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PixelTest/PixelTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PixelTest/PixelTest.modulemap";
+				PRODUCT_MODULE_NAME = PixelTest;
+				PRODUCT_NAME = PixelTest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4F36A54BDADA8E958D3EA526D91914A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32CB5F5FB725B1A4E5073076953601DF /* ShowTime.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ShowTime/ShowTime-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShowTime/ShowTime-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ShowTime/ShowTime.modulemap";
+				PRODUCT_MODULE_NAME = ShowTime;
+				PRODUCT_NAME = ShowTime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		13338E6A92763276D7E744F0BE126971 /* Build configuration list for PBXNativeTarget "ShowTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				040B3C23F3536587D5A4EB91C89D63A1 /* Debug */,
-				9C013AE42837DDBED81C8A67FA1E1264 /* Release */,
+				E98F6328642CEAA27F7D96D45881820D /* Debug */,
+				F4F36A54BDADA8E958D3EA526D91914A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1214,8 +1210,8 @@
 		3E3DAFD22F6F5D171B961BE368E0F89A /* Build configuration list for PBXNativeTarget "PixelTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24ECBDA9EB4F7AEEE38AE68BC985B08F /* Debug */,
-				6E25DDD89A1C4FFCF6011652AF654AE1 /* Release */,
+				F3926A45977C33F456A219225A06C014 /* Debug */,
+				D679C1A9695E2212CC3CA8C3D39E5347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
