@@ -1,6 +1,6 @@
 PODS:
   - PixelTest (2.3.0)
-  - ShowTime (2.5.1)
+  - ShowTime (2.5.2)
 
 DEPENDENCIES:
   - PixelTest
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   PixelTest: bf8ebcab58def20fbcf4ff791b80b74687eb4529
-  ShowTime: 5784a54538b030efc93ea5f370277d46b534e351
+  ShowTime: 5cb2c5314da2983cec44f27123a15473cf29306f
 
 PODFILE CHECKSUM: 1eeb455a7480bdb5803f86041651fb7df6759835
 
