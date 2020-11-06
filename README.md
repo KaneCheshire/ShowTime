@@ -45,7 +45,7 @@ and gestures in your XCUI automation tests while the tests run!
 
 ### Manual
 
-- Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/master/Sources/ShowTime/ShowTime.swift) into your project or copy the contents of it where ever you like.
+- Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/main/Sources/ShowTime/ShowTime.swift) into your project or copy the contents of it where ever you like.
 
 ### Swift Package Manager
 
