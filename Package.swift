@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "ShowTime",
-    platforms: [.iOS("8.2")],
+    platforms: [.iOS("9.0")],
     products: [.library(name: "ShowTime", targets: ["ShowTime"])],
     targets: [.target(name: "ShowTime")],
     swiftLanguageVersions: [.v5]
