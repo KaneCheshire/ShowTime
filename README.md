@@ -9,6 +9,7 @@
 - [Installation](#installation)
     - [Cocoapods](#cocoapods)
     - [Manual](#manual)
+    - [Swift Package Manager](#swift-package-manager)
 - [Usage](#usage)
 - [How it works](#how-it-works)
 - [Useful info](#useful-info)
