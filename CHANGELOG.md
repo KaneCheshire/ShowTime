@@ -1,5 +1,9 @@
 # Changelog
 
+# 2.5.3
+
+- Fixes warnings about targeting iOS 8 [#48](https://github.com/KaneCheshire/ShowTime/issues/48)
+
 # 2.5.2
 
 - Adds support for Swift Package Manager (@maxxfrazer)
