@@ -20,7 +20,7 @@
     
     // ShowTime also supports Objective-C projects:
     
-//    ShowTime.enabled = EnabledAlways;
+    ShowTime.enabled = EnabledAlways;
     
 //    ShowTime.shouldIgnoreApplePencilEvents = NO;
 //    ShowTime.disappearDelay = 0;
