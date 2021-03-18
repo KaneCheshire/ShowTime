@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PixelTest",
+        "repositoryURL": "https://github.com/kanecheshire/pixeltest",
+        "state": {
+          "branch": null,
+          "revision": "3b151473492b9581382a624e988524bebfeafbe1",
+          "version": "2.3.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
