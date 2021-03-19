@@ -21,18 +21,6 @@ jobs:
         run: xcodebuild build-for-testing -workspace Example/ShowTime-Example.xcworkspace -scheme ShowTime-Example -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=14.4'
       - name: Test on iPhone 12
         run: xcodebuild test-without-building -workspace Example/ShowTime-Example.xcworkspace -scheme ShowTime-Example -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=14.4'
-          
-  build_spm:
-    name: Ensure Swift Package Manager builds
-    runs-on: macOS-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Set Xcode version to 12.4
-        run: sudo xcode-select -switch /Applications/Xcode_12.4.app
-      - name: Build Swift Package Manager
-        run: xcodebuild -workspace package.xcworkspace -scheme ShowTime -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=11.4'
 
   build_cocoapods:
     name: Ensure Cocoapods builds
