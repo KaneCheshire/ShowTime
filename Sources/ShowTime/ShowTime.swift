@@ -18,9 +18,7 @@ public final class ShowTime: NSObject {
     /// - never:     ShowTime is never enabled.
     /// - debugOnly: ShowTime is enabled while the `DEBUG` flag is set and enabled.
     @objc public enum Enabled: Int {
-        case always
-        case never
-        case debugOnly
+        case always, never, debugOnly
     }
     
     /// Defines a style of animation.
@@ -29,16 +27,14 @@ public final class ShowTime: NSObject {
     /// - scaleDown: The animation has a scale down effect.
     /// - scaleUp: The animation has a scale up effect.
     public enum Animation {
-        case standard
-        case scaleDown
-        case scaleUp
+        case standard, scaleDown, scaleUp
         case custom((UIView) -> Void)
     }
     
     /// Whether ShowTime is enabled.
     /// ShowTime automatically enables itself by default.
     /// (`.always` by default)
-    @objc public static var enabled: ShowTime.Enabled = .always
+    @objc public static var enabled: Enabled = .always
     
     /// The fill (background) colour of the visual touches.
     /// If set to `.auto`, ShowTime automatically uses the stroke color with 50% alpha.
@@ -59,7 +55,7 @@ public final class ShowTime: NSObject {
     
     /// The style of animation to use when hiding a visual touch.
     /// (`.standard` by default)
-    public static var disappearAnimation: ShowTime.Animation = .standard
+    public static var disappearAnimation: Animation = .standard
     
     /// The delay, in seconds, before the visual touch disappears after a touch ends.
     /// (`0.2`s by default)
@@ -185,7 +181,7 @@ class TouchView: UILabel {
     
 }
 
-internal var _touches = [UITouch : TouchView]()
+var _touches = [UITouch : TouchView]()
 
 extension UIWindow {
     
@@ -246,7 +242,7 @@ extension UIWindow {
 
 private extension UITouch {
     
-    /// Normalizes the level of force betwenn 0 and 1 regardless of device.
+    /// Normalizes the level of force between 0 and 1 regardless of device.
     /// Will always be 0 for devices that don't support 3D Touch.
     var normalizedForce: CGFloat {
         guard #available(iOS 9.0, *), maximumPossibleForce > 0 else { return 0 }

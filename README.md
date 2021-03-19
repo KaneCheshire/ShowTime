@@ -1,4 +1,3 @@
-[![CI Status](http://img.shields.io/travis/KaneCheshire/ShowTime.svg?style=flat)](https://travis-ci.org/KaneCheshire/ShowTime)
 [![Version](https://img.shields.io/cocoapods/v/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
 [![License](https://img.shields.io/cocoapods/l/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
 [![Platform](https://img.shields.io/cocoapods/p/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
@@ -7,9 +6,9 @@
 # It's ShowTime 🎥
 
 - [Installation](#installation)
+    - [Swift Package Manager](#swift-package-manager)
     - [Cocoapods](#cocoapods)
     - [Manual](#manual)
-    - [Swift Package Manager](#swift-package-manager)
 - [Usage](#usage)
 - [How it works](#how-it-works)
 - [Useful info](#useful-info)
@@ -39,6 +38,11 @@ and gestures in your XCUI automation tests while the tests run!
 
 ## Installation
 
+### Swift Package Manager
+
+- Step 1: In Xcode 11+, add `https://github.com/KaneCheshire/ShowTime.git` to the list of Swift Package dependencies, [see here](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) for more information.
+- Step 2: There is no step 2, ShowTime works as soon as you launch your app, but you can [configure](#usage) it if you wish!
+
 ### Cocoapods
 
 - Step 1: Add `pod 'ShowTime'` to your Podfile and run `pod update` in Terminal.
@@ -47,11 +51,6 @@ and gestures in your XCUI automation tests while the tests run!
 ### Manual
 
 - Step 1: Drop [`ShowTime.swift`](https://raw.githubusercontent.com/KaneCheshire/ShowTime/main/Sources/ShowTime/ShowTime.swift) into your project or copy the contents of it where ever you like.
-
-### Swift Package Manager
-
-- Step 1: In Xcode 11+, add `https://github.com/KaneCheshire/ShowTime.git` to the list of Swift Package dependencies, [see here](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) for more information.
-- Step 2: There is no step 2, ShowTime works as soon as you launch your app, but you can [configure](#usage) it if you wish!
 
 ## Usage
 

@@ -5,7 +5,6 @@ target 'ShowTime_Example' do
 
   target 'ShowTime_Tests' do
     inherit! :complete
-    pod 'PixelTest'
   end
 end
 

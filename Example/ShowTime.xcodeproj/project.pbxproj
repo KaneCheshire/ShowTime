@@ -20,7 +20,7 @@
 		C345581C205BAE6F00364603 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C345581A205BAE6F00364603 /* MainInterface.storyboard */; };
 		C3455820205BAE6F00364603 /* ShowTimeTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3455814205BAE6E00364603 /* ShowTimeTodayExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C3842B16207D6B9E007BDB57 /* ShowTimeSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3842B15207D6B9E007BDB57 /* ShowTimeSnapshotTests.swift */; };
-		FE89F459F687C4D8FA2B42A8 /* Pods_ShowTime_Example_ShowTime_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98718DFA6C77F6F4D331EA83 /* Pods_ShowTime_Example_ShowTime_Tests.framework */; };
+		C3FD196C260407DF002DEB9F /* PixelTest in Frameworks */ = {isa = PBXBuildFile; productRef = C3FD196B260407DF002DEB9F /* PixelTest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE89F459F687C4D8FA2B42A8 /* Pods_ShowTime_Example_ShowTime_Tests.framework in Frameworks */,
+				C3FD196C260407DF002DEB9F /* PixelTest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +281,9 @@
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
 			name = ShowTime_Tests;
+			packageProductDependencies = (
+				C3FD196B260407DF002DEB9F /* PixelTest */,
+			);
 			productName = Tests;
 			productReference = 607FACE51AFB9204008FA782 /* ShowTime_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -334,14 +337,16 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "ShowTime" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+				C3FD196A260407DF002DEB9F /* XCRemoteSwiftPackageReference "pixeltest" */,
+			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -846,6 +851,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3FD196A260407DF002DEB9F /* XCRemoteSwiftPackageReference "pixeltest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kanecheshire/pixeltest";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3FD196B260407DF002DEB9F /* PixelTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3FD196A260407DF002DEB9F /* XCRemoteSwiftPackageReference "pixeltest" */;
+			productName = PixelTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

@@ -98,9 +98,9 @@
 		191A3C82FBE74D46583A387031E1F9F3 /* Pods-ShowTime_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1A1D81A224A0F9E3ADA45C7C21CE137D /* Pods-ShowTime_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-Info.plist"; sourceTree = "<group>"; };
 		20B92E956E59E87055D3AF112CA4346F /* PixelTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PixelTest-dummy.m"; sourceTree = "<group>"; };
-		246C5312AD287517A78640A4FAF48421 /* ShowTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShowTime.framework; path = ShowTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		246C5312AD287517A78640A4FAF48421 /* ShowTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShowTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26719205B1D821FA2C6D80749FFC407D /* Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowTime_Example-ShowTime_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		27D884F06C250A848DC3944B127DE5AC /* PixelTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PixelTest.framework; path = PixelTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D884F06C250A848DC3944B127DE5AC /* PixelTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PixelTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BE71B7FA6173C3B05886F0886F5E57 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = PixelTest/Models/Configuration.swift; sourceTree = "<group>"; };
 		314B25FC63A2DE537971096596F6B6CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		396400E530F55EF1A3990DC14C29F29B /* Pods-ShowTime_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTime_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		47CD64A6EAFEF3A42ED334E5E1436B09 /* Pods-ShowTime_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShowTime_Example.modulemap"; sourceTree = "<group>"; };
 		4CB35D1E83470A2C16830E2686EE8913 /* XCTestCase+AddAttachmentWithName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+AddAttachmentWithName.swift"; path = "PixelTest/Extensions/XCTestCase+AddAttachmentWithName.swift"; sourceTree = "<group>"; };
 		4E2D84469332629C46CFFDEF9A3F7788 /* LayoutCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutCoordinatorType.swift; path = PixelTest/Protocols/LayoutCoordinatorType.swift; sourceTree = "<group>"; };
-		50C2425A434BBC04BAA53C9CA786F8E9 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
+		50C2425A434BBC04BAA53C9CA786F8E9 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		5788EED68E097F0C1CE253BC6C6E18B3 /* ImageType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageType.swift; path = PixelTest/Models/ImageType.swift; sourceTree = "<group>"; };
 		5A1F1DFED1207BD8DA92A0E6BC2FEC9C /* Pods-ShowTime_Example-ShowTime_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowTime_Example-ShowTime_Tests-dummy.m"; sourceTree = "<group>"; };
 		5A80FEF07D5ECC9D9FF381EAD4BE98E6 /* Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTime_Example-ShowTime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,18 +127,18 @@
 		749C73171DC7E0DB9860E084E377C039 /* PixelTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PixelTest.modulemap; sourceTree = "<group>"; };
 		7A93D9EA1A298358AB9722D381CC8AE5 /* ShowTime-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShowTime-dummy.m"; sourceTree = "<group>"; };
 		7B49087FD6E5571C2D0D91621EAAC415 /* FileManagerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileManagerType.swift; path = PixelTest/Protocols/FileManagerType.swift; sourceTree = "<group>"; };
-		7B5FE6FF8ABB5FCF521C328BD74642E2 /* Pods_ShowTimeTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTimeTodayExtension.framework; path = "Pods-ShowTimeTodayExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5FE6FF8ABB5FCF521C328BD74642E2 /* Pods_ShowTimeTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTimeTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7528BA6BBACECE3D023443D3EF0A18 /* Pods-ShowTime_Example-ShowTime_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShowTime_Example-ShowTime_Tests.modulemap"; sourceTree = "<group>"; };
 		7DE047DA7DDD51C3857ED57CF9F4E4EC /* TestCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestCoordinatorType.swift; path = PixelTest/Protocols/TestCoordinatorType.swift; sourceTree = "<group>"; };
 		7E9A799019B812061A722AFDFDE23696 /* Pods-ShowTimeTodayExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTimeTodayExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		82B7D786D1213F6A182F9D102EED0187 /* PixelTest+VerifyConveniences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PixelTest+VerifyConveniences.swift"; path = "PixelTest/PixelTest+VerifyConveniences.swift"; sourceTree = "<group>"; };
 		88D9E3FF366CF160DC37DBD81CE85828 /* ResultsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultsCoordinator.swift; path = PixelTest/Coordinators/ResultsCoordinator.swift; sourceTree = "<group>"; };
 		8CD3585AC5E47E8825A721BFA67F3A2B /* ShowTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShowTime.swift; path = Sources/ShowTime/ShowTime.swift; sourceTree = "<group>"; };
-		8CEC4DEF66E14AAEAFF2E02E3900CED5 /* Pods_ShowTime_Example_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTime_Example_ShowTime_Tests.framework; path = "Pods-ShowTime_Example-ShowTime_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CEC4DEF66E14AAEAFF2E02E3900CED5 /* Pods_ShowTime_Example_ShowTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example_ShowTime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BDD1BBA118D508DEEBB1B1697A0F8F /* Pods-ShowTimeTodayExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShowTimeTodayExtension.modulemap"; sourceTree = "<group>"; };
 		95B0433121CAE83FF0D196FEF99FEF97 /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9979076F0A62451D8A444BE63CA1AD36 /* ShowTime-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShowTime-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EFCA01B12B601C37675E424C869AD32 /* LayoutCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutCoordinator.swift; path = PixelTest/Coordinators/LayoutCoordinator.swift; sourceTree = "<group>"; };
 		9FA38FDA1B656FB8C42985541C9A34D5 /* ShowTime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-umbrella.h"; sourceTree = "<group>"; };
 		A0AF154F0A1F8ABE6C8D43EDF57AC137 /* XCTestCase+InfoPlist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+InfoPlist.swift"; path = "PixelTest/Extensions/XCTestCase+InfoPlist.swift"; sourceTree = "<group>"; };
@@ -149,12 +149,12 @@
 		B3A7229A3D2875F58EC79394B5F0974C /* RecordCoordinatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordCoordinatorType.swift; path = PixelTest/Protocols/RecordCoordinatorType.swift; sourceTree = "<group>"; };
 		B5AE568F0E915D98F77F76786E50C8CA /* Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-ShowTime_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B5CAB0E24E8E33E7B6ED5593AEC177E5 /* RecordCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordCoordinator.swift; path = PixelTest/Coordinators/RecordCoordinator.swift; sourceTree = "<group>"; };
-		B61B3E0B8E29BB9549A40D8E967F8C87 /* Pods_ShowTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowTime_Example.framework; path = "Pods-ShowTime_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA2CECC06931157B554F15DE4A4BA4FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B61B3E0B8E29BB9549A40D8E967F8C87 /* Pods_ShowTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowTime_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2CECC06931157B554F15DE4A4BA4FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BB90A64C40E7D88C99D332564F8A55FD /* Pods-ShowTimeTodayExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowTimeTodayExtension-umbrella.h"; sourceTree = "<group>"; };
 		BC29DC25C27F6E2B5D3C6497628FFBD9 /* PixelTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PixelTest-Info.plist"; sourceTree = "<group>"; };
 		BCEC3DA23D548A9FE81777CE68B61931 /* PixelTest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PixelTest-prefix.pch"; sourceTree = "<group>"; };
-		C7C9E1751095BA349BBEC909C7DC302A /* ShowTime.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ShowTime.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C7C9E1751095BA349BBEC909C7DC302A /* ShowTime.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ShowTime.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C93BE64C80FBD814BC41EFB78ABA7BC6 /* Pods-ShowTimeTodayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowTimeTodayExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		CA47493240E304EE47627CA91EC8576A /* Pods-ShowTime_Example-ShowTime_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowTime_Example-ShowTime_Tests-Info.plist"; sourceTree = "<group>"; };
 		CFE3D1BC24C345C93ECBF4E4F9FE3072 /* ShowTime-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShowTime-prefix.pch"; sourceTree = "<group>"; };
@@ -377,7 +377,6 @@
 				A0AF154F0A1F8ABE6C8D43EDF57AC137 /* XCTestCase+InfoPlist.swift */,
 				E177524D0D742A2FC364CAD7A3379B75 /* Support Files */,
 			);
-			name = PixelTest;
 			path = PixelTest;
 			sourceTree = "<group>";
 		};
@@ -563,7 +562,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 11.0";
@@ -749,6 +748,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -803,7 +803,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/PixelTest/PixelTest-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PixelTest/PixelTest-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -838,7 +838,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/PixelTest/PixelTest-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PixelTest/PixelTest-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1028,7 +1028,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ShowTime/ShowTime-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ShowTime/ShowTime-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1141,7 +1141,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ShowTime/ShowTime-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ShowTime/ShowTime-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1186,6 +1186,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
