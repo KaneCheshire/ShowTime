@@ -18,9 +18,9 @@ jobs:
       - name: Set Xcode version to 12.4
         run: sudo xcode-select -switch /Applications/Xcode_12.4.app
       - name: Build for testing
-        run: xcodebuild build-for-testing -workspace Example/ShowTime-Example.xcworkspace -scheme ShowTime-Example -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=14.4'
+        run: xcodebuild build-for-testing -workspace Example/ShowTime.xcworkspace -scheme ShowTime-Example -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=14.4'
       - name: Test on iPhone 12
-        run: xcodebuild test-without-building -workspace Example/ShowTime-Example.xcworkspace -scheme ShowTime-Example -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=14.4'
+        run: xcodebuild test-without-building -workspace Example/ShowTime.xcworkspace -scheme ShowTime-Example -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=14.4'
 
   build_cocoapods:
     name: Ensure Cocoapods builds
