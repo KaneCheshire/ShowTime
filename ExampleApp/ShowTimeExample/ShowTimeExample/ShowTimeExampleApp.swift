@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// Run the app and play around with some settings :)
+
 @main
 struct ShowTimeExampleApp: App {
     var body: some Scene {

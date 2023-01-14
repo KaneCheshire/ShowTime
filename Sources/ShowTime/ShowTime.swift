@@ -17,7 +17,7 @@ public final class ShowTime: NSObject {
     /// - always:    ShowTime is always enabled.
     /// - never:     ShowTime is never enabled.
     /// - debugOnly: ShowTime is enabled while the `DEBUG` flag is set and enabled.
-    @objc public enum Enabled: Int {
+    @objc public enum Enabled: Int, CaseIterable {
         case always, never, debugOnly
     }
     
@@ -51,7 +51,7 @@ public final class ShowTime: NSObject {
     
     /// The size of the touch circles.
     /// (44pt x 44pt by default)
-    @objc public static var size = CGSize(width: 44, height: 44)
+    @objc public static var size = CGSize(width: 44, height: 44) // TODO: Just make CGFloat
     
     /// The style of animation to use when hiding a visual touch.
     /// (`.standard` by default)
@@ -186,7 +186,7 @@ var _touches = [UITouch : TouchView]()
 extension UIWindow {
     
     open override var layer: CALayer {
-        UIWindow.swizzle()
+        UIWindow.swizzle() // TODO: Only swizzle when enabled
         return super.layer
     }
     

@@ -11,6 +11,8 @@
 		C3F5AE1B2972A9F70063E051 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5AE1A2972A9F70063E051 /* ContentView.swift */; };
 		C3F5AE1D2972A9F90063E051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F5AE1C2972A9F90063E051 /* Assets.xcassets */; };
 		C3F5AE202972A9F90063E051 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F5AE1F2972A9F90063E051 /* Preview Assets.xcassets */; };
+		C3F5AE2A2972AB0E0063E051 /* ShowTime in Frameworks */ = {isa = PBXBuildFile; productRef = C3F5AE292972AB0E0063E051 /* ShowTime */; };
+		C3F5AE2C2972BBB00063E051 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5AE2B2972BBB00063E051 /* Row.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C3F5AE1A2972A9F70063E051 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3F5AE1C2972A9F90063E051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3F5AE1F2972A9F90063E051 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3F5AE272972AAC30063E051 /* ShowTime */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShowTime; path = ../..; sourceTree = "<group>"; };
+		C3F5AE2B2972BBB00063E051 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F5AE2A2972AB0E0063E051 /* ShowTime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +40,10 @@
 		C3F5AE0C2972A9F70063E051 = {
 			isa = PBXGroup;
 			children = (
+				C3F5AE262972AAC30063E051 /* Packages */,
 				C3F5AE172972A9F70063E051 /* ShowTimeExample */,
 				C3F5AE162972A9F70063E051 /* Products */,
+				C3F5AE282972AB0E0063E051 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +60,7 @@
 			children = (
 				C3F5AE182972A9F70063E051 /* ShowTimeExampleApp.swift */,
 				C3F5AE1A2972A9F70063E051 /* ContentView.swift */,
+				C3F5AE2B2972BBB00063E051 /* Row.swift */,
 				C3F5AE1C2972A9F90063E051 /* Assets.xcassets */,
 				C3F5AE1E2972A9F90063E051 /* Preview Content */,
 			);
@@ -65,6 +73,21 @@
 				C3F5AE1F2972A9F90063E051 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3F5AE262972AAC30063E051 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C3F5AE272972AAC30063E051 /* ShowTime */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		C3F5AE282972AB0E0063E051 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +106,9 @@
 			dependencies = (
 			);
 			name = ShowTimeExample;
+			packageProductDependencies = (
+				C3F5AE292972AB0E0063E051 /* ShowTime */,
+			);
 			productName = ShowTimeExample;
 			productReference = C3F5AE152972A9F70063E051 /* ShowTimeExample.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F5AE1B2972A9F70063E051 /* ContentView.swift in Sources */,
+				C3F5AE2C2972BBB00063E051 /* Row.swift in Sources */,
 				C3F5AE192972A9F70063E051 /* ShowTimeExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +364,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3F5AE292972AB0E0063E051 /* ShowTime */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ShowTime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3F5AE0D2972A9F70063E051 /* Project object */;
 }
