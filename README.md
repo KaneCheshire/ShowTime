@@ -2,7 +2,7 @@
 
 - [Installation](#installation)
     - [Swift Package Manager](#swift-package-manager)
-    - [Cocoapods](#cocoapods)
+    - [Cocoapods _deprecated_](#cocoapods)
     - [Manual](#manual)
 - [Usage](#usage)
 - [How it works](#how-it-works)
@@ -28,7 +28,8 @@ By default, the size of the visual touches are 44pt; this mirrors Apple's guidel
 
 Showing your gestures during demos gives your audience a much clearer context on what's happening on your device. Try ShowTime for your next demo, it's super easy to set up!
 
-**ADDED BONUS:** Adding ShowTime as a pod to your app in debug mode will show taps and gestures in your XCUI automation tests while the tests run!
+**ADDED BONUS:** Adding ShowTime to your app in debug mode will show taps and gestures in your XCUI automation tests while the tests run!
+**ADDED BONUS:** Adding ShowTime to your app in debug mode will show taps and gestures in your XCUI automation tests while the tests run!
 
 ![ShowTime](http://kanecheshire.com/images/github/showtime-demo-4.gif)
 
