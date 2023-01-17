@@ -1,6 +1,0 @@
-os: osx
-language: objective-c
-osx_image: xcode11.3
-script:
-  - cd Example; pod update; cd ../
-  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/ShowTime.xcworkspace -scheme ShowTime-Example -sdk iphonesimulator -destination "OS=13.3,name=iPhone 11 Pro" | xcpretty
