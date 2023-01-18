@@ -18,15 +18,3 @@ jobs:
         run: sudo xcode-select -switch /Applications/Xcode_14.2.app
       - name: Test iOS 16.2
         run: xcodebuild test -scheme ShowTime -sdk iphonesimulator16.2 -destination "OS=16.2,name=iPhone 14"
-
-  test_macos_11:
-    name: Run tests
-    runs-on: macOS-11
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Set Xcode version to 13.2
-        run: sudo xcode-select -switch /Applications/Xcode_13.2.app
-      - name: Test iOS 15.2
-        run: xcodebuild test -scheme ShowTime -sdk iphonesimulator15.2 -destination "OS=15.2,name=iPhone 13"
