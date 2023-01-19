@@ -1,6 +1,0 @@
-framework module Pods_ShowTime_Example_ShowTime_Tests {
-  umbrella header "Pods-ShowTime_Example-ShowTime_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

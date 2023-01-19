@@ -1,13 +1,8 @@
-[![Version](https://img.shields.io/cocoapods/v/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
-[![License](https://img.shields.io/cocoapods/l/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
-[![Platform](https://img.shields.io/cocoapods/p/ShowTime.svg?style=flat)](http://cocoapods.org/pods/ShowTime)
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/matteocrippa/awesome-swift)
-
-# It's ShowTime 🎥
+# It's ShowTime! 🎥
 
 - [Installation](#installation)
     - [Swift Package Manager](#swift-package-manager)
-    - [Cocoapods](#cocoapods)
+    - [Cocoapods _deprecated_](#cocoapods)
     - [Manual](#manual)
 - [Usage](#usage)
 - [How it works](#how-it-works)
@@ -15,24 +10,25 @@
 - [Author](#author)
 - [License](#license)
 
-ShowTime is the simplest and best way to display all your taps and gestures on screen. Perfect for that demo, presentation or video.
+ShowTime is the simplest and best way to display all your taps and gestures on screen. Perfect for that demo, presentation or video!
 
-One file (or pod install) is all you need to add that extra polish your demos. ShowTime even **displays the level of force you're applying**, and can be configured to show the **actual number of taps performed**. Apple Pencil events are configurable and disabled by default.
+All you need to add that extra polish your demos is to add the Swift package dependency to your app target, you don't even need to `import ShowTime` if you don't want to change any of the options!
 
-ShowTime works as soon as your app runs with no setup required, but is also highly configurable if you don't like the defaults.
+ShowTime can be configured to show the **actual number of taps performed**. Apple Pencil events are ignored by default but this can be configured.
 
-ShowTime works with **single- and multi-window setups**, as well as in **iOS widgets**, and works with any Swift or Objective-C project.
+ShowTime works as soon as your app runs, with no setup required, but is also highly configurable if you don't like the defaults.
+
+ShowTime works with **single- and multi-window setups** out-the-box, without the need to subclass or set a `UIWindow`.
 
 Check out **[How it works](#how-it-works)**.
 
-It takes less than a minute to install ShowTime, consider using it when you're sharing or recording your screen through QuickTime or AirPlay.
+It takes less than a minute to install ShowTime, consider using it when you're sharing or recording your screen through QuickTime or AirPlay to help give your viewers extra context.
 
 By default, the size of the visual touches are 44pt; this mirrors Apple's guidelines for minimum hit size for buttons on iOS. You're free to change this, of course!
 
-Showing your gestures during demos gives your audience a much clearer context on what's happening on your device. Try ShowTime for your next demo, it's insanely easy to set up!
+Showing your gestures during demos gives your audience a much clearer context on what's happening on your device. Try ShowTime for your next demo, it's super easy to set up!
 
-**ADDED BONUS:** Adding ShowTime as a pod to your app in debug mode will show taps
-and gestures in your XCUI automation tests while the tests run!
+**ADDED BONUS:** Adding ShowTime to your app in debug mode will show taps and gestures in your XCUI automation tests while the tests run!
 
 ![ShowTime](http://kanecheshire.com/images/github/showtime-demo-4.gif)
 
@@ -45,6 +41,8 @@ and gestures in your XCUI automation tests while the tests run!
 
 ### Cocoapods
 
+> NOTE: I won't be supporting Cocoapods for future updates, but for for now the podspec will remain in the repo with the last released version for Cocoapods. You can always install the latest `ShowTime.swift` [manually](#manual) if you want newer updates but can't use Swift Package Manager yet.
+
 - Step 1: Add `pod 'ShowTime'` to your Podfile and run `pod update` in Terminal.
 - Step 2: There is no step 2, ShowTime works as soon as you launch your app, but you can [configure](#usage) it if you wish!
 
@@ -54,9 +52,9 @@ and gestures in your XCUI automation tests while the tests run!
 
 ## Usage
 
-ShowTime works out of the box (you don't even need to import the framework anywhere), but you can customise it to turn it on or off, change the colour of the taps, and even choose whether to display the number of taps for multiple taps.
+ShowTime works out of the box (you don't even need to `import ShowTime` in any file), but you can customise it to turn it on or off, change the colour of the taps, plus lots more options.
 
-There's lots of options to play with which helps ShowTime work with your app's character during demos.
+There's lots of options to play with which helps ShowTime work with your app's character and theme during demos.
 
 Here's a list of options:
 
@@ -140,13 +138,14 @@ ShowTime swizzles the `sendEvent(_:)` method on `UIWindow`, intercepts the event
 ## Useful info
 
 ### Why don't I need to import ShowTime to get it to work?
-ShowTime automatically swizzles functions which doesn't require the framework to be imported with `import ShowTime`, so after install the cocoapod, ShowTime is automagically enabled. The only time you'll need to import the framework is if you want to play around with the configuration.
+ShowTime automagically swizzles functions which doesn't require the framework to be imported with `import ShowTime`, it just requires installing the code somewhere in a target (via Swift Package Manager, Cocoapods, or manually copying the code). The only time you'll need to import the framework is if you want to play around with the configuration.
+If you're wondering how the swizzling happens automatically, ShowTime overrides `UIWindow`'s `layer` property and performs the initial swizzling setup there. So the first time a `UIWindow`'s `layer` property is accessed, the swizzle happens automatically.
 
 ### Can I use this in production?
 Yes, I've never seen any weird crashes but it's never been stress tested, so to do so is at your own risk.
 
 ### Why would I want to show the number of multiple taps?
-People watching a demo of your app don't know exactly what your fingers are doing, so showing how many times you've tapped on a specific part of the screen really helps people understand the gestures you're carrying out.
+People watching a demo of your app don't know exactly what your fingers are doing, especially if it's a screen recording or over Zoom, so showing how many times you've tapped on a specific part of the screen really helps people understand the gestures you're carrying out.
 
 Double tapping makes sense if you're watching someone's hands, but often this can be easily missed if you're watching it on a screen. Showing the number of multiple taps by setting `ShowTime.shouldShowMultipleTapCount` to `true` shows a number inside the tap itself, clearly demonstrating to your audience that you just tapped twice (or more) in succession in the same place.
 

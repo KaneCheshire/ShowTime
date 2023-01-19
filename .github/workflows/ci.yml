@@ -7,21 +7,18 @@ on:
     branches: [ '*' ]
 
 jobs:
-
-  test_xcode12_ios14:
-    name: Run tests on Xcode 12 and iOS 14
-    runs-on: macOS-latest
+  test_macos_12:
+    name: Run tests
+    runs-on: macOS-12
 
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Set Xcode version to 12.4
-        run: sudo xcode-select -switch /Applications/Xcode_12.4.app
-      - name: Build for testing
-        run: xcodebuild build-for-testing -workspace Example/ShowTime.xcworkspace -scheme ShowTime-Example -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=14.4'
-      - name: Test on iPhone 12
-        run: xcodebuild test-without-building -workspace Example/ShowTime.xcworkspace -scheme ShowTime-Example -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=14.4'
-
+      - name: Set Xcode version to 14.2
+        run: sudo xcode-select -switch /Applications/Xcode_14.2.app
+      - name: Test iOS 16.2
+        run: xcodebuild test -scheme ShowTime -sdk iphonesimulator16.2 -destination "OS=16.2,name=iPhone 14"
+        
   build_cocoapods:
     name: Ensure Cocoapods builds
     runs-on: macOS-latest
@@ -29,9 +26,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Set Xcode version to 12.4
-        run: sudo xcode-select -switch /Applications/Xcode_12.4.app
+      - name: Set Xcode version to 14.2
+        run: sudo xcode-select -switch /Applications/Xcode_14.2.app
       - name: Build Cocoapods
         run: pod lib lint --verbose --allow-warnings
-
-
