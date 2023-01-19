@@ -26,7 +26,7 @@ build_cocoapods:
      steps:
        - name: Checkout
          uses: actions/checkout@v1
-       - name: Set Xcode version to 13.4
-         run: sudo xcode-select -switch /Applications/Xcode_14.4.app
+       - name: Set Xcode version to 12.4
+         run: sudo xcode-select -switch /Applications/Xcode_12.4.app
        - name: Build Cocoapods
          run: pod lib lint --verbose --allow-warnings
