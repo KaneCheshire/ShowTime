@@ -19,14 +19,14 @@ jobs:
       - name: Test iOS 16.2
         run: xcodebuild test -scheme ShowTime -sdk iphonesimulator16.2 -destination "OS=16.2,name=iPhone 14"
         
-build_cocoapods:
-     name: Ensure Cocoapods builds
-     runs-on: macOS-latest
+  build_cocoapods:
+    name: Ensure Cocoapods builds
+    runs-on: macOS-latest
 
-     steps:
-       - name: Checkout
-         uses: actions/checkout@v1
-       - name: Set Xcode version to 12.4
-         run: sudo xcode-select -switch /Applications/Xcode_12.4.app
-       - name: Build Cocoapods
-         run: pod lib lint --verbose --allow-warnings
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Set Xcode version to 12.4
+        run: sudo xcode-select -switch /Applications/Xcode_12.4.app
+      - name: Build Cocoapods
+        run: pod lib lint --verbose --allow-warnings
