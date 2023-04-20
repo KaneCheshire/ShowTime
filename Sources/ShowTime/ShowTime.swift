@@ -183,61 +183,48 @@ class TouchView: UILabel {
 
 var _touches = [UITouch : TouchView]()
 
-extension UIWindow {
-    
-    open override var layer: CALayer {
-        UIWindow.swizzle() // TODO: Only swizzle when enabled
-        return super.layer
-    }
-    
-    private class func swizzle() { // `initialize()` removed in Swift 4
-        struct Swizzled { static var once = false } // Workaround for missing dispatch_once in Swift 3
-        guard !Swizzled.once else { return }
-        Swizzled.once = true
-        guard let original = class_getInstanceMethod(self, #selector(UIWindow.sendEvent(_:))) else { return }
-        guard let new = class_getInstanceMethod(self, #selector(UIWindow.swizzled_sendEvent(_:))) else { return }
-        method_exchangeImplementations(original, new)
-    }
-    
-    @objc private func swizzled_sendEvent(_ event: UIEvent) {
-        swizzled_sendEvent(event)
-        guard ShowTime.shouldEnable else { return removeAllTouchViews() }
-        event.allTouches?.forEach {
-            if ShowTime.shouldIgnoreApplePencilEvents && $0.isApplePencil { return }
-            switch $0.phase {
-            case .began: touchBegan($0)
-            case .moved, .stationary: touchMoved($0)
-            case .cancelled, .ended: touchEnded($0)
-            default: return
-            }
-        }
-    }
-    
-    private func touchBegan(_ touch: UITouch) {
-        guard _touches[touch] == nil else { return } // Fixes a bug in iOS 13.4 which sends duplicated touch events with a pointer
-        let touchView = TouchView(touch: touch, relativeTo: self)
-        addSubview(touchView)
-        _touches[touch] = touchView
-    }
-    
-    private func touchMoved(_ touch: UITouch) {
-        guard let touchView = _touches[touch] else { return }
-        touchView.update(with: touch, relativeTo: self)
-    }
-    
-    private func touchEnded(_ touch: UITouch) {
-        removeTouchView(associatedWith: touch)
-    }
-    
-    private func removeAllTouchViews() {
-        _touches.keys.forEach { removeTouchView(associatedWith: $0) }
-    }
-    
-    private func removeTouchView(associatedWith touch: UITouch) {
-        guard let touchView = _touches[touch] else { return }
-        touchView.disappear()
-        _touches[touch] = nil
-    }
+public class ShowTimeWindow: UIWindow {
+
+	public override func sendEvent(_ event: UIEvent) {
+		super.sendEvent(event)
+
+		guard ShowTime.shouldEnable else { return removeAllTouchViews() }
+		event.allTouches?.forEach {
+			if ShowTime.shouldIgnoreApplePencilEvents && $0.isApplePencil { return }
+			switch $0.phase {
+				case .began: touchBegan($0)
+				case .moved, .stationary: touchMoved($0)
+				case .cancelled, .ended: touchEnded($0)
+				default: return
+			}
+		}
+	}
+
+	private func touchBegan(_ touch: UITouch) {
+		guard _touches[touch] == nil else { return } // Fixes a bug in iOS 13.4 which sends duplicated touch events with a pointer
+		let touchView = TouchView(touch: touch, relativeTo: self)
+		addSubview(touchView)
+		_touches[touch] = touchView
+	}
+
+	private func touchMoved(_ touch: UITouch) {
+		guard let touchView = _touches[touch] else { return }
+		touchView.update(with: touch, relativeTo: self)
+	}
+
+	private func touchEnded(_ touch: UITouch) {
+		removeTouchView(associatedWith: touch)
+	}
+
+	private func removeAllTouchViews() {
+		_touches.keys.forEach { removeTouchView(associatedWith: $0) }
+	}
+
+	private func removeTouchView(associatedWith touch: UITouch) {
+		guard let touchView = _touches[touch] else { return }
+		touchView.disappear()
+		_touches[touch] = nil
+	}
 }
 
 private extension UITouch {
